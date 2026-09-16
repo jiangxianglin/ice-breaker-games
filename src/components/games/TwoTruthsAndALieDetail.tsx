@@ -142,9 +142,25 @@ export function TwoTruthsAndALieDetail({ game, relatedGames = [] }: Props) {
           </p>
           <h3>Why play it?</h3>
           <p>
-            It works well for teams, classrooms, and workshops because it is simple, fun, and
-            naturally creates follow-up conversation. People reveal surprising facts without a long
-            monologue, and quieter participants can join by guessing before they share.
+            The format gives every person the same structure: two facts, one false statement, a short
+            guess round. Quieter people can participate by voting before they share. It fails when
+            lies become extreme, when prompts invade private life, or when you let each turn run past
+            two minutes. For safer no-lie options, browse{" "}
+            <Link href="/games-like-two-truths-and-a-lie">games like Two Truths and a Lie</Link>.
+          </p>
+        </section>
+
+        <section className={styles.guide}>
+          <h2>Why this game works (and when it does not)</h2>
+          <p>
+            Two Truths works because the lie creates a light puzzle without requiring a long
+            autobiography. The group practices curiosity with a time box. Skip it when the meeting
+            is a hard conversation, when visitors cannot consent the way regulars can, or when the
+            clock is already gone—see{" "}
+            <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>. Prefer a
+            one-word arrival ritual from{" "}
+            <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link> if you
+            only have three minutes.
           </p>
         </section>
 
@@ -156,7 +172,93 @@ export function TwoTruthsAndALieDetail({ game, relatedGames = [] }: Props) {
             <li>Use breakout rooms for large groups</li>
             <li>Ask people to make the lie believable, not extreme</li>
             <li>Model one fun, low-stakes example before the first volunteer</li>
+            <li>Ban dating, money, trauma, and family-conflict prompts in school settings</li>
+            <li>Pass is always allowed—guessing only still counts as participation</li>
           </ul>
+        </section>
+
+        <section className={styles.guide}>
+          <h2>How to facilitate (step-by-step)</h2>
+          <ol>
+            <li>
+              <strong>Set the pass rule.</strong> Say that anyone may share only two truths, write
+              answers in chat, or sit out a round without explaining why.
+            </li>
+            <li>
+              <strong>Model one set.</strong> Deliver three short statements. Ask for one or two
+              questions, then a show of hands or chat votes on the lie. Reveal in under 30 seconds.
+            </li>
+            <li>
+              <strong>Time-box turns.</strong> Aim for 60–90 seconds of share + 30–45 seconds of
+              guess. Cap the circle at 8–12 voices; sample volunteers in larger rooms.
+            </li>
+            <li>
+              <strong>Chunk large groups.</strong> Above ~15 people, open breakouts of 4–6 or run two
+              sequential rounds of volunteers only.
+            </li>
+            <li>
+              <strong>Close with a theme, not a roast.</strong> Mirror two patterns you heard
+              (“travelers and bakers”) and move to the agenda.
+            </li>
+          </ol>
+        </section>
+
+        <section className={styles.guide}>
+          <h2>Variations</h2>
+          <ul>
+            <li>
+              <strong>Two Truths and a Goal</strong> — replace the lie with a near-term work or class
+              goal. Good when you want forward energy without deception.
+            </li>
+            <li>
+              <strong>Chat-first virtual</strong> — type three statements; vote with reactions; unmute
+              only the speaker. Fits{" "}
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>.
+            </li>
+            <li>
+              <strong>Classroom volunteer sample</strong> — six students share; everyone else guesses
+              in pairs. Use on a bell schedule.
+            </li>
+          </ul>
+          <h3>Two-card prep (site original)</h3>
+          <p>
+            Give each person two blank cards before the round: “truth bank” and “believable lie.”
+            They write privately for 60 seconds, then destroy or pocket unused ideas after their turn.
+            Prep reduces panic lies (“I am a secret agent”) and keeps school- and work-safe content
+            on the table.
+          </p>
+        </section>
+
+        <section className={styles.guide}>
+          <h2>Common mistakes</h2>
+          <ul>
+            <li>
+              <strong>Extreme lies.</strong> Outrageous claims end guessing early and feel like a
+              roast. Require “someone in this room might believe it.”
+            </li>
+            <li>
+              <strong>Unlimited follow-ups.</strong> Cross-examination eats the clock. Enforce one or
+              two questions max.
+            </li>
+            <li>
+              <strong>Full-room share in 40 people.</strong> Split or sample. A marathon circle
+              teaches people to tune out.
+            </li>
+          </ul>
+        </section>
+
+        <section className={styles.guide}>
+          <h2>For adults, work, school &amp; church</h2>
+          <p>
+            At work, stick to hobbies, tools, food, and travel timing—not salary or dating. In high
+            school and teen rooms, use the bans above and prefer the printable worksheet when you
+            need quiet prep:{" "}
+            <Link href="/blog/two-truths-and-a-lie-for-students-printable">
+              Two Truths and a Lie for students printable
+            </Link>
+            . For visitor-heavy church small groups, allow a pass and avoid testimony-level prompts;
+            preference games may fit better on week one.
+          </p>
         </section>
 
         <section className={styles.storyBand} aria-label="Playing the game">

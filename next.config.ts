@@ -17,6 +17,21 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/games/security-audit-probe-do-not-keep",
+        destination: "/games",
+        permanent: true,
+      },
+      {
+        source: "/games/runners-seerrunnerbuilder",
+        destination: "/games",
+        permanent: true,
+      },
+      {
+        source: "/games/desert-island",
+        destination: "/games/desert-island-scenario",
+        permanent: true,
+      },
+      {
         source: "/icebreaker-games-for-adults",
         destination: "/blog/ice-breaker-games-for-adults",
         permanent: true,

@@ -124,11 +124,17 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.title === "Human Bingo" ? (
             <p>
-              Human Bingo is one of the most popular ice breaker games for social events and networking. 
-              This engaging ice breaker game helps participants connect through fun interactions while learning interesting facts about each other. 
-              Human Bingo works perfectly as an ice breaker game for parties, conferences, team building sessions, and social gatherings. 
-              Whether you're hosting a small meetup or a large event, Human Bingo creates an energetic atmosphere that encourages mingling and conversation. 
-              As an ice breaker game, Human Bingo is easy to set up, requires minimal materials, and guarantees everyone will have a great time getting to know each other.
+              Human Bingo is a mingling icebreaker: each person carries a grid of prompts and collects
+              initials from people who match each square. It gives shy participants a script for
+              starting conversations and scales to conferences and orientations when prompts stay
+              clean. Customize cards for school or work, print extras, and allow any square to be
+              skipped. For alternatives, see{" "}
+              <Link href="/games-like-human-bingo">games like Human Bingo</Link>
+              {" "}or classroom grids in the{" "}
+              <Link href="/blog/human-bingo-for-students-printable">
+                Human Bingo for students printable
+              </Link>
+              .
             </p>
           ) : game.title === "Alliterative Name Game" ? (
             <p>
@@ -138,9 +144,12 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.title === "One Word Check-In" ? (
             <p>
-              One Word Check-In is a quick, low-pressure icebreaker for meetings and workshops. Each person shares one word to describe their
-              mood, energy, or focus. It gets everyone speaking early, helps the facilitator read the room, and can be done in a few minutes
-              without any materials.
+              One Word Check-In is a 3–5 minute arrival ritual: each person shares one word for energy,
+              focus, or need. It is for pulse-taking, not mingling. Keep a pass rule, prefer chat in
+              large Zoom rooms, and do not diagnose anyone’s word. For a metaphor version see{" "}
+              <Link href="/games/weather-check-in">Weather Check-In</Link>
+              ; for meeting choosers see{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
             </p>
           ) : game.title === "Two Truths and a Lie" ? (
             <p>
@@ -149,13 +158,20 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.title === "Minefield" ? (
             <p>
-              Minefield is a trust and communication team building game. One person walks through a simple obstacle course while blindfolded,
-              guided only by a partner’s verbal instructions. It is especially effective when followed by a short debrief on clarity, assumptions, and trust.
+              Minefield is a guided navigation exercise: a walker moves through soft obstacles using
+              only a partner’s words, then the pair debriefs clarity and assumptions. Blindfolds are
+              optional with easy opt-out. Use on training days—not tense meetings. See{" "}
+              <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>
+              {" "}and{" "}
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>.
             </p>
           ) : game.title === "The Name Game" ? (
             <p>
-              The Name Game is a simple name game icebreaker for helping a new group learn names quickly. Each person repeats the names of everyone who went before them, then adds their own name with a short memory cue such as a role, adjective, or hobby.
-              It works well for meetings, classrooms, and workshops because it is structured, low-pressure, and gets everyone speaking early without needing materials.
+              The Name Game helps a new group learn names with a short cue (role, hobby, or adjective).
+              Chunk groups larger than about a dozen so nobody recites twenty names in a row. Allow
+              neighbors to help on blanks. Compare{" "}
+              <Link href="/games/motion-name-game">Motion Name-Game</Link> and more formats on{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>.
             </p>
           ) : game.slug === "chainlink" ? (
             <p>
@@ -220,13 +236,106 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.title === "Emoji Check-In" ? (
             <p>
-              Emoji Check-In is a quick mood-sharing activity for meetings, classes, and remote teams. Participants choose one emoji to represent their energy, focus, or feeling right now.
-              It helps the facilitator read the room in 3–5 minutes while giving quieter participants a safe, simple way to participate.
+              Emoji Check-In is a 2–5 minute pulse: one emoji for energy or focus, collected in chat
+              or reactions. Mirror themes—do not interrogate sad faces in public. For a word version
+              see{" "}
+              <Link href="/games/one-word-check-in">One Word Check-In</Link>
+              ; for more emoji formats see{" "}
+              <Link href="/emoji-icebreaker-games">emoji icebreaker games</Link>.
+            </p>
+          ) : game.slug === "chat-waterfall" ? (
+            <p>
+              Chat Waterfall has everyone type silently, then send on a shared count so the chat
+              floods together. The facilitator mirrors themes; unmutes stay optional. Ideal for Zoom
+              and Teams when going around the room is too slow. See{" "}
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link> and{" "}
+              <Link href="/short-virtual-icebreakers">short virtual icebreakers</Link>.
+            </p>
+          ) : game.slug === "human-knot" ? (
+            <p>
+              Human Knot is a small-circle hand-hold untangle—only with clear consent, circles of
+              6–10, and easy opt-outs (ribbons or coach roles). Many workplaces should pick a
+              no-contact alternative from{" "}
+              <Link href="/games-like-the-human-knot">games like the Human Knot</Link>
+              {" "}or skip contact games entirely (
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>
+              ).
+            </p>
+          ) : game.slug === "telephone-charades" ? (
+            <p>
+              Telephone Charades passes a silent gesture down a line until the phrase mutates—laughs
+              without personal disclosure. Keep phrases clean and allow pass. Safer contact-wise than
+              a knot; see{" "}
+              <Link href="/funny-icebreaker-games-for-meetings">
+                funny ice breaker games for meetings
+              </Link>
+              .
+            </p>
+          ) : game.slug === "virtual-background-story" ? (
+            <p>
+              Virtual Background Story uses a themed background (or blur) plus a 15-second why. Plain
+              walls count. Reset backgrounds before slides. For tighter clocks use{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link>.
+            </p>
+          ) : game.slug === "skittles-sharing" ? (
+            <p>
+              Skittles Sharing maps candy colors to light prompts in small circles—or use allergy-safe
+              tokens. Pass is allowed; no forced eating. Fits youth and church rooms with visitor-safe
+              prompts—see{" "}
+              <Link href="/icebreaker-games-for-youth-group">ice breaker games for youth group</Link>.
+            </p>
+          ) : game.slug === "guess-who-personal-trivia" ? (
+            <p>
+              Guess Who Personal Trivia screens anonymous safe facts, then the group guesses authors.
+              Owners may refuse reveal. Prefer this over unscreened party games; compare{" "}
+              <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie</Link>.
+            </p>
+          ) : game.slug === "line-up" ? (
+            <p>
+              Line-Up sorts the group by a clean criterion (birthday month, commute) with optional
+              silence. Offer seated continua. A lower-contact alternative to the Human Knot—see{" "}
+              <Link href="/games-like-the-human-knot">games like the Human Knot</Link>.
+            </p>
+          ) : game.slug === "beach-ball-qa" ? (
+            <p>
+              Beach Ball Q&amp;A tosses a soft ball covered in light prompts; catch, answer briefly,
+              toss on. Pass allowed. Zone large rooms. Good for teens and youth nights—see{" "}
+              <Link href="/icebreaker-games-for-teens">ice breaker games for teens</Link>.
+            </p>
+          ) : game.slug === "scavenger-hunt" ? (
+            <p>
+              A short scavenger hunt uses a safe 8–12 item list, small teams, and a hard time stop.
+              Prefer photo proof and seated roles. Keep it an icebreaker, not a half-day event—see{" "}
+              <Link href="/icebreaker-games-for-youth-group">youth group icebreakers</Link>.
+            </p>
+          ) : game.slug === "skribbl-pictionary-online" ? (
+            <p>
+              Drawing-and-guessing warm-ups work on any shared whiteboard—Skribbl-style sites are
+              optional third-party tools, not an Ice Breaker Games multiplayer product. Use private
+              rooms and clean word lists. Details in{" "}
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>.
+            </p>
+          ) : game.slug === "take-a-picture-of-your-shoes" ? (
+            <p>
+              Take a Picture of Your Shoes is an optional camera gag: show shoes, a mug, or stay off
+              camera. No brand shaming. For low-trust rooms prefer{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link>.
+            </p>
+          ) : game.slug === "train-wreck" ? (
+            <p>
+              Train Wreck calls light categories so matching people walk to new spots—walk-only by
+              default. Avoid body or dating categories. Large-group energizer notes in{" "}
+              <Link href="/blog/ice-breaker-games-for-adults-large-groups">
+                icebreaker games for adults in large groups
+              </Link>
+              .
             </p>
           ) : game.title === "The Question Web" ? (
             <p>
-              The Question Web is a get-to-know-you activity that uses a ball of yarn or string. As people ask and answer questions, the string forms a visible web,
-              helping the group notice how connection builds through attention and curiosity.
+              The Question Web builds a yarn (or whiteboard) web as people answer short prompts and
+              pass the strand across the circle. Keep prompts work-safe and tosses soft. Better for
+              workshops than standups—see{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
             </p>
           ) : game.title === "Count Up" ? (
             <p>
@@ -240,33 +349,442 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.slug === "topics-tables" ? (
             <p>
-              Topics Tables is an easy way to spark conversation in groups that are already seated. Each table uses a small set of themed prompts, discusses for a few minutes,
-              then optionally rotates tables or switches prompt cards to meet new people and explore new topics.
+              Topics Tables seats people with prompt cards for short timed talks, then optional
+              rotates or card swaps. Harvest one line per table. Built for banquet and workshop
+              seating—see{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>
+              {" "}or{" "}
+              <Link href="/games/speed-networking">Speed Networking</Link> for 1:1 rounds.
             </p>
           ) : game.slug === "unique-and-shared" ? (
             <p>
-              Unique and Shared is a low-pressure get-to-know activity where people identify one thing that is unique about themselves and one thing they share in common
-              with a partner or small group. It balances belonging (shared) with individuality (unique), which helps rapport form quickly.
+              Unique and Shared pairs one shared trait with one unique trait in small groups—belonging
+              plus individuality without bingo cards. Compare{" "}
+              <Link href="/games/common-ground">Common Ground</Link>
+              {" "}and{" "}
+              <Link href="/games/10-things-in-common">10 Things in Common</Link>.
             </p>
           ) : game.title === "Common Ground" ? (
             <p>
-              Common Ground is a simple connection game where people try to find as many shared interests or experiences as possible in a short time.
-              It is fast, low-pressure, and works well for new teams, classrooms, and workshops because it helps people notice similarity without forcing personal disclosure.
+              Common Ground is a timed search for shared interests that are not obvious—hobbies, food,
+              tools, weekend habits. Pairs or trios list commons, optionally rotate once, then harvest
+              one or two examples. Use category cards for shy or visitor-heavy rooms. Continue with{" "}
+              <Link href="/icebreaker-games-for-small-groups">ice breaker games for small groups</Link>
+              {" "}or storytelling options on{" "}
+              <Link href="/games-like-two-truths-and-a-lie">games like Two Truths and a Lie</Link>.
             </p>
           ) : game.title === "The Check-In" ? (
             <p>
-              The Check-In is a quick meeting icebreaker where each person shares a short update using a single prompt (for example: one word, a color, or a weather report).
-              It improves presence, alignment, and psychological safety, and it is easy to time-box for teams of any size.
+              The Check-In is a generic arrival ritual—one word, color, weather, or scale—kept inside
+              a few minutes with a pass rule. For fixed scripts use{" "}
+              <Link href="/games/one-word-check-in">One Word Check-In</Link> or{" "}
+              <Link href="/games/weather-check-in">Weather Check-In</Link>
+              ; for meeting choosers see{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
+            </p>
+          ) : game.slug === "what-are-you-bringing-to-the-meeting" ? (
+            <p>
+              What Are You Bringing to the Meeting asks each person for one contribution or need in a
+              single sentence, then the facilitator may reorder the agenda. Treat blockers as valuable
+              brings. See{" "}
+              <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>.
+            </p>
+          ) : game.slug === "desert-island-scenario" ? (
+            <p>
+              Desert Island Scenario is a light hypothetical (three items or skills) shared in trios.
+              Keep humor kind; optional bridge to real project resources. For non-fantasy storytelling
+              try{" "}
+              <Link href="/games-like-two-truths-and-a-lie">games like Two Truths and a Lie</Link>.
+            </p>
+          ) : game.slug === "speed-networking" ? (
+            <p>
+              Speed Networking runs short timed 1:1 rounds with a clear rotate signal—better structure
+              than open mingling for many introverts. Plan floaters for odd numbers. See{" "}
+              <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>
+              {" "}and{" "}
+              <Link href="/games-like-human-bingo">games like Human Bingo</Link>.
+            </p>
+          ) : game.slug === "passions-tic-tac-toe" ? (
+            <p>
+              Passions Tic-Tac-Toe is a small 3×3 passion grid for quick mingling—Human Bingo’s faster
+              cousin. Soft wins; inclusive squares. Curated on{" "}
+              <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>.
+            </p>
+          ) : game.slug === "picture-sharing" ? (
+            <p>
+              Picture Sharing is an optional themed photo or chat description—cameras off count as a
+              full pass. Keep themes privacy-safe. For tighter clocks use{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link>
+              {" "}or browse{" "}
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>.
+            </p>
+          ) : game.slug === "show-and-tell" ? (
+            <p>
+              Show and Tell uses one nearby object and a 20-second why—sample voices in large rooms.
+              Avoid status flexing. Related:{" "}
+              <Link href="/games/picture-sharing">Picture Sharing</Link>.
+            </p>
+          ) : game.slug === "crossword-names" ? (
+            <p>
+              Crossword Names builds a shared name grid that interlocks letters—ask for spellings and
+              pronunciations. Split above ~12. See{" "}
+              <Link href="/riddle-icebreakers-for-virtual-meetings">
+                riddle icebreakers for virtual meetings
+              </Link>
+              {" "}and{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>.
+            </p>
+          ) : game.slug === "guess-that-team-member" ? (
+            <p>
+              Guess That Team Member uses facilitator-screened work-safe clues; owners may refuse
+              reveal. Compare{" "}
+              <Link href="/games/guess-who-personal-trivia">Guess Who Personal Trivia</Link>.
+            </p>
+          ) : game.slug === "mystery-envelope" ? (
+            <p>
+              Mystery Envelope opens clean random prompts—swap once, pass anytime, no humiliating
+              dares. Digital decks work for remote. See{" "}
+              <Link href="/riddle-icebreakers-for-virtual-meetings">
+                riddle icebreakers for virtual meetings
+              </Link>
+              .
+            </p>
+          ) : game.slug === "invention-pitch" ? (
+            <p>
+              Invention Pitch has small teams invent a playful product in minutes and pitch in under
+              a minute—soft snaps, no roast judging. Fits{" "}
+              <Link href="/funny-icebreaker-games-for-meetings">
+                funny ice breaker games for meetings
+              </Link>
+              .
+            </p>
+          ) : game.slug === "news-headline-warm-up" ? (
+            <p>
+              News Headline Warm-Up invents short fictional headlines about the day—never real
+              tragedies or coworker roasts. Chat paste works well. See{" "}
+              <Link href="/funny-icebreaker-games-for-meetings">
+                funny ice breaker games for meetings
+              </Link>
+              .
+            </p>
+          ) : game.slug === "pterodactyl" ? (
+            <p>
+              Pterodactyl is a silly no-teeth word game—prefer the no-elimination version for work.
+              Skip formal client calls. More laugh-forward openers on{" "}
+              <Link href="/funny-icebreaker-games-for-meetings">
+                funny ice breaker games for meetings
+              </Link>
+              .
+            </p>
+          ) : game.slug === "alliterative-name-game" ? (
+            <p>
+              Alliterative Name Game pairs each name with a same-letter adjective—pass or name-only
+              for hard letters. Compare{" "}
+              <Link href="/games/the-name-game">The Name Game</Link>
+              {" "}and more formats on{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>.
+            </p>
+          ) : game.slug === "blind-name-tag" ? (
+            <p>
+              Blind Name Tag uses facilitator-screened stickies and yes/no guesses—swap once, pass
+              anytime. Playful adults only; skip cold client rooms. See{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>.
+            </p>
+          ) : game.slug === "10-things-in-common" ? (
+            <p>
+              10 Things in Common is Human Bingo’s quieter cousin—pairs list shared interests beyond
+              the obvious, then share one surprise. Related:{" "}
+              <Link href="/games/common-ground">Common Ground</Link>
+              {" "}and{" "}
+              <Link href="/games-like-human-bingo">games like Human Bingo</Link>.
+            </p>
+          ) : game.slug === "one-word-at-a-time" ? (
+            <p>
+              One Word at a Time builds a silly shared sentence—one word each turn. Not the same as{" "}
+              <Link href="/games/one-word-check-in">One Word Check-In</Link>
+              . Curated on{" "}
+              <Link href="/best-icebreaker-games">best icebreaker games</Link>.
+            </p>
+          ) : game.slug === "category-mixer" ? (
+            <p>
+              Category Mixer clusters people by inclusive prompts for fast hellos—no bingo cards.
+              Seated options matter. See{" "}
+              <Link href="/games-like-human-bingo">games like Human Bingo</Link>.
+            </p>
+          ) : game.slug === "icebreaker-bingo" ? (
+            <p>
+              Icebreaker Bingo is Human Bingo with custom theme decks—soft line wins, pass anytime.
+              Compare{" "}
+              <Link href="/games/human-bingo">Human Bingo</Link>.
+            </p>
+          ) : game.slug === "reception-line" ? (
+            <p>
+              Reception Line uses two facing rows and timed hellos so wallflowers still meet people.
+              Related:{" "}
+              <Link href="/games/speed-networking">Speed Networking</Link>.
+            </p>
+          ) : game.slug === "sole-mate" ? (
+            <p>
+              Sole Mate matches on shoe style—or safer snack/commute prompts; shoes stay on. More
+              mixers on{" "}
+              <Link href="/games-like-human-bingo">games like Human Bingo</Link>.
+            </p>
+          ) : game.slug === "marshmallow-challenge" ? (
+            <p>
+              Marshmallow Challenge is a spaghetti-tower teamwork build with allergen-safe stand-ins
+              and a process debrief—knot energy without hand-holding. See{" "}
+              <Link href="/games-like-the-human-knot">games like the Human Knot</Link>.
+            </p>
+          ) : game.slug === "paper-bag-pickup" ? (
+            <p>
+              Paper Bag Pickup is short rule-based collecting with optional contact and a seated
+              lane. Prefer{" "}
+              <Link href="/games/line-up">Line-Up</Link>
+              {" "}when racing is unsafe.
+            </p>
+          ) : game.slug === "story-swap" ? (
+            <p>
+              Story Swap is timed pair listening plus a one-line introduce—visitor-safe prompts for
+              church small groups. Related:{" "}
+              <Link href="/games/two-truths-and-a-dream">Two Truths and a Dream</Link>.
+            </p>
+          ) : game.slug === "two-truths-and-a-dream" ? (
+            <p>
+              Two Truths and a Dream skips the lie—two facts plus one hope. Compare classic{" "}
+              <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie</Link>
+              {" "}and{" "}
+              <Link href="/games-like-two-truths-and-a-lie">games like Two Truths</Link>.
+            </p>
+          ) : game.slug === "appreciation-circle" ? (
+            <p>
+              Appreciation Circle closes trusted small groups with optional spoken or sticky
+              thanks—not a stranger opener. See{" "}
+              <Link href="/icebreaker-games-for-small-groups">
+                ice breaker games for small groups
+              </Link>
+              .
+            </p>
+          ) : game.slug === "year-of-the-coin" ? (
+            <p>
+              Year of the Coin draws a year for a light memory—pass and redraw for hard seasons.
+              Church-friendly notes on{" "}
+              <Link href="/icebreaker-games-for-church">icebreaker games for church</Link>.
             </p>
           ) : game.slug === "remote-change-3-things" ? (
             <p>
-              Remote Change 3 Things is a playful virtual icebreaker for observation and laughter. One person changes three small things off camera, returns, and the group tries to spot the changes.
-              It is a great warm-up for remote meetings because everyone can participate by guessing in chat.
+              Remote Change 3 Things is a camera-friendly observation warm-up—one volunteer changes
+              three props, the room guesses in chat. Opt-in only. See{" "}
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>
+              {" "}and{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link>.
+            </p>
+          ) : game.slug === "dicebreakers" ? (
+            <p>
+              Dicebreakers maps a die to six soft prompts—pass and one re-roll anytime. Prompt lottery,
+              not Would You Rather. Fits{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
+            </p>
+          ) : game.slug === "count-up" ? (
+            <p>
+              Count Up is a listening drill: count together without overlapping voices, restart kindly,
+              then debrief interruption norms. More teamwork options on{" "}
+              <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>.
+            </p>
+          ) : game.slug === "diversity-bingo" ? (
+            <p>
+              Diversity Bingo is a skills-and-habits mixer—not an identity audit. Screen every square,
+              allow pass, and harvest what people can teach. Prefer{" "}
+              <Link href="/games/human-bingo">Human Bingo</Link>
+              {" "}if the word diversity will land as HR theater.
+            </p>
+          ) : game.slug === "wheel-of-fortune-introductions" ? (
+            <p>
+              Wheel of Fortune Introductions spins a light prompt for a 20-second intro. Pass or
+              re-spin anytime. See{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>
+              {" "}and{" "}
+              <Link href="/games/dicebreakers">Dicebreakers</Link>.
+            </p>
+          ) : game.slug === "where-do-we-come-from-what-is-famous" ? (
+            <p>
+              People choose a place and one ordinary famous thing—never “where are you really from.”
+              Pass or pick a park. Skip when origin talk is risky (
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>
+              ).
+            </p>
+          ) : game.slug === "fantasy-vacation" ? (
+            <p>
+              Fantasy Vacation is a short invented trip with no wealth contest. Staycations count.
+              Compare packing constraints on{" "}
+              <Link href="/games/desert-island-scenario">Desert Island Scenario</Link>.
+            </p>
+          ) : game.slug === "speed-dating-icebreaker" ? (
+            <p>
+              Treat this as timed pair hellos—not dating. Same rotations as{" "}
+              <Link href="/games/speed-networking">Speed Networking</Link>
+              {" "}with professional prompts and a halfway bell.
+            </p>
+          ) : game.slug === "would-you-rather-training" ? (
+            <p>
+              Would You Rather Training uses work process pairs and bridges one prompt into the
+              agenda. For party hypotheticals use{" "}
+              <Link href="/games/would-you-rather">Would You Rather</Link>.
+            </p>
+          ) : game.slug === "guess-who" ? (
+            <p>
+              Guess Who is the simple classroom fact-bowl. For screened workplace facts and refuse
+              reveal, use{" "}
+              <Link href="/games/guess-who-personal-trivia">Guess Who Personal Trivia</Link>.
+            </p>
+          ) : game.slug === "telephone-charades-lines" ? (
+            <p>
+              Telephone Charades Lines runs two parallel gesture chains—soft race, no touching.
+              Single chain:{" "}
+              <Link href="/games/telephone-charades">Telephone Charades</Link>.
+            </p>
+          ) : game.slug === "near-and-far" ? (
+            <p>
+              Near and Far is a floor or chat spectrum—not a two-side poll. Seated pointing counts.
+              Compare{" "}
+              <Link href="/games/this-or-that-questions">This or That Questions</Link>.
+            </p>
+          ) : game.slug === "if-then" ? (
+            <p>
+              If-Then completes a safe stem in one sentence. Pass or write-only. For process tradeoffs
+              use{" "}
+              <Link href="/games/would-you-rather-training">Would You Rather Training</Link>.
+            </p>
+          ) : game.slug === "crazy-handshake" ? (
+            <p>
+              Crazy Handshake is optional contact—air high-five is the default. Skip forced touch.
+              See{" "}
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>.
+            </p>
+          ) : game.slug === "helium-stick" ? (
+            <p>
+              Helium Stick is a fingertip teamwork lower-the-rod drill with a process debrief—knot
+              energy without hand-holding. Related:{" "}
+              <Link href="/games-like-the-human-knot">games like the Human Knot</Link>.
+            </p>
+          ) : game.slug === "apple-orange-and-banana" ? (
+            <p>
+              Apple Orange Banana is a short fruit-label attention reset. Hands-only at work. Youth
+              options on{" "}
+              <Link href="/icebreaker-games-for-youth-group">
+                ice breaker games for youth group
+              </Link>
+              .
+            </p>
+          ) : game.slug === "bang" ? (
+            <p>
+              Bang is a tiny pointing spike—use the no-elimination, renamed version or skip. Safer
+              energy:{" "}
+              <Link href="/games/rock-paper-scissors-tournament">
+                Rock Paper Scissors Tournament
+              </Link>
+              .
+            </p>
+          ) : game.slug === "5-4-3-2-1-grounding-technique" ? (
+            <p>
+              5-4-3-2-1 is an optional sensory reset, not a party game. Answers stay private. If the
+              room needs support instead of an activity, read{" "}
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>.
+            </p>
+          ) : game.slug === "group-map" ? (
+            <p>
+              Group Map is silent optional pins—not an origin audit. Spoken hometown shares live on{" "}
+              <Link href="/games/where-do-we-come-from-what-is-famous">
+                Where Do We Come From
+              </Link>
+              .
+            </p>
+          ) : game.slug === "christmas-pick-a-side" ? (
+            <p>
+              Christmas Pick a Side is binary holiday preference polls—winter deck for mixed-faith
+              rooms. For mingling clusters use{" "}
+              <Link href="/games/christmas-connection">Christmas Connection</Link>.
+            </p>
+          ) : game.slug === "christmas-roll-poll" ? (
+            <p>
+              Christmas Roll Poll maps a die to seasonal prompts—pass or re-roll anytime. Non-seasonal
+              cousin:{" "}
+              <Link href="/games/dicebreakers">Dicebreakers</Link>.
+            </p>
+          ) : game.slug === "the-great-christmas-candy-pass" ? (
+            <p>
+              Candy Pass needs allergen labels and a non-food token lane—nobody must eat. Related:{" "}
+              <Link href="/games/skittles-sharing">Skittles Sharing</Link>.
+            </p>
+          ) : game.slug === "guess-the-gift-by-sound" ? (
+            <p>
+              Guess the Gift by Sound shakes wrapped ordinary objects—soft guesses, few items.
+              Compare{" "}
+              <Link href="/games/ornament-guess">Ornament Guess</Link>.
+            </p>
+          ) : game.slug === "share-a-favorite-holiday-memory" ? (
+            <p>
+              Favorite Holiday Memory is optional and light-only—offer a this-year alternative and
+              pass. Low-trust parties should prefer{" "}
+              <Link href="/games/christmas-pick-a-side">Christmas Pick a Side</Link>.
+            </p>
+          ) : game.slug === "whats-on-your-phone-christmas-edition" ? (
+            <p>
+              Phone Christmas Edition is optional photo/song share—never force unlocks. Privacy-first
+              cousin:{" "}
+              <Link href="/games/picture-sharing">Picture Sharing</Link>.
             </p>
           ) : game.slug === "ornament-guess" ? (
             <p>
-              Ornament Guess is a light guessing game where someone shares an ornament (or any meaningful object) and gives a clue. The group guesses what it represents,
-              then the person reveals the story. It is especially good for seasonal gatherings and team socials when you want quick, friendly conversation.
+              Ornament Guess uses a short clue about an ornament or any meaningful object—winter
+              objects welcome. Seated tips on{" "}
+              <Link href="/blog/christmas-table-icebreaker-games">
+                Christmas table icebreaker games
+              </Link>
+              .
+            </p>
+          ) : game.slug === "holiday-bingo" ? (
+            <p>
+              Holiday Bingo is Human Bingo with a winter deck—soft line wins, inclusive squares.
+              See{" "}
+              <Link href="/games/human-bingo">Human Bingo</Link>.
+            </p>
+          ) : game.slug === "holiday-fortunes" ? (
+            <p>
+              Holiday Fortunes draws screened wish slips—pass or redraw. Keep them secular and kind.
+              Related:{" "}
+              <Link href="/games/mystery-envelope">Mystery Envelope</Link>.
+            </p>
+          ) : game.slug === "two-truths-and-a-tinsel" ? (
+            <p>
+              Two Truths and a Tinsel is seasonal Two Truths—or two truths plus a hope. Classic rules:{" "}
+              <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie</Link>.
+            </p>
+          ) : game.slug === "message-under-a-plate" ? (
+            <p>
+              Message Under a Plate puts a light prompt at every seat—neighbor share or silent read.
+              More seated ideas:{" "}
+              <Link href="/blog/christmas-table-icebreaker-games">
+                Christmas table icebreaker games
+              </Link>
+              .
+            </p>
+          ) : game.slug === "photo-booth-prompt-jar" ? (
+            <p>
+              Photo Booth Prompt Jar is drop-in and optional—consent before every post. No-camera prop
+              lane welcome. See{" "}
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>.
+            </p>
+          ) : game.slug === "around-the-world-traditions" ? (
+            <p>
+              Around the World Traditions is consent-led optional sharing—never a culture quiz. Prefer{" "}
+              <Link href="/games/christmas-connection">Christmas Connection</Link>
+              {" "}when trust is thin.
+            </p>
+          ) : game.slug === "sing-off" ? (
+            <p>
+              Sing-Off allows titles and hums—no forced solos. Cooperative playlists beat elimination.
+              Non-singing cousin:{" "}
+              <Link href="/games/name-that-movie-quote">Name That Movie Quote</Link>.
             </p>
           ) : game.slug === "christmas-connection" ? (
             <p>
@@ -293,6 +811,57 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>
               {" "}or during a kickoff from{" "}
               <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>.
+            </p>
+          ) : game.slug === "would-you-rather" ? (
+            <p>
+              Would You Rather is a preference poll with optional movement: people pick a side on
+              either/or prompts. Keep a clean deck, allow pass, and stop after six to ten questions.
+              Skip edgy party lists at work and school. For calmer binaries try{" "}
+              <Link href="/games/this-or-that-questions">This or That Questions</Link>
+              ; for laugh-forward meeting openers see{" "}
+              <Link href="/funny-icebreaker-games-for-meetings">
+                funny ice breaker games for meetings
+              </Link>
+              .
+            </p>
+          ) : game.slug === "this-or-that-questions" ? (
+            <p>
+              This or That Questions are short preference pairs (coffee or tea; docs or slides) answered
+              with hands, sides, or chat. Use them when you need a two-minute pulse without stories.
+              Pair with{" "}
+              <Link href="/games/one-word-check-in">One Word Check-In</Link> for word-based arrivals, or
+              browse{" "}
+              <Link href="/short-virtual-icebreakers">short virtual icebreakers</Link> for chat-first
+              options.
+            </p>
+          ) : game.slug === "six-word-memoirs" ? (
+            <p>
+              Six Word Memoirs asks people to write exactly six words on a prompt (today, this week,
+              this team), then optionally share. The constraint creates brevity; it is better after
+              names are known than as a stranger opener. Allow write-only participation. Warm up with{" "}
+              <Link href="/games/common-ground">Common Ground</Link> or a meeting check-in from{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
+            </p>
+          ) : game.slug === "rock-paper-scissors-tournament" ? (
+            <p>
+              Rock Paper Scissors Tournament is a large-group energizer: winners keep playing while
+              losers join cheer squads. It needs floor space and a seated option. End at a champion or
+              final four. Use for orientations and youth nights—not crisis meetings. Run-sheet ideas
+              live in{" "}
+              <Link href="/blog/ice-breaker-games-for-adults-large-groups">
+                icebreaker games for adults in large groups
+              </Link>
+              .
+            </p>
+          ) : game.slug === "never-have-i-ever" ? (
+            <p>
+              Never Have I Ever only belongs here with a facilitator-owned, school- and work-safe
+              prompt deck—no alcohol mechanics, no crowd-sourced gotchas. When the only prompts you
+              have are party-game mean, skip it (
+              <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>
+              ) and run{" "}
+              <Link href="/games/would-you-rather">Would You Rather</Link> or{" "}
+              <Link href="/games/human-bingo">Human Bingo</Link> instead.
             </p>
           ) : (
             <p>
@@ -1221,13 +1790,13 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
 
         {game.title === "Human Bingo" && (
           <div className={styles.section}>
-            <h3>Benefits of Human Bingo as an Ice Breaker Game</h3>
+            <h3>Facilitation notes for Human Bingo</h3>
             <ul>
-              <li>Human Bingo encourages natural conversation and networking among participants</li>
-              <li>This ice breaker game works well for groups of any size, from 10 to 100+ people</li>
-              <li>Human Bingo helps shy participants feel more comfortable approaching others</li>
-              <li>As an ice breaker game, Human Bingo creates a fun, competitive atmosphere</li>
-              <li>Human Bingo can be customized to fit any theme or group demographic</li>
+              <li>Print more cards than people so mingling never stalls</li>
+              <li>Rewrite invasive squares before the event</li>
+              <li>Call a soft mid-point so late finishers are not shamed</li>
+              <li>Celebrate multiple lines—not a single winner stampede</li>
+              <li>Seed agenda pairs from card initials when you want a working follow-on</li>
             </ul>
           </div>
         )}
