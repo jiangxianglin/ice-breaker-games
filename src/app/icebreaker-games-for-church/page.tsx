@@ -6,15 +6,15 @@ import styles from "./church.module.css";
 
 export const revalidate = 86400;
 
-const title = "Icebreaker Games for Church (Chooser + 12 Run Cards)";
+const title = "12 Ice Breaker Games for Church (2026)";
 const description =
-  "Pick a church-safe icebreaker by room type, group size, and visitor comfort. Twelve facilitator run cards with time, supplies, and what to skip.";
+  "Ice breaker games for church small groups, youth nights, and welcome events. Twelve visitor-safe run cards with time, supplies, and what to skip.";
 const canonical =
   "https://www.icebreakergames.site/icebreaker-games-for-church";
 const ogImage =
-  "https://www.icebreakergames.site/img/icebreaker-games-for-small-groups-hero.jpg";
+  "https://www.icebreakergames.site/img/icebreaker-games-for-church-visitor-safe.jpg";
 const ogImageAlt =
-  "Adults talking in a small circle during a church small-group icebreaker";
+  "Ice breaker games for church — facilitator welcoming a visitor before a short group opener";
 const authorName = "Ice Breaker Games Editorial Team";
 const datePublished = "2026-09-16";
 const dateModified = "2026-09-16";
@@ -368,7 +368,7 @@ export default async function IcebreakerGamesForChurchPage() {
         <header className={styles.hero}>
           <div className={styles.heroMedia}>
             <Image
-              src="/img/icebreaker-games-for-small-groups-hero.jpg"
+              src="/img/icebreaker-games-for-church-visitor-safe.jpg"
               alt={ogImageAlt}
               fill
               priority
@@ -382,10 +382,10 @@ export default async function IcebreakerGamesForChurchPage() {
               <span>/</span>
               <Link href="/games">Games</Link>
               <span>/</span>
-              <span>Icebreaker games for church</span>
+              <span>Ice breaker games for church</span>
             </nav>
             <p className={styles.brand}>Ice Breaker Games</p>
-            <h1 className={styles.heroTitle}>Icebreaker Games for Church</h1>
+            <h1 className={styles.heroTitle}>Ice breaker games for church</h1>
             <p className={styles.heroLead}>
               A chooser for church rooms, then twelve run cards with time, supplies, and
               visitor notes.

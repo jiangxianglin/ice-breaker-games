@@ -52,7 +52,21 @@ export default function AboutPage() {
           Content is written and reviewed by the Ice Breaker Games editorial team with a focus on
           psychological safety, inclusion, and realistic timing for real meetings—not gimmicks.
           Where we reference research or established facilitation practice, we cite sources on the
-          page.
+          page. The public checklist is{" "}
+          <Link
+            href="/how-we-choose-icebreakers"
+            className="font-medium text-foreground underline underline-offset-2"
+          >
+            how we choose icebreaker games
+          </Link>
+          , including when we{" "}
+          <Link
+            href="/when-to-skip-an-icebreaker"
+            className="font-medium text-foreground underline underline-offset-2"
+          >
+            skip an icebreaker
+          </Link>
+          .
         </p>
       </section>
 

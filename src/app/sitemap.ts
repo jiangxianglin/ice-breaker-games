@@ -53,6 +53,8 @@ function getStaticPages(): MetadataRoute.Sitemap {
     { path: "/church-icebreaker-questions", changeFrequency: weekly, priority: 0.85 },
     { path: "/free-fun-icebreaker-games", changeFrequency: weekly, priority: 0.9 },
     { path: "/about", changeFrequency: monthly, priority: 0.6 },
+    { path: "/how-we-choose-icebreakers", changeFrequency: monthly, priority: 0.7 },
+    { path: "/when-to-skip-an-icebreaker", changeFrequency: monthly, priority: 0.7 },
     { path: "/contact", changeFrequency: monthly, priority: 0.6 },
     { path: "/blog", changeFrequency: weekly, priority: 0.9, lastModified: articleLastModified },
     { path: "/privacy-policy", changeFrequency: monthly, priority: 0.5 },

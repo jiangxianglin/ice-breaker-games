@@ -109,6 +109,46 @@ function ExtrasBody({
         </section>
       ) : null}
 
+      {extras.whyItWorks ? (
+        <section className={styles.section}>
+          <h2>Why this game works (and when it does not)</h2>
+          <p>{extras.whyItWorks}</p>
+        </section>
+      ) : null}
+
+      {extras.facilitatorScript && extras.facilitatorScript.length > 0 ? (
+        <section className={styles.section}>
+          <h2>Facilitator script</h2>
+          <ol>
+            {extras.facilitatorScript.map((item) => (
+              <li key={item.speaker}>
+                <strong>{item.speaker}.</strong> {item.line}
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
+
+      {extras.pitfalls && extras.pitfalls.length > 0 ? (
+        <section className={styles.section}>
+          <h2>Common mistakes</h2>
+          <ul>
+            {extras.pitfalls.map((item) => (
+              <li key={item.title}>
+                <strong>{item.title}.</strong> {item.body}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {extras.originalVariant ? (
+        <section className={styles.section}>
+          <h2>{extras.originalVariant.title}</h2>
+          <p>{extras.originalVariant.body}</p>
+        </section>
+      ) : null}
+
       {extras.adultsWork ? (
         <section className={styles.section}>
           <h2>For adults, work &amp; meetings</h2>
@@ -166,6 +206,10 @@ export function GamePageExtras({ slug, skipFaq }: GamePageExtrasProps) {
     (extras.variations && extras.variations.length > 0) ||
     (extras.rulesTiming && extras.rulesTiming.length > 0) ||
     Boolean(extras.adultsWork) ||
+    Boolean(extras.whyItWorks) ||
+    Boolean(extras.originalVariant) ||
+    (extras.facilitatorScript && extras.facilitatorScript.length > 0) ||
+    (extras.pitfalls && extras.pitfalls.length > 0) ||
     Boolean(extras.quote) ||
     (extras.sources && extras.sources.length > 0) ||
     (!skipFaq && extras.faqs.length > 0);

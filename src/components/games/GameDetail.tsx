@@ -268,11 +268,43 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               Ornament Guess is a light guessing game where someone shares an ornament (or any meaningful object) and gives a clue. The group guesses what it represents,
               then the person reveals the story. It is especially good for seasonal gatherings and team socials when you want quick, friendly conversation.
             </p>
+          ) : game.slug === "christmas-connection" ? (
+            <p>
+              Christmas Connection is a holiday preference mixer: people find others who share a taste (lights vs candles, movies vs music), form small clusters, then harvest a few themes.
+              Use it at parties and year-end socials when you want movement without a tradition contest. For mixed-faith rooms, switch to winter prompts. See the step-by-step, pass rule, and our Preference Passport variant below.
+              After dinner seating starts, continue with{" "}
+              <Link href="/blog/christmas-table-icebreaker-games">Christmas table icebreaker games</Link>
+              {" "}or scale the room with{" "}
+              <Link href="/blog/ice-breaker-games-for-adults-large-groups">icebreaker games for large adult groups</Link>.
+            </p>
+          ) : game.slug === "motion-name-game" ? (
+            <p>
+              Motion Name-Game attaches a small, repeatable gesture to each name so faces stick. It is a name-learning energizer, not a talent show.
+              Chunk groups larger than about 12 so nobody recites the whole room. Offer a seated gesture from the first sentence. Compare the verbal version in{" "}
+              <Link href="/games/the-name-game">The Name Game</Link> and more formats on{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>. Classroom timing notes live on{" "}
+              <Link href="/icebreaker-games-for-high-school-students">ice breaker games for high school students</Link>.
+            </p>
+          ) : game.slug === "team-superpower-collage" ? (
+            <p>
+              Team Superpower Collage is a short identity-building exercise for people who already share a project, class, or team.
+              Groups add a few tiles that name an observable behavior plus a process “kryptonite,” then keep two tiles as a trial. Skip capes and skip this as a first-minute opener for strangers.
+              Use it after a check-in from{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>
+              {" "}or during a kickoff from{" "}
+              <Link href="/icebreaker-games-for-work">icebreaker games for work</Link>.
+            </p>
           ) : (
             <p>
-              This ice breaker game is perfect for {game.category.toLowerCase()} settings. 
-              It helps participants feel comfortable, encourages interaction, and creates a positive atmosphere. 
-              Whether you're working with a small group or a large team, this activity is designed to break down barriers and foster meaningful connections.
+              {game.title} is a {game.difficulty ? `${game.difficulty.toLowerCase()} ` : ""}
+              {game.category.toLowerCase()} activity for {game.players || "flexible groups"}.
+              Plan about {game.duration || "a few minutes"}
+              {game.materials ? ` and have ${game.materials.replace(/\n/g, ", ")} ready` : ""}.
+              Run it as a time-boxed opener, keep a pass rule, and stop while energy is still high.
+              Browse more formats in the{" "}
+              <Link href="/games">games library</Link>
+              {" "}or start from our{" "}
+              <Link href="/how-we-choose-icebreakers">icebreaker selection checklist</Link>.
             </p>
           )}
 
@@ -484,6 +516,44 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
                 <li>Keep clues short (one sentence) and time-box guesses</li>
                 <li>Let people pass or share a neutral object if they prefer</li>
                 <li>Use breakout rooms for large groups</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "christmas-connection" && (
+            <div className={styles.tipBox}>
+              <h4>Prompt ideas (holiday-optional)</h4>
+              <ul>
+                <li>Lights or candles</li>
+                <li>Early gifts or morning-of</li>
+                <li>Movies or music while cooking</li>
+                <li>Soup or stew on a cold night</li>
+                <li>Indoor New Year or outdoor walk</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "motion-name-game" && (
+            <div className={styles.tipBox}>
+              <h4>Motion ideas that stay small</h4>
+              <ul>
+                <li>Two-finger wave</li>
+                <li>Mug-lift (virtual)</li>
+                <li>Book-open mime (seated)</li>
+                <li>Two snaps above the table</li>
+                <li>A nod only—still counts</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "team-superpower-collage" && (
+            <div className={styles.tipBox}>
+              <h4>Tile examples</h4>
+              <ul>
+                <li>Power: we decide in the room. Kryptonite: decisions live only in chat.</li>
+                <li>Power: we close loops in writing. Kryptonite: no owner on action items.</li>
+                <li>Power: we ask the quiet person last. Kryptonite: the loudest voice goes first by habit.</li>
+                <li>Power: we time-box openers. Kryptonite: icebreakers eat the agenda.</li>
               </ul>
             </div>
           )}

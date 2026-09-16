@@ -6,9 +6,9 @@ import styles from "./free-fun.module.css";
 
 export const revalidate = 86400;
 
-const title = "Free Fun Icebreaker Games (No Signup, No Cringe)";
+const title = "12 Free Fun Icebreaker Games (2026)";
 const description =
-  "Free fun icebreaker games you can run today—no signup. Twelve facilitator run cards with a chooser for meetings, small groups, and Zoom, plus what to skip.";
+  "Free fun icebreaker games you can run today—no signup, no paywall. Twelve facilitator run cards for meetings, small groups, and Zoom, plus what to skip.";
 const canonical = "https://www.icebreakergames.site/free-fun-icebreaker-games";
 const ogImage =
   "https://www.icebreakergames.site/img/free-fun-icebreaker-games-hero.jpg";
@@ -372,7 +372,7 @@ export default async function FreeFunIcebreakerGamesPage() {
               <span>Free fun icebreaker games</span>
             </nav>
             <p className={styles.brand}>Ice Breaker Games</p>
-            <h1 className={styles.heroTitle}>Free Fun Icebreaker Games</h1>
+            <h1 className={styles.heroTitle}>Free fun icebreaker games</h1>
             <p className={styles.heroLead}>
               No signup. No paywall. Twelve run cards that aim for laughs without the cringe.
             </p>

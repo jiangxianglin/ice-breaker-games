@@ -93,19 +93,24 @@ export default async function Home() {
 
   const popularGames = [
     {
-      href: "/icebreaker-games-for-high-school-students",
-      title: "Ice breaker games for high school students",
-      description: "14 classroom-safe openers for advisory, first day, clubs, and PE.",
+      href: "/free-fun-icebreaker-games",
+      title: "Free fun icebreaker games",
+      description: "12 no-signup openers with laughs, not cringe—meetings, small groups, Zoom.",
     },
     {
-      href: "/icebreakers-for-teens",
-      title: "Icebreakers for teens",
-      description: "Audience hub: pick openers for shy, energetic, or mixed teen groups.",
+      href: "/icebreaker-games-for-church",
+      title: "Ice breaker games for church",
+      description: "Visitor-safe chooser plus 12 run cards for small groups and youth nights.",
     },
     {
       href: "/games-like-two-truths-and-a-lie",
       title: "Games like Two Truths and a Lie",
       description: "12 get-to-know-you substitutes with rules, variations, and facilitator tips.",
+    },
+    {
+      href: "/icebreaker-games-for-high-school-students",
+      title: "Ice breaker games for high school students",
+      description: "14 classroom-safe openers for advisory, first day, clubs, and PE.",
     },
     {
       href: "/virtual-icebreaker-games",
@@ -116,11 +121,6 @@ export default async function Home() {
       href: "/icebreaker-games-for-meetings",
       title: "Ice breaker games for meetings",
       description: "Quick, low-pressure openers for standups, workshops, and team meetings.",
-    },
-    {
-      href: "/icebreaker-games-for-teens",
-      title: "Ice breaker games for teens",
-      description: "Student-cluster hub: classroom and club openers with safety notes.",
     },
   ];
 

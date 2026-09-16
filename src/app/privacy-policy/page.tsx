@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 
+const title = "Privacy Policy | Ice Breaker Games";
+const description =
+  "How Ice Breaker Games collects data, uses cookies, and discloses Google Analytics and advertising (including interest-based ads).";
+
 export const metadata: Metadata = {
-  title: "Privacy Policy | Ice Breaker Games",
-  description: "Privacy Policy for Ice Breaker Games website.",
+  title,
+  description,
   alternates: {
     canonical: "https://www.icebreakergames.site/privacy-policy",
   },
   openGraph: {
     type: "website",
     url: "https://www.icebreakergames.site/privacy-policy",
-    title: "Privacy Policy | Ice Breaker Games",
-    description: "Privacy Policy for Ice Breaker Games website.",
+    title,
+    description,
     siteName: "Ice Breaker Games",
   },
 };
@@ -19,102 +23,146 @@ export default function PrivacyPolicy() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
-      
+
       <div className="prose dark:prose-invert max-w-none">
-        <p className="text-muted-foreground mb-6">
-          Last updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-        </p>
+        <p className="text-muted-foreground mb-6">Last updated: September 16, 2026</p>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
           <p className="text-muted-foreground mb-4">
-            Ice Breaker Games ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
+            Ice Breaker Games (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates
+            https://www.icebreakergames.site. This Privacy Policy explains how we collect, use, and
+            share information when you visit the site. Browsing the game library does not require an
+            account.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">2. Information We Collect</h2>
-          <p className="text-muted-foreground mb-4">
-            We may collect information about you in a variety of ways. The information we may collect on the website includes:
-          </p>
           <ul className="list-disc list-inside text-muted-foreground mb-4 space-y-2">
-            <li><strong>Personal Data:</strong> Personally identifiable information, such as your name and email address, that you voluntarily give to us when you register with the website or when you choose to participate in various activities related to the website.</li>
-            <li><strong>Derivative Data:</strong> Information our servers automatically collect when you access the website, such as your IP address, browser type, operating system, access times, and the pages you have viewed directly before and after accessing the website.</li>
-            <li><strong>Analytics Data:</strong> We use Google Analytics to understand how visitors use our website. This includes information about your device, browsing actions, and patterns.</li>
+            <li>
+              <strong>Information you send us:</strong> If you email{" "}
+              <a href="mailto:support@icebreakergames.site" className="underline underline-offset-2">
+                support@icebreakergames.site
+              </a>{" "}
+              or use the contact page, we receive the address and message you provide. We do not
+              operate a public user registration system.
+            </li>
+            <li>
+              <strong>Technical data:</strong> Our hosting provider may log IP address, browser
+              type, operating system, timestamps, and referring URLs as part of serving pages
+              securely.
+            </li>
+            <li>
+              <strong>Analytics:</strong> We use Google Analytics to understand which pages are
+              used. Analytics may set cookies or similar identifiers.
+            </li>
+            <li>
+              <strong>We do not request precise geolocation</strong> (GPS or similar device
+              location APIs) in our site code.
+            </li>
           </ul>
         </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">3. Use of Your Information</h2>
-          <p className="text-muted-foreground mb-4">
-            Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the website to:
-          </p>
           <ul className="list-disc list-inside text-muted-foreground mb-4 space-y-2">
-            <li>Improve our website and services</li>
-            <li>Understand how users interact with our content</li>
-            <li>Respond to user inquiries and offer support</li>
-            <li>Send you updates and marketing communications (with your consent)</li>
-            <li>Monitor and analyze usage and trends to improve user experience</li>
+            <li>Operate, secure, and improve the website</li>
+            <li>Answer support mail</li>
+            <li>Understand aggregate usage (which guides are opened)</li>
+            <li>Serve and measure advertising if Google AdSense or similar ads are enabled</li>
           </ul>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">4. Disclosure of Your Information</h2>
+          <h2 className="text-2xl font-semibold mb-4">4. Cookies, Analytics, and Advertising</h2>
           <p className="text-muted-foreground mb-4">
-            We may share information we have collected about you in certain situations. Your information may be disclosed as follows:
+            Cookies are small files stored on your device. You can block cookies in your browser;
+            some features (including analytics and ads) may not work as intended.
           </p>
+          <h3 className="text-xl font-semibold mb-3">Google Analytics</h3>
+          <p className="text-muted-foreground mb-4">
+            Google Analytics collects usage data on our behalf. Google&apos;s processing is described
+            in Google&apos;s own privacy documentation. We configure page views in our site code; we
+            do not intentionally send email addresses or phone numbers to Analytics as user IDs.
+          </p>
+          <h3 className="text-xl font-semibold mb-3">Google AdSense and interest-based ads (IBA)</h3>
+          <p className="text-muted-foreground mb-4">
+            We may use Google AdSense to display ads. Third parties, including Google, may use
+            cookies, web beacons, or similar technologies to collect information about your visits
+            to this and other sites in order to show ads, including interest-based advertising.
+            Google&apos;s use of advertising cookies is described in Google&apos;s Advertising Privacy
+            documentation. You can opt out of personalized Google ads through Google&apos;s Ads
+            Settings.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            We do not merge advertising identifiers with the contents of support emails, and we do
+            not intend to pass personally identifiable information (such as name, email, or phone
+            number) in ad request URLs or as custom targeting parameters.
+          </p>
+          <p className="text-muted-foreground mb-4">
+            If we enable personalized ads for visitors in the European Economic Area or the United
+            Kingdom, we will deploy a consent mechanism that meets Google&apos;s EU user consent
+            policy (a certified consent management platform where required). Until that is in
+            place, ads—if shown—should not rely on unauthorized personalization for those regions.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">5. Disclosure of Your Information</h2>
           <ul className="list-disc list-inside text-muted-foreground mb-4 space-y-2">
-            <li><strong>By Law or to Protect Rights:</strong> If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others.</li>
-            <li><strong>Third-Party Service Providers:</strong> We may share your information with third parties that perform services for us or on our behalf, including data analysis, email delivery, hosting services, and customer service.</li>
+            <li>
+              <strong>Service providers:</strong> Hosting, analytics, and advertising partners
+              process data to provide those services.
+            </li>
+            <li>
+              <strong>Legal:</strong> We may disclose information if required by law or to protect
+              the site, our users, or others.
+            </li>
           </ul>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">5. Cookies and Tracking Technologies</h2>
+          <h2 className="text-2xl font-semibold mb-4">6. Children</h2>
           <p className="text-muted-foreground mb-4">
-            We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier.
-          </p>
-          <p className="text-muted-foreground mb-4">
-            You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">6. Third-Party Websites</h2>
-          <p className="text-muted-foreground mb-4">
-            The website may contain links to third-party websites and applications of interest. Once you have used these links to leave the website, any information you provide to these third parties is not covered by this Privacy Policy.
+            This site is written for facilitators, managers, teachers, and youth leaders. We do not
+            knowingly collect personal information from children under 13. We do not design the
+            site as directed to children under 13. If you believe a child sent us personal
+            information, email support and we will delete it.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">7. Security of Your Information</h2>
+          <h2 className="text-2xl font-semibold mb-4">7. Third-Party Links</h2>
           <p className="text-muted-foreground mb-4">
-            We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable.
+            Guides may link to other websites. Their privacy practices are their own.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">8. Policy for Children</h2>
+          <h2 className="text-2xl font-semibold mb-4">8. Security and Retention</h2>
           <p className="text-muted-foreground mb-4">
-            We do not knowingly solicit information from or market to children under the age of 13. If we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible.
+            We use standard hosting and transport security (HTTPS). No method of transmission is
+            perfectly secure. Support emails are retained as needed to answer you and then as
+            required for legitimate business or legal reasons.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">9. Changes to This Privacy Policy</h2>
+          <h2 className="text-2xl font-semibold mb-4">9. Changes</h2>
           <p className="text-muted-foreground mb-4">
-            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
+            We will post updates on this page and change the &quot;Last updated&quot; date.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">10. Contact Us</h2>
+          <h2 className="text-2xl font-semibold mb-4">10. Contact</h2>
           <p className="text-muted-foreground mb-4">
-            If you have questions or comments about this Privacy Policy, please email{" "}
+            Privacy questions:{" "}
             <a href="mailto:support@icebreakergames.site" className="underline underline-offset-2">
               support@icebreakergames.site
             </a>{" "}
-            or visit our{" "}
+            or the{" "}
             <a href="/contact" className="underline underline-offset-2">
               contact page
             </a>

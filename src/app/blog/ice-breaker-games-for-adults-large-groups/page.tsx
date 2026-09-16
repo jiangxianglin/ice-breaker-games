@@ -297,6 +297,87 @@ export default function AdultsLargeGroupsPage() {
           </div>
         </section>
 
+        <section className="mb-10 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-xl border border-gray-200/60 dark:border-gray-700/60 p-6 md:p-8">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
+            A 50-person run sheet you can copy
+          </h2>
+          <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 mb-3">
+            This is an editorial template, not a claim about a specific client event. Use it when
+            you have about 50 adults, a microphone, and 12 minutes before a keynote or a working
+            session.
+          </p>
+          <ol className="list-decimal pl-5 space-y-2 text-sm md:text-base text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>0:00–1:00 — Brief.</strong> State the pass rule and the physical constraint
+              (“stay in your third of the room”). Repeat once.
+            </li>
+            <li>
+              <strong>1:00–8:00 — One mechanic only.</strong> Tournament, bingo mingle, or seated
+              this-or-that. Do not stack two games.
+            </li>
+            <li>
+              <strong>8:00–10:00 — Harvest.</strong> Two volunteer sentences or a show of hands. No
+              full-room share-out.
+            </li>
+            <li>
+              <strong>10:00–12:00 — Bridge.</strong> One sentence that ties the opener to the agenda
+              (“you already practiced pairing—use that for the table discussion”).
+            </li>
+          </ol>
+          <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 mt-4">
+            If acoustics are poor, skip mingling and run seated polls. Preference mixers like{" "}
+            <Link href="/games/christmas-connection" className="text-emerald-700 dark:text-emerald-300 underline font-medium">
+              Christmas Connection
+            </Link>{" "}
+            need zones above ~30 people or they become a shout.
+          </p>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
+            Failure modes we write against
+          </h2>
+          <ul className="list-disc pl-5 space-y-3 text-sm md:text-base text-gray-700 dark:text-gray-300">
+            <li>
+              <strong>One circle for 80 people.</strong> Yarn webs and growing name lists collapse.
+              Split, zone, or switch to a stage-led poll.
+            </li>
+            <li>
+              <strong>Instructions without a demo.</strong> Adults will wait. Model the move once
+              with a volunteer before you say “go.”
+            </li>
+            <li>
+              <strong>Prize culture.</strong> Cheap prizes turn mixers into a rush for the front.
+              Use optional recognition or skip prizes.
+            </li>
+            <li>
+              <strong>Forced disclosure.</strong> Large rooms amplify embarrassment. Keep prompts at
+              preference level. If the topic is heavy,{" "}
+              <Link href="/when-to-skip-an-icebreaker" className="text-emerald-700 dark:text-emerald-300 underline font-medium">
+                skip the icebreaker
+              </Link>
+              .
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-10">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
+            How this page relates to the rest of the site
+          </h2>
+          <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 mb-3">
+            Use this guide when headcount is the constraint. Use{" "}
+            <Link href="/icebreaker-games-for-work" className="text-emerald-700 dark:text-emerald-300 underline font-medium">
+              icebreaker games for work
+            </Link>{" "}
+            when the constraint is professional tone, and{" "}
+            <Link href="/how-we-choose-icebreakers" className="text-emerald-700 dark:text-emerald-300 underline font-medium">
+              how we choose icebreaker games
+            </Link>{" "}
+            when you are deciding whether a format belongs on the agenda at all.
+          </p>
+        </section>
+
         <section className="mt-12 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl shadow-xl border border-gray-200/60 dark:border-gray-700/60 p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
             Final thoughts

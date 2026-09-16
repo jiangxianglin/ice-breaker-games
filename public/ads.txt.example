@@ -1,0 +1,5 @@
+# After Google AdSense approval, replace this file's contents with the
+# authorized seller line from AdSense (Sites → ads.txt). Example format:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# Do not invent a publisher ID. A fake ads.txt line can be worse than none.

@@ -18,6 +18,18 @@ export function Footer() {
               About
             </Link>
             <Link
+              href="/how-we-choose-icebreakers"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              How we choose games
+            </Link>
+            <Link
+              href="/when-to-skip-an-icebreaker"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              When to skip
+            </Link>
+            <Link
               href="/contact"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >

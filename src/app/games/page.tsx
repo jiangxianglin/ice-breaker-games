@@ -108,6 +108,18 @@ const clusterGuides = [
       "Group-cluster hub: facilitator-ready activities for circles of 4–12.",
   },
   {
+    href: "/icebreaker-games-for-church",
+    title: "Ice breaker games for church",
+    description:
+      "Visitor-safe chooser for small groups, youth nights, and welcome events.",
+  },
+  {
+    href: "/free-fun-icebreaker-games",
+    title: "Free fun icebreaker games",
+    description:
+      "No signup, no paywall—twelve fun openers for meetings, small groups, and Zoom.",
+  },
+  {
     href: "/name-game-icebreakers",
     title: "Name game icebreakers",
     description:

@@ -583,6 +583,10 @@ export default async function IcebreakerGamesForSmallGroupsPage() {
               <Link href="/icebreaker-games-for-youth-group">
                 ice breaker games for youth group
               </Link>
+              ; for faith-context rooms, see{" "}
+              <Link href="/icebreaker-games-for-church">
+                ice breaker games for church
+              </Link>
               ; for larger agendas, see{" "}
               <Link href="/icebreaker-games-for-meetings">
                 ice breaker games for meetings
@@ -655,6 +659,11 @@ export default async function IcebreakerGamesForSmallGroupsPage() {
                 ice breaker games for youth group
               </Link>
               ,{" "}
+              <Link href="/icebreaker-games-for-church">
+                ice breaker games for church
+              </Link>
+              ,{" "}
+              <Link href="/free-fun-icebreaker-games">free fun icebreaker games</Link>,{" "}
               <Link href="/icebreaker-games-for-meetings">
                 ice breaker games for meetings
               </Link>

@@ -72,7 +72,7 @@ Running effective **icebreaker games** can transform your team meetings from awk
 
 ## Why Effective Icebreaker Games Matter
 
-In today's diverse workplace environment, **icebreaker games** serve as crucial tools for breaking down barriers and fostering authentic connections. Research from Harvard Business School demonstrates that teams who regularly engage in well-facilitated activities show 25% higher performance rates and improved communication patterns.
+Structured icebreakers are useful when they are brief, optional, and tied to starting the real agenda. We do not cite a performance-percentage claim here; treat openers as a facilitation choice, not a guaranteed productivity lift. For a public overview of the format, see Wikipedia’s article on icebreakers in facilitation.
 
 ![Diverse business professionals collaborating in team building icebreaker activity](/icebreaker-team-collaboration.jpg)
 
@@ -211,7 +211,7 @@ When it comes to bringing people together, nothing beats the power of **fun iceb
 
 ## Why Fun Icebreaker Games Are Essential for Modern Groups
 
-In today's diverse and often remote work environment, **fun icebreaker games** serve as crucial tools for building psychological safety and fostering authentic relationships. Research from Harvard Business School demonstrates that teams who engage in these activities show 25% higher performance rates and significantly improved communication patterns.
+Fun icebreaker games help when the room needs a shared, low-stakes task before the real work. We do not claim a measured performance increase from running them. Pick games that match time, group size, and a pass rule rather than treating “fun” as a result you can promise.
 
 **Fun icebreaker games** work because they:
 - **Break down social barriers** by creating shared experiences
