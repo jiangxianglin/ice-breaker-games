@@ -10,12 +10,17 @@ export async function middleware(request: NextRequest) {
 
   if (
     hostname === "icebreakergames.site" ||
-    (hostname === canonicalHostname && forwardedProto === "http")
+    hostname === canonicalHostname
   ) {
-    const url = request.nextUrl.clone();
-    url.hostname = canonicalHostname;
-    url.protocol = "https:";
-    return NextResponse.redirect(url, 308);
+    const isInsecure =
+      forwardedProto === "http" ||
+      (!forwardedProto && request.nextUrl.protocol === "http:");
+    if (hostname === "icebreakergames.site" || isInsecure) {
+      const url = request.nextUrl.clone();
+      url.hostname = canonicalHostname;
+      url.protocol = "https:";
+      return NextResponse.redirect(url, 308);
+    }
   }
 
   const pathname = request.nextUrl.pathname;

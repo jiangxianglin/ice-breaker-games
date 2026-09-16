@@ -363,6 +363,45 @@ export default async function GamesLikeTheHumanKnotPage() {
             </div>
           </section>
 
+          <section className={styles.guide}>
+            <h2>Why games like the Human Knot work</h2>
+            <p>
+              Team problem-solving openers create shared laughter and a debriefable moment—if everyone opted in and mobility needs are respected.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Human Knot–style openers teach collaboration through a shared physical puzzle—but lower-contact substitutes keep the lesson when touch is not appropriate.
+              </p>
+              <cite className={styles.cite}>
+                — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Pick contact level first, then browse related formats in{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker library
+              </a>
+              .
+            </p>
+          </section>
+
           <section className={styles.sectionHead}>
             <h2>Best games like the Human Knot</h2>
             <p>
@@ -468,6 +507,43 @@ export default async function GamesLikeTheHumanKnotPage() {
                 <p>{item.a}</p>
               </div>
             ))}
+          </section>
+
+          <section className={styles.sources} aria-labelledby="sources-heading">
+            <h2 id="sources-heading">Sources &amp; further reading</h2>
+            <p>
+              Facilitation framing below draws on established icebreaker references:
+            </p>
+            <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab — Icebreaker library
+                </a>
+              </li>
+              <li>
+                <Link href="/games/human-knot">
+                  Ice Breaker Games — Human Knot rules
+                </Link>
+              </li>
+              <li>
+                <Link href="/games-like-human-bingo">
+                  Ice Breaker Games — Games like Human Bingo
+                </Link>
+              </li>
+            </ol>
           </section>
 
           <section className={styles.related}>

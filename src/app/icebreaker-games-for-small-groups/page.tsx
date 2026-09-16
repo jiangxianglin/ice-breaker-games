@@ -356,15 +356,7 @@ export default async function IcebreakerGamesForSmallGroupsPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -456,6 +448,45 @@ export default async function IcebreakerGamesForSmallGroupsPage() {
                 when comfort and mobility are unknown.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why icebreakers for small groups work</h2>
+            <p>
+              Fewer people raise the stakes of silence. A light structure makes participation feel fair instead of forced.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                In small groups, short structured openers help every voice get a turn without one person filling the whole room—or forcing deep disclosure too early.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Libraries like{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker collection
+              </a>{" "}
+              emphasize time-boxed formats—ideal when four to twelve people share a table or Zoom gallery.
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -583,6 +614,15 @@ export default async function IcebreakerGamesForSmallGroupsPage() {
               group/meeting cluster pages:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"

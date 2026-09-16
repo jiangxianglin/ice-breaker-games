@@ -383,6 +383,53 @@ export default async function GamesLikeHumanBingoPage() {
             </div>
           </section>
 
+          <section className={styles.guide}>
+            <h2>Why games like Human Bingo work</h2>
+            <p>
+              Card-and-mingle formats create light structure for networking rooms where open mingling feels awkward.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Mingling icebreakers like Human Bingo work because they give shy people a reason to approach strangers and surface shared traits without long speeches.
+              </p>
+              <cite className={styles.cite}>
+                — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Compare related mixer formats in{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker library
+              </a>{" "}
+              and the general overview on{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Wikipedia’s icebreaker (facilitation) page
+              </a>
+              .
+            </p>
+          </section>
+
           <section className={styles.sectionHead}>
             <h2>Best games like Human Bingo</h2>
             <p>
@@ -549,6 +596,43 @@ export default async function GamesLikeHumanBingoPage() {
                 )}
               </div>
             ))}
+          </section>
+
+          <section className={styles.sources} aria-labelledby="sources-heading">
+            <h2 id="sources-heading">Sources &amp; further reading</h2>
+            <p>
+              Facilitation framing below draws on established icebreaker references:
+            </p>
+            <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab — Icebreaker library
+                </a>
+              </li>
+              <li>
+                <Link href="/games/human-bingo">
+                  Ice Breaker Games — Human Bingo how-to
+                </Link>
+              </li>
+              <li>
+                <Link href="/games-like-the-human-knot">
+                  Ice Breaker Games — Games like the Human Knot
+                </Link>
+              </li>
+            </ol>
           </section>
 
           <section className={styles.related}>

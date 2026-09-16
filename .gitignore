@@ -48,6 +48,8 @@ next-env.d.ts
 # internal documentation
 image-prompts.md
 IMAGE_PROMPTS.md
+knowledge.md
+**/knowledge.md
 
 # summary and documentation files (internal use only)
 *_SUMMARY.md
@@ -60,3 +62,5 @@ IMAGE_PROMPTS.md
 # database files
 seed-games.sql
 setup-database.sql
+
+certificates

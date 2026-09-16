@@ -355,15 +355,7 @@ export default async function IcebreakerGamesForHighSchoolStudentsPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -455,6 +447,53 @@ export default async function IcebreakerGamesForHighSchoolStudentsPage() {
                 personal, or physical games are not adapted for comfort and safety.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why icebreaker games for high school students work</h2>
+            <p>
+              High school periods are short and socially complex. A well-scoped game beats an open-ended share circle for most first days and club meetings.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Classroom icebreakers work between bells when prompts stay school-safe, turns stay short, and students can participate without forced personal disclosure.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Guidance summarized from facilitation sources such as{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Wikipedia’s icebreaker (facilitation) overview
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab
+              </a>{" "}
+              favors clear rules and optional depth—useful in advisory and first-period rooms.
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -592,6 +631,15 @@ export default async function IcebreakerGamesForHighSchoolStudentsPage() {
               student cluster pages:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"

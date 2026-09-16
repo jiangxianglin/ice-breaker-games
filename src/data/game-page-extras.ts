@@ -3,11 +3,25 @@ export type GameFaqItem = {
   a: string;
 };
 
+export type GamePageSource = {
+  label: string;
+  href: string;
+  external?: boolean;
+};
+
 export type GamePageExtrasContent = {
   howToSteps?: { title: string; body: string }[];
   variations?: { title: string; body: string }[];
   rulesTiming?: { label: string; body: string }[];
   adultsWork?: string;
+  /** Editorial quotation + cite links for GEO / AI visibility audits */
+  quote?: {
+    text: string;
+    citeLead?: string;
+    citeLinks: { label: string; href: string }[];
+  };
+  sourcesIntro?: string;
+  sources?: GamePageSource[];
   faqs: GameFaqItem[];
 };
 
@@ -215,6 +229,48 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     adultsWork:
       "Chainlink works well as a meeting opener when you want names plus common ground without a long icebreaker. Follow it with how to play the name game if the group still needs name recall.",
+    quote: {
+      text: "Introduction chains work when each person must name a shared trait before adding their own fact—so listening for overlap becomes the skill, not memorizing the whole circle.",
+      citeLead:
+        "Ice Breaker Games Editorial Team, summarizing guidance from",
+      citeLinks: [
+        {
+          label: "Wikipedia, “Icebreaker (facilitation)”",
+          href: "https://en.wikipedia.org/wiki/Icebreaker_(facilitation)",
+        },
+        {
+          label: "SessionLab’s icebreaker library",
+          href: "https://www.sessionlab.com/library/icebreaker",
+        },
+      ],
+    },
+    sourcesIntro:
+      "Facilitation framing for Chainlink draws on established icebreaker references:",
+    sources: [
+      {
+        label: "Wikipedia — Icebreaker (facilitation)",
+        href: "https://en.wikipedia.org/wiki/Icebreaker_(facilitation)",
+        external: true,
+      },
+      {
+        label: "SessionLab — Icebreaker library",
+        href: "https://www.sessionlab.com/library/icebreaker",
+        external: true,
+      },
+      {
+        label: "Harvard Business Review — Remote Work",
+        href: "https://hbr.org/topic/subject/remote-work",
+        external: true,
+      },
+      {
+        label: "Ice Breaker Games — Name game icebreakers",
+        href: "/name-game-icebreakers",
+      },
+      {
+        label: "Ice Breaker Games — Icebreaker games for meetings",
+        href: "/icebreaker-games-for-meetings",
+      },
+    ],
     faqs: [
       {
         q: "How do you play Chainlink?",
@@ -240,6 +296,38 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
   },
 
   "emoji-introduction": {
+    howToSteps: [
+      {
+        title: "Set the count",
+        body: "Ask for 2–3 emojis that represent the person (or their week). Model a vivid example first so the room knows the tone.",
+      },
+      {
+        title: "Share in chat or on paper",
+        body: "Everyone posts at once in Zoom/Teams/Slack chat, or writes emojis on sticky notes in person. Simultaneous sharing keeps energy up.",
+      },
+      {
+        title: "One guess, then clarify",
+        body: "Invite one group guess, then a one-sentence explanation. For groups over 12, keep most shares chat-only and unmute a few volunteers.",
+      },
+      {
+        title: "Bridge to the agenda",
+        body: "Note one theme you heard (energy, hobbies, weekend plans) and open the real meeting or lesson while curiosity is high.",
+      },
+    ],
+    variations: [
+      {
+        title: "Meeting energy trio",
+        body: "Ask for one emoji for energy, one for focus, and one for what people need from the meeting—closer to a check-in than a full intro.",
+      },
+      {
+        title: "Fake-emoji round",
+        body: "Optional Two Truths twist: include one misleading emoji and let the group spot it. Use only with groups that enjoy light bluffing.",
+      },
+      {
+        title: "Breakout pairs",
+        body: "Pairs decode each other’s emoji sets for 90 seconds, then introduce their partner in one sentence to the full room.",
+      },
+    ],
     rulesTiming: [
       {
         label: "Players",
@@ -247,16 +335,165 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         label: "Time",
-        body: "10–15 minutes. Budget 30–90 seconds per person depending on group size.",
+        body: "5–15 minutes. Chat-only rounds can finish in under eight minutes; spoken explains need more time.",
       },
       {
         label: "Setup",
-        body: "Need a shared chat (Zoom/Teams/Slack) or paper/sticky notes for in-person groups.",
+        body: "Shared chat (Zoom/Teams/Slack) or paper/sticky notes for in-person groups.",
       },
     ],
     adultsWork:
-      "For work meetings, ask for 2–3 work-safe emojis (role, energy, weekend plan) so the activity stays professional. Remote teams can post in chat first, then unmute only if they want to explain—ideal for mixed introvert/extrovert groups.",
-    faqs: [], // on-page FAQ already exists in GameDetail
+      "For work meetings, keep emojis work-safe (role, tools, weekend hobbies). Remote teams can post in chat first, then unmute only if they want to explain—good for mixed introvert/extrovert groups. Pair with short virtual icebreakers when the agenda is tight.",
+    faqs: [
+      {
+        q: "How do you play Emoji Introduction?",
+        a: "Each person picks 2–3 emojis that represent them, posts in chat (or on paper), the group gets one guess, then the person explains in one sentence. Continue until enough people have shared for the room size.",
+      },
+      {
+        q: "How many people can play Emoji Introduction?",
+        a: "It works with 5–30 people. Under 12, everyone can speak briefly. Above 12, keep most answers in chat and unmute a handful of volunteers so the opener stays under 15 minutes.",
+      },
+      {
+        q: "What materials do you need?",
+        a: "A chat window or sticky notes. No special props. In person, phones with an emoji keyboard also work.",
+      },
+      {
+        q: "How long does Emoji Introduction take?",
+        a: "Chat-first rounds often finish in 5–8 minutes. If everyone explains aloud, budget 10–15 minutes and cap each turn at about 30–60 seconds.",
+      },
+      {
+        q: "What are good emojis for self-introduction?",
+        a: "Pick specific, conversation-friendly symbols: hobbies, pets, foods, tools you use, or places you’ve lived. Avoid inside jokes the room cannot decode and skip anything that invites status pressure.",
+      },
+      {
+        q: "Can Emoji Introduction work in classrooms?",
+        a: "Yes. Use school-safe prompts (weekend plans, favorite subject energy, one hobby). Offer a pass option and keep explanations short so class time stays on track.",
+      },
+    ],
+  },
+
+  "weather-check-in": {
+    howToSteps: [
+      {
+        title: "Frame the metaphor",
+        body: "Ask everyone to describe how they feel right now as weather—sunny, foggy, stormy, partly cloudy, windy. Say one light example so people know short answers are enough.",
+      },
+      {
+        title: "Model and invite",
+        body: "Facilitator goes first: “Mostly sunny with a chance of email thunder.” Invite a pass option so nobody is forced to overshare.",
+      },
+      {
+        title: "Collect answers fast",
+        body: "Go around the circle or post in chat simultaneously. Cap spoken turns at one sentence. For 15+ people, chat-only is usually cleaner.",
+      },
+      {
+        title: "Name the room pattern",
+        body: "Reflect the overall forecast in one sentence (“lots of partly cloudy—makes sense after a busy week”), then open the agenda. Skip long analysis unless the meeting is about wellbeing.",
+      },
+    ],
+    variations: [
+      {
+        title: "Weekend forecast",
+        body: "Ask for the weather of their weekend so far, not their mood—lighter when the group is new.",
+      },
+      {
+        title: "Project weather",
+        body: "For work teams: “What’s the weather on this project?” Keep it about workload and clarity, not personal crisis.",
+      },
+      {
+        title: "Emoji + weather",
+        body: "Combine with Emoji Check-In: one weather word plus one emoji in chat for hybrid rooms.",
+      },
+    ],
+    rulesTiming: [
+      {
+        label: "Players",
+        body: "5–25 people. Above 15, prefer chat posts over spoken rounds.",
+      },
+      {
+        label: "Time",
+        body: "3–8 minutes including the one-sentence room summary.",
+      },
+      {
+        label: "Safety",
+        body: "Metaphors can still surface hard feelings—thank the share, don’t therapize mid-meeting, and offer a pass.",
+      },
+    ],
+    adultsWork:
+      "Weather Check-In is a meeting-friendly opener when you need a fast energy read before decisions or a long agenda. Pair it with One Word Check-In or Emoji Check-In if the team already likes short rituals. Keep examples work-safe and move on once you’ve named the room pattern.",
+    quote: {
+      text: "Short, metaphorical check-ins help remote and hybrid teams recreate hallway connection—without forcing long personal monologues before the real agenda.",
+      citeLead:
+        "Ice Breaker Games Editorial Team, summarizing guidance from",
+      citeLinks: [
+        {
+          label: "Harvard Business Review (Remote Work)",
+          href: "https://hbr.org/topic/subject/remote-work",
+        },
+        {
+          label: "MIT Sloan Management Review",
+          href: "https://sloanreview.mit.edu/tag/remote-work/",
+        },
+        {
+          label: "SessionLab’s icebreaker library",
+          href: "https://www.sessionlab.com/library/icebreaker",
+        },
+      ],
+    },
+    sourcesIntro:
+      "Facilitation framing for Weather Check-In draws on established remote-work and icebreaker references:",
+    sources: [
+      {
+        label: "Harvard Business Review — Remote Work",
+        href: "https://hbr.org/topic/subject/remote-work",
+        external: true,
+      },
+      {
+        label: "MIT Sloan — Research on workplace connection",
+        href: "https://sloanreview.mit.edu/tag/remote-work/",
+        external: true,
+      },
+      {
+        label: "SessionLab — Icebreaker library",
+        href: "https://www.sessionlab.com/library/icebreaker",
+        external: true,
+      },
+      {
+        label: "Wikipedia — Icebreaker (facilitation)",
+        href: "https://en.wikipedia.org/wiki/Icebreaker_(facilitation)",
+        external: true,
+      },
+      {
+        label: "Ice Breaker Games — Virtual icebreaker games",
+        href: "/virtual-icebreaker-games",
+      },
+      {
+        label: "Ice Breaker Games — Short virtual icebreakers",
+        href: "/short-virtual-icebreakers",
+      },
+    ],
+    faqs: [
+      {
+        q: "How do you play Weather Check-In?",
+        a: "Each person describes their current feeling as weather (sunny, foggy, stormy, partly cloudy). Go around quickly or post in chat, allow a pass, then the facilitator names the group’s overall weather in one sentence before starting the agenda.",
+      },
+      {
+        q: "How long does Weather Check-In take?",
+        a: "Most groups finish in 3–8 minutes. Chat-only rounds for larger teams often take under five minutes.",
+      },
+      {
+        q: "Is Weather Check-In good for virtual meetings?",
+        a: "Yes. It was designed for remote and hybrid rooms: people can type weather answers in chat without unmuting, then unmute only if they want to add a detail.",
+      },
+      {
+        q: "What are good Weather Check-In examples?",
+        a: "Try: “mostly sunny,” “foggy but clearing,” “light drizzle,” “thunderstorm with bright spots,” or “partly cloudy with a strong coffee breeze.” Keep metaphors short and optional.",
+      },
+      {
+        q: "How is Weather Check-In different from One Word Check-In?",
+        a: "One Word Check-In asks for a single word (energy, focus, mood). Weather Check-In uses a metaphor, which often feels safer when people want nuance without a long personal story.",
+      },
+    ],
   },
 };
 

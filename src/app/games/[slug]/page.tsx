@@ -100,6 +100,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     imageUrl = "/img/ChatWaterfall.png";
   } else if (game.title === "Emoji Introduction") {
     imageUrl = "/img/EmojiIntroduction-GameplayScene.png";
+  } else if (game.slug === "weather-check-in") {
+    imageUrl = "/img/games/weather-check-in-hero.jpg";
   } else if (game.title === "Emoji Check-In") {
     imageUrl = "/img/EmojiCheck-In-hero.png";
   } else if (game.title === "Portrait Gallery") {
@@ -182,7 +184,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   } else if (game.title === "Chat Waterfall") {
     description = "Chat Waterfall | Ice Breaker Games: A high-energy virtual icebreaker where everyone types answers simultaneously and sends at once, creating a waterfall effect. Perfect for large groups!";
   } else if (game.title === "Emoji Introduction") {
-    description = "Run an Emoji Introduction activity for meetings, classrooms, and remote teams. Includes rules, emoji examples, facilitator script, variations, and safety tips.";
+    description =
+      "How to play Emoji Introduction: share 2–3 emojis, guess once, explain in one sentence. 5–30 players, 5–15 minutes. Rules, examples, and virtual tips.";
+  } else if (game.slug === "weather-check-in") {
+    description =
+      "How to run Weather Check-In: a 3–8 minute mood check using weather metaphors. Rules, examples, and tips for meetings and remote teams.";
   } else if (game.title === "Emoji Check-In") {
     description = "Run a quick Emoji Check-In icebreaker for meetings and online classes. Includes mood prompts, examples, facilitation tips, and remote team variations.";
   } else if (game.title === "Icebreaker Bingo") {
@@ -271,7 +277,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "How to play Human Bingo: networking icebreaker with prompts, rules, and tips. 10–50 players, 20–30 minutes. Includes links to games like Human Bingo.";
   } else if (game.title === "Emoji Introduction") {
     description =
-      "Learn how to play Emoji Introduction: participants introduce themselves using emojis and others guess the meaning. 5–30 players, 10–15 minutes. Steps and variation ideas included.";
+      "How to play Emoji Introduction: share 2–3 emojis, guess once, explain in one sentence. 5–30 players, 5–15 minutes. Rules, examples, and virtual tips.";
+  } else if (game.slug === "weather-check-in") {
+    description =
+      "How to run Weather Check-In: a 3–8 minute mood check using weather metaphors. Rules, examples, and tips for meetings and remote teams.";
   } else if (game.title === "Emoji Check-In") {
     description =
       "Learn how to play Emoji Check-In: a quick mood-sharing activity where participants express how they feel using emojis. 3–30 players, 3–5 minutes. Examples and variation ideas included.";
@@ -355,20 +364,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "Learn how to play Pterodactyl: a hilarious circle game where participants say 'pterodactyl' without showing teeth. 8–30 players, 8–12 minutes. Rules and variation tips included.";
   } else if (game.title === "Chainlink") {
     description =
-      "Learn how to play Chainlink: an introduction chain activity where participants link facts with shared traits. 8–40 players, 10–15 minutes. Steps and tips included.";
+      "Learn how to play Chainlink: an introduction chain where each person links a shared trait, then adds a new fact. 8–40 players, 10–15 minutes.";
   }
 
   const title =
     game.title === "Portrait Gallery"
       ? "Portrait Gallery Icebreaker Game | How to Play (Step-by-Step)"
       : game.title === "Emoji Introduction"
-      ? "Emoji Introduction Icebreaker Game | Virtual & In-Person How to Play"
+      ? "Emoji Introduction Icebreaker Game | How to Play"
       : game.title === "Emoji Check-In"
         ? "Emoji Check-In Icebreaker | Quick Mood Activity for Teams"
         : game.title === "Alliterative Name Game"
           ? "Alliterative Name Game (Adjective Name Game) | How to Play + Examples"
           : game.title === "One Word Check-In"
             ? "One Word Check-In Icebreaker | Quick Team Check-In Prompts"
+            : game.slug === "weather-check-in"
+              ? "Weather Check-In Icebreaker | Quick Mood Check for Meetings"
             : game.title === "Two Truths and a Lie"
               ? "Two Truths and a Lie Icebreaker | Rules, Examples & Questions"
               : game.title === "Minefield"
@@ -462,7 +473,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
                                   : game.title === "Human Bingo"
                                     ? "Human Bingo Icebreaker | How to Play + Games Like It"
                                   : game.title === "Emoji Introduction"
-                                    ? "Emoji Introduction Ice Breaker Game - Fun Virtual Meeting Activity"
+                                    ? "Emoji Introduction Icebreaker Game | How to Play"
                                   : game.title === "Emoji Check-In"
                                     ? "Emoji Check-In Ice Breaker Game - Quick Mood Sharing Activity"
                                   : game.title === "Chat Waterfall"
@@ -545,7 +556,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : game.title === "Chat Waterfall"
             ? "Chat Waterfall | Ice Breaker Games - Simultaneous chat waterfall effect in virtual meeting ice breaker"
             : game.title === "Emoji Introduction"
-            ? "Emoji Introduction | Ice Breaker Games - Participants introduce themselves using creative emojis in virtual meeting ice breaker game"
+            ? "emoji-introduction — participants sharing emoji self-intros in a virtual meeting"
+            : game.slug === "weather-check-in"
+            ? "weather-check-in — remote team sharing mood as weather metaphors on a video call"
             : game.title === "Emoji Check-In"
             ? "Emoji Check-In ice breaker game - Participants share mood using emojis in virtual meeting icebreaker"
             : game.title === "Portrait Gallery"
@@ -680,7 +693,11 @@ export default async function GameDetailPage({ params }: Props) {
   } else if (game.title === "Chat Waterfall") {
     jsonLdDescription = "Chat Waterfall | Ice Breaker Games: A high-energy virtual icebreaker where everyone types answers simultaneously and sends at once, creating a waterfall effect. Perfect for large groups!";
   } else if (game.title === "Emoji Introduction") {
-    jsonLdDescription = "Emoji Introduction | Ice Breaker Games: A fun ice breaker game where participants introduce themselves using creative emojis. Perfect for virtual meetings, online classrooms & team building. Easy to play with 5-30 players in just 10-15 minutes.";
+    jsonLdDescription =
+      "How to play Emoji Introduction: share 2–3 emojis, guess once, explain in one sentence. 5–30 players, 5–15 minutes. Rules, examples, and virtual tips.";
+  } else if (game.slug === "weather-check-in") {
+    jsonLdDescription =
+      "Weather Check-In is a quick mood check where each person describes how they feel as weather. It works for 5–25 people in 3–8 minutes and suits remote meetings.";
   } else if (game.title === "Emoji Check-In") {
     jsonLdDescription = "Emoji Check-In ice breaker game for virtual meetings. Express mood with emojis! Quick 3-5 min team activity. Free Emoji Check-In icebreaker for online meetings.";
   } else if (game.title === "Icebreaker Bingo") {
@@ -769,7 +786,10 @@ export default async function GameDetailPage({ params }: Props) {
       "Human Bingo is a networking icebreaker where participants receive bingo cards with personal characteristic prompts and mingle to find matches. First to complete a line wins. It encourages conversation and rapid introductions for 10–50 people in 20–30 minutes.";
   } else if (game.title === "Emoji Introduction") {
     jsonLdDescription =
-      "Emoji Introduction is a modern visual icebreaker where participants introduce themselves using only emojis and others guess what the emojis represent. It is creative, inclusive, and works for 5–30 people in 10–15 minutes.";
+      "How to play Emoji Introduction: share 2–3 emojis, guess once, explain in one sentence. 5–30 players, 5–15 minutes. Rules, examples, and virtual tips.";
+  } else if (game.slug === "weather-check-in") {
+    jsonLdDescription =
+      "Weather Check-In is a quick mood check where each person describes how they feel as weather. It works for 5–25 people in 3–8 minutes and suits remote meetings.";
   } else if (game.title === "Emoji Check-In") {
     jsonLdDescription =
       "Emoji Check-In is a quick mood-sharing activity where participants express how they are feeling using emojis in a virtual or in-person setting. It gets everyone speaking in seconds and helps the facilitator read the room in 3–5 minutes.";
@@ -859,21 +879,11 @@ export default async function GameDetailPage({ params }: Props) {
       {
         "@type": "Article",
         "@id": `https://www.icebreakergames.site/games/${game.slug}#article`,
-        headline: game.title === "Find Your Match" ? "Find Your Match | Ice Breaker Games" : game.title === "Human Bingo" ? "Human Bingo - Ice Breaker Game" : game.title === "Chat Waterfall" ? "Chat Waterfall | Ice Breaker Games" : game.title === "Emoji Introduction" ? "Emoji Introduction - Ice Breaker Game for Virtual Meetings" : game.title === "Emoji Check-In" ? "Emoji Check-In - Quick Mood Sharing Ice Breaker Game" : game.title === "Alliterative Name Game" ? "Alliterative Name Game (Adjective Name Game) | How to Play + Examples" : game.title === "One Word Check-In" ? "One Word Check-In Icebreaker | Quick Team Check-In Prompts" : game.title === "Two Truths and a Lie" ? "Two Truths and a Lie Icebreaker | Rules, Examples & Questions" : game.title === "Minefield" ? "Minefield Team Building Game | How to Play + Debrief" : game.title === "The Name Game" ? "The Name Game Icebreaker | How to Play + Examples" : game.title === "The Question Web" ? "The Question Web Icebreaker | How to Play + Prompts" : game.title === "Count Up" ? "Count Up Team Building Game | Rules + Tips" : game.title === "Dicebreakers" ? "Dicebreakers Icebreaker Game | How to Play + Prompts" : game.slug === "topics-tables" ? "Topics Tables Icebreaker | How to Run + Prompts" : game.slug === "unique-and-shared" ? "Unique and Shared Icebreaker | How to Play" : game.title,
+        headline: game.title === "Find Your Match" ? "Find Your Match | Ice Breaker Games" : game.title === "Human Bingo" ? "Human Bingo - Ice Breaker Game" : game.title === "Chat Waterfall" ? "Chat Waterfall | Ice Breaker Games" : game.title === "Emoji Introduction" ? "Emoji Introduction Icebreaker Game | How to Play" : game.title === "Emoji Check-In" ? "Emoji Check-In Icebreaker | Quick Mood Sharing" : game.title === "Alliterative Name Game" ? "Alliterative Name Game (Adjective Name Game) | How to Play + Examples" : game.title === "One Word Check-In" ? "One Word Check-In Icebreaker | Quick Team Check-In Prompts" : game.title === "Two Truths and a Lie" ? "Two Truths and a Lie Icebreaker | Rules, Examples & Questions" : game.title === "Minefield" ? "Minefield Team Building Game | How to Play + Debrief" : game.title === "The Name Game" ? "The Name Game Icebreaker | How to Play + Examples" : game.title === "The Question Web" ? "The Question Web Icebreaker | How to Play + Prompts" : game.title === "Count Up" ? "Count Up Team Building Game | Rules + Tips" : game.title === "Dicebreakers" ? "Dicebreakers Icebreaker Game | How to Play + Prompts" : game.slug === "topics-tables" ? "Topics Tables Icebreaker | How to Run + Prompts" : game.slug === "unique-and-shared" ? "Unique and Shared Icebreaker | How to Play" : game.title,
         description: jsonLdDescription,
         image: jsonLdImage,
-        author: {
-          "@type": "Organization",
-          name: "Ice Breaker Games",
-        },
-        publisher: {
-          "@type": "Organization",
-          name: "Ice Breaker Games",
-          logo: {
-            "@type": "ImageObject",
-            url: "https://www.icebreakergames.site/img/Hero.png",
-          },
-        },
+        author: { "@id": "https://www.icebreakergames.site/#organization" },
+        publisher: { "@id": "https://www.icebreakergames.site/#organization" },
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": `https://www.icebreakergames.site/games/${game.slug}`,
@@ -1063,68 +1073,22 @@ export default async function GameDetailPage({ params }: Props) {
           }
         ]
       }] : []),
-      ...(game.title === "Emoji Introduction" ? [{
-        "@type": "FAQPage",
-        "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            "name": "How do you play Emoji Introduction?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Participants think of 3-5 emojis that represent themselves. Each person then posts their emojis in the chat or shares their screen. The group tries to guess what each emoji represents, and the person explains the meaning behind their choices. This continues until everyone has shared."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How many people can play Emoji Introduction?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Emoji Introduction works best with 5-30 people. For smaller groups of 5-10, everyone can share and discuss each person's emojis in detail. For larger groups of 10-30, you may want to limit sharing time or use breakout rooms to keep the activity moving."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What materials do you need for Emoji Introduction?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You need a chat function in your video conferencing tool or a shared digital space where participants can post their emojis. If playing in person, you can use paper and markers for participants to write or draw their emojis. That's it - no special materials required!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does Emoji Introduction take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Emoji Introduction typically takes 10-15 minutes, depending on group size. With a small group of 5-8 people, you can spend 1-2 minutes on each person for a total of 10-15 minutes. Larger groups may need to move faster, keeping introductions to 30-60 seconds each."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What are good emojis to use for self-introduction?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Choose emojis that represent your hobbies, interests, or personality. For example: 🏋️ for fitness lovers, 📚 for readers, 🎮 for gamers, 🍕 for foodies, 🐕 for pet owners, ✈️ for travelers. Try to pick emojis that spark conversation and reveal something meaningful about you."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can Emoji Introduction be used in classroom settings?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely! Emoji Introduction is perfect for online classrooms, virtual training sessions, and hybrid learning environments. It's especially great for getting students comfortable with each other at the start of a new semester or course. Teachers can also use it as a fun way to check understanding of concepts."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What tips make Emoji Introduction more engaging?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "First, create a welcoming environment where everyone feels comfortable participating. Give participants time to think about their emoji choices before sharing. Encourage creative emoji combinations rather than obvious ones. Allow discussion after each reveal. And follow up with a brief reflection to reinforce the connections made during the game."
-            }
-          }
-        ]
-      }] : []),
+      ...(game.slug === "emoji-introduction" && getGamePageFaqs(game.slug).length
+        ? [
+            {
+              "@type": "FAQPage",
+              "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
+              mainEntity: getGamePageFaqs(game.slug).map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.a,
+                },
+              })),
+            },
+          ]
+        : []),
       ...(game.title === "Emoji Check-In" ? [{
         "@type": "HowTo",
         "@id": `https://www.icebreakergames.site/games/${game.slug}#howto`,
@@ -3740,52 +3704,22 @@ export default async function GameDetailPage({ params }: Props) {
           }
         ]
       }] : []),
-      ...(game.title === "Chainlink" ? [{
-        "@type": "FAQPage",
-        "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            "name": "How do you play Chainlink?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Person A introduces themselves with a fact. Person B repeats Person A's fact and adds their own that links to it. Person C repeats both and adds theirs, and so on. The chain grows around the circle."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What facts work for Chainlink?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Use fun, linkable facts: 'I play tennis and I like documentaries', 'I like documentaries and I have a dog'. The linking is what makes it memorable."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "With 8–15 people, a full round takes 10–15 minutes. Each person takes about 1 minute to recite the chain and add theirs."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can it work for large groups?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For groups over 15, split into sub-circles. Each circle produces its own chain. Bring everyone back to share highlights."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What does Chainlink reveal?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It reveals how people listen, recall, and build on each other's contributions. The debrief surfaces memory, attention, and collaborative thinking."
-            }
-          }
-        ]
-      }] : []),
+      ...(game.slug === "chainlink" && getGamePageFaqs(game.slug).length
+        ? [
+            {
+              "@type": "FAQPage",
+              "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
+              mainEntity: getGamePageFaqs(game.slug).map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.a,
+                },
+              })),
+            },
+          ]
+        : []),
       ...(game.title === "10 Things in Common" ? [{
         "@type": "FAQPage",
         "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
@@ -4016,52 +3950,22 @@ export default async function GameDetailPage({ params }: Props) {
           }
         ]
       }] : []),
-      ...(game.title === "Emoji Introduction" ? [{
-        "@type": "FAQPage",
-        "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            "name": "How do you play Emoji Introduction?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Ask each person to think of 3–5 emojis that represent them. Each person posts their emojis in chat. The group guesses what each set of emojis means, then the person explains their choices."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What makes a good Emoji Introduction?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Encourage specific, personal emojis: a hobby, a travel destination, a value, a mood. The more specific, the more interesting the guess becomes."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "With 5–15 people, a full round takes 10–15 minutes. Keep each person's share to about 30–60 seconds to maintain pace."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can it work for large groups?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. For large groups, ask people to post their emojis in chat before the meeting and do a fast slideshow, or invite 5–8 volunteers to share live."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if someone is not familiar with emojis?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Suggest a short list of starter emojis and let them choose. Alternatively, allow words in place of emojis for the first round."
-            }
-          }
-        ]
-      }] : []),
+      ...(game.slug === "weather-check-in" && getGamePageFaqs(game.slug).length
+        ? [
+            {
+              "@type": "FAQPage",
+              "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,
+              mainEntity: getGamePageFaqs(game.slug).map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.a,
+                },
+              })),
+            },
+          ]
+        : []),
       ...(game.title === "Chat Waterfall" ? [{
         "@type": "FAQPage",
         "@id": `https://www.icebreakergames.site/games/${game.slug}#faq`,

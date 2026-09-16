@@ -192,14 +192,7 @@ export default function StudentsIcebreakersPage() {
       "@type": "Organization",
       name: post.author,
     },
-    publisher: {
-      "@type": "Organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/favicon.ico",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: {

@@ -228,6 +228,37 @@
   color: var(--hk-accent-hover);
 }
 
+.quote {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--hk-accent);
+  background: rgba(231, 239, 233, 0.55);
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.quote p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--hk-ink);
+  font-style: italic;
+}
+
+.cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--hk-muted);
+}
+
+.cite a {
+  color: var(--hk-accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .snapshot {
   display: grid;
   gap: 1.5rem;
@@ -696,6 +727,28 @@
 
 .related a:hover {
   color: var(--hk-accent-hover);
+}
+
+.figure {
+  margin: 0 0 2.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--hk-lichen);
+  border: 1px solid var(--hk-line);
+}
+
+.figureImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figureCaption {
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--hk-muted);
 }
 
 @keyframes yg-rise {

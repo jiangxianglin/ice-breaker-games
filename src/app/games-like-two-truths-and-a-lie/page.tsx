@@ -8,16 +8,20 @@ export const revalidate = 86400;
 
 const title = "12 Games Like Two Truths and a Lie (2026)";
 const description =
-  "Looking for games like Two Truths and a Lie? Compare 12 get-to-know substitutes for work, class, and Zoom—with rules, timing, safer variations, and facilitator tips.";
+  "Compare 12 games like Two Truths and a Lie for work, class, and Zoom—with rules, timing, and safer no-lie options.";
 const canonical =
   "https://www.icebreakergames.site/games-like-two-truths-and-a-lie";
 const ogImage =
   "https://www.icebreakergames.site/img/games-like-two-truths-and-a-lie-hero.jpg";
 const ogImageAlt =
-  "Games like Two Truths and a Lie — diverse adults laughing during a storytelling icebreaker circle";
+  "games-like-two-truths-and-a-lie — diverse adults laughing during a storytelling icebreaker circle";
 const authorName = "Ice Breaker Games Editorial Team";
 const datePublished = "2026-08-11";
-const dateModified = "2026-08-29";
+const dateModified = "2026-09-16";
+
+const twoTruthsEntitySameAs = [
+  "https://en.wikipedia.org/wiki/Icebreaker_(facilitation)",
+] as const;
 
 const scenarioPicks = [
   {
@@ -55,7 +59,7 @@ const comparisonRows = [
   ["Six Word Memoirs", "Low–Med", "8–12 min", "Creative, low overshare risk"],
   ["Guess Who (trivia)", "Medium", "10–15 min", "Mystery + reveal like spotting a lie"],
   ["Common Ground", "Low", "8–15 min", "Connection without bluffing"],
-  ["Emoji Introduction", "Low", "5–8 min", "Visual / virtual-friendly"],
+  ["Emoji Introduction", "Low", "5–15 min", "Visual / virtual-friendly"],
   ["The Name Game", "Low", "8–12 min", "Name learning + light facts"],
   ["Story Swap", "Med–High", "10–15 min", "Deeper storytelling pairs"],
   ["Desert Island", "Low–Med", "8–12 min", "Imaginative preference sharing"],
@@ -187,7 +191,7 @@ const gameEntries = [
     name: "Emoji Introduction",
     bestFor: "A visual Two Truths substitute for virtual or hybrid rooms",
     players: "5–40",
-    time: "5–8 min",
+    time: "5–15 min",
     materials: "Chat or whiteboard",
     steps: [
       "Each person posts 2–3 emojis that represent them or their week.",
@@ -353,26 +357,31 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `${canonical}#article`,
     headline: title,
     description,
     image: [ogImage],
     datePublished,
     dateModified,
-    author: {
-      "@type": "Organization",
-      name: authorName,
-      url: "https://www.icebreakergames.site/about",
+    inLanguage: "en",
+    isAccessibleForFree: true,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonical,
+      url: canonical,
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
+    about: {
+      "@type": "Thing",
+      name: "Two truths and a lie",
+      description:
+        "A get-to-know party game where players share two true statements and one false statement.",
+      sameAs: [...twoTruthsEntitySameAs],
     },
-    mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+    author: { "@id": "https://www.icebreakergames.site/#organization" },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
+    isPartOf: {
+      "@id": "https://www.icebreakergames.site/#website",
+    },
   };
 
   return (
@@ -420,8 +429,8 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
               <Link href="/games/two-truths-and-a-lie" className={styles.ctaPrimary}>
                 How to play Two Truths and a Lie
               </Link>
-              <Link href="/games/emoji-introduction" className={styles.ctaGhost}>
-                Try Emoji Introduction
+              <Link href="/free-fun-icebreaker-games" className={styles.ctaGhost}>
+                Free fun icebreaker games
               </Link>
               <Link href="/games-like-human-bingo" className={styles.ctaGhost}>
                 Games like Human Bingo
@@ -438,6 +447,21 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
             <span aria-hidden="true"> · </span>
             <time dateTime={dateModified}>Updated {dateModified}</time>
           </p>
+
+          <section className={styles.guide}>
+            <h2>Quick answer: best games like Two Truths and a Lie</h2>
+            <p>
+              If the group likes light bluffing, keep classic{" "}
+              <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie</Link> or try{" "}
+              <Link href="/games/never-have-i-ever">Never Have I Ever</Link>. If people dislike
+              lying, switch to{" "}
+              <Link href="/games/two-truths-and-a-dream">Two Truths and a Dream</Link>,{" "}
+              <Link href="/games/this-or-that-questions">This or That</Link>, or chat-first{" "}
+              <Link href="/games/emoji-introduction">Emoji Introduction</Link>. Need a free,
+              low-cringe shortlist beyond this page? Browse{" "}
+              <Link href="/free-fun-icebreaker-games">free fun icebreaker games</Link>.
+            </p>
+          </section>
 
           <section className={styles.snapshot} aria-label="When these games work best">
             <div className={styles.snapshotItem}>
@@ -472,16 +496,57 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
               and optional depth, while changing the risk level (bluffing, opinion-only, or pure
               storytelling).
             </p>
+            <blockquote className={styles.quote}>
+              <p>
+                “Each participant makes three statements about themselves. Two statements are true,
+                and one is untrue. Other group members try to identify the falsehood.”
+              </p>
+              <cite className={styles.cite}>
+                —{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)” — Two truths and a lie
+                </a>
+              </cite>
+            </blockquote>
+            <p>
+              That classic mechanic is one option—not the only one. Facilitation libraries such as{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker collection
+              </a>{" "}
+              treat icebreakers as short, intentional openers before the real agenda. When people
+              dislike inventing a false fact, switch to aspiration or preference formats instead of
+              forcing the lie.
+            </p>
             <p>
               If you need the classic rules first, start with our{" "}
               <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie how-to</Link>. If the
               room dislikes lying, jump to{" "}
               <Link href="/games/two-truths-and-a-dream">Two Truths and a Dream</Link> or{" "}
-              <Link href="/games/six-word-memoirs">Six Word Memoirs</Link>. For virtual rooms, try the
-              in-page builder on{" "}
-              <Link href="/games/emoji-introduction">Emoji Introduction</Link>.
+              <Link href="/games/six-word-memoirs">Six Word Memoirs</Link>. For virtual rooms, use
+              chat-first formats from the comparison table below.
             </p>
           </section>
+
+          <figure className={styles.figure}>
+            <Image
+              src="/img/games-like-two-truths-and-a-lie-meeting.jpg"
+              alt="games-like-two-truths-and-a-lie — work team running a storytelling icebreaker in a meeting room"
+              width={1600}
+              height={900}
+              className={styles.figureImg}
+            />
+            <figcaption className={styles.figureCaption}>
+              Work meetings: prefer low-bluff substitutes when trust is still forming.
+            </figcaption>
+          </figure>
 
           <section className={styles.sectionHead}>
             <h2>Pick by scenario</h2>
@@ -619,10 +684,9 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
             <h3>For work &amp; adults</h3>
             <p>
               Keep prompts professional and optional. Strong picks:{" "}
-              <Link href="/games/this-or-that-questions">This or That</Link>,{" "}
-              <Link href="/games/emoji-introduction">Emoji Introduction</Link>,{" "}
-              <Link href="/games/common-ground">Common Ground</Link>, and themed Two Truths (“one
-              work fact, one hobby, one travel”). More meeting-ready openers live in{" "}
+              <Link href="/games/this-or-that-questions">This or That</Link>, Common Ground, and
+              themed Two Truths (“one work fact, one hobby, one travel”). More meeting-ready openers
+              live in{" "}
               <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
             </p>
             <h3>For classrooms &amp; teens</h3>
@@ -630,25 +694,34 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
               Favor pass options and school-safe examples. Try{" "}
               <Link href="/games/six-word-memoirs">Six Word Memoirs</Link>,{" "}
               <Link href="/games/the-name-game">The Name Game</Link>, or{" "}
-              <Link href="/games/would-you-rather">Would You Rather</Link>. Print ready worksheets from{" "}
+              <Link href="/games/would-you-rather">Would You Rather</Link>. Print ready worksheets
+              from{" "}
               <Link href="/blog/two-truths-and-a-lie-for-students-printable">
                 Two Truths and a Lie for students printable
               </Link>
-              . See also{" "}
-              <Link href="/icebreaker-games-for-high-school-students">
-                ice breaker games for high school students
-              </Link>{" "}
-              and{" "}
-              <Link href="/blog/icebreaker-games-for-students">icebreaker games for students</Link>.
+              .
             </p>
             <h3>For virtual teams</h3>
             <p>
               Simultaneous chat beats long mute/unmute loops. Use emoji intros, reaction polls, or
               breakout Story Swap. Browse the{" "}
-              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link> hub and{" "}
-              <Link href="/short-virtual-icebreakers">short virtual icebreakers</Link> when the
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link> hub when the
               agenda is tight.
             </p>
+
+            <figure className={styles.figure}>
+              <Image
+                src="/img/games-like-two-truths-and-a-lie-classroom.jpg"
+                alt="games-like-two-truths-and-a-lie — students in a circle choosing a low-risk Two Truths alternative"
+                width={1600}
+                height={900}
+                className={styles.figureImg}
+              />
+              <figcaption className={styles.figureCaption}>
+                Classrooms: offer a pass option and keep statements school-safe.
+              </figcaption>
+            </figure>
+
             <h3>Debrief questions</h3>
             <ul>
               <li>What surprised you about someone else’s story?</li>
@@ -671,10 +744,20 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
           <section className={styles.sources} aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources &amp; further reading</h2>
             <p>
-              Get-to-know formats work best with clear consent and time-boxing. These references
-              support inclusive facilitation:
+              Claims about the classic game definition and facilitation practice on this page are
+              grounded in the external references below. On-site guides expand the run cards.
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>{" "}
+                (includes the Two truths and a lie definition quoted above)
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"
@@ -682,7 +765,8 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
                   target="_blank"
                 >
                   SessionLab — Icebreaker library
-                </a>
+                </a>{" "}
+                (facilitation framing for short openers)
               </li>
               <li>
                 <Link href="/games/two-truths-and-a-lie">
@@ -694,34 +778,18 @@ export default async function GamesLikeTwoTruthsAndALiePage() {
                   Ice Breaker Games — Games like Human Bingo
                 </Link>
               </li>
-              <li>
-                <Link href="/emoji-icebreaker-games">
-                  Ice Breaker Games — Emoji icebreaker games
-                </Link>
-              </li>
             </ol>
           </section>
 
           <section className={styles.related}>
             <h2>Related guides</h2>
             <p>
-              Keep exploring games like Two Truths and a Lie with{" "}
+              Keep exploring with{" "}
               <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie rules</Link>,{" "}
-              <Link href="/blog/two-truths-and-a-lie-for-students-printable">
-                Two Truths printable for students
-              </Link>
-              , <Link href="/games/two-truths-and-a-dream">Two Truths and a Dream</Link>,{" "}
-              <Link href="/games/emoji-introduction">Emoji Introduction</Link>,{" "}
               <Link href="/games-like-human-bingo">games like Human Bingo</Link>,{" "}
-              <Link href="/games-like-the-human-knot">games like the Human Knot</Link>,{" "}
               <Link href="/icebreaker-games-for-meetings">meeting icebreakers</Link>,{" "}
-              <Link href="/icebreaker-games-for-teens">ice breaker games for teens</Link>,{" "}
-              <Link href="/icebreaker-games-for-small-groups">
-                ice breaker games for small groups
-              </Link>
-              ,{" "}
-              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>, and the{" "}
-              <Link href="/games">full games library</Link>.
+              <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>, and{" "}
+              <Link href="/free-fun-icebreaker-games">free fun icebreaker games</Link>.
             </p>
           </section>
         </div>

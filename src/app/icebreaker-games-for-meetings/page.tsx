@@ -359,15 +359,7 @@ export default async function IcebreakerGamesForMeetingsPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -457,6 +449,45 @@ export default async function IcebreakerGamesForMeetingsPage() {
                 or people need quiet focus before a hard decision.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why icebreaker games for meetings work</h2>
+            <p>
+              Work meetings need warmth without wasting the clock. Structured openers settle the room so people can contribute sooner.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Meeting icebreakers earn trust when they are brief, optional, and clearly tied to starting the working agenda—not entertainment that crowds out decisions.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a> and <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Facilitation practice—including formats catalogued by{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab
+              </a>
+              —treats icebreakers as intentional openers before the real work begins.
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -587,6 +618,15 @@ export default async function IcebreakerGamesForMeetingsPage() {
               workplace cluster pages:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"

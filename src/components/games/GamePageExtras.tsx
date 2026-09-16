@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { GamePageExtrasContent } from "@/data/game-page-extras";
 import { getGamePageExtras } from "@/data/game-page-extras";
 import styles from "./game-detail.module.css";
@@ -7,6 +8,39 @@ type GamePageExtrasProps = {
   /** When true, skip FAQ block (e.g. emoji already has FAQ in GameDetail) */
   skipFaq?: boolean;
 };
+
+function QuoteBlock({
+  quote,
+}: {
+  quote: NonNullable<GamePageExtrasContent["quote"]>;
+}) {
+  const links = quote.citeLinks;
+  return (
+    <blockquote className={styles.quote}>
+      <p>{quote.text}</p>
+      <cite className={styles.cite}>
+        — {quote.citeLead ?? "Ice Breaker Games Editorial Team"}{" "}
+        {links.map((link, index) => {
+          let sep = "";
+          if (index > 0) {
+            if (links.length === 2) sep = " and ";
+            else if (index === links.length - 1) sep = ", and ";
+            else sep = ", ";
+          }
+          return (
+            <span key={link.href}>
+              {sep}
+              <a href={link.href} rel="noopener noreferrer" target="_blank">
+                {link.label}
+              </a>
+            </span>
+          );
+        })}
+        .
+      </cite>
+    </blockquote>
+  );
+}
 
 function ExtrasBody({
   extras,
@@ -27,6 +61,24 @@ function ExtrasBody({
               </li>
             ))}
           </ol>
+          {extras.quote ? <QuoteBlock quote={extras.quote} /> : null}
+          {extras.quote && extras.sources?.some((s) => s.external) ? (
+            <p className={styles.citeInline}>
+              Compare related short openers in{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab&apos;s icebreaker library
+              </a>
+              .
+            </p>
+          ) : null}
+        </section>
+      ) : extras.quote ? (
+        <section className={styles.section}>
+          <QuoteBlock quote={extras.quote} />
         </section>
       ) : null}
 
@@ -77,6 +129,30 @@ function ExtrasBody({
           </div>
         </section>
       ) : null}
+
+      {extras.sources && extras.sources.length > 0 ? (
+        <section className={styles.sources} aria-labelledby="game-sources-heading">
+          <h2 id="game-sources-heading">Sources &amp; further reading</h2>
+          {extras.sourcesIntro ? <p>{extras.sourcesIntro}</p> : null}
+          <ol>
+            {extras.sources.map((source) => (
+              <li key={source.href}>
+                {source.external ? (
+                  <a
+                    href={source.href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {source.label}
+                  </a>
+                ) : (
+                  <Link href={source.href}>{source.label}</Link>
+                )}
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
     </>
   );
 }
@@ -90,6 +166,8 @@ export function GamePageExtras({ slug, skipFaq }: GamePageExtrasProps) {
     (extras.variations && extras.variations.length > 0) ||
     (extras.rulesTiming && extras.rulesTiming.length > 0) ||
     Boolean(extras.adultsWork) ||
+    Boolean(extras.quote) ||
+    (extras.sources && extras.sources.length > 0) ||
     (!skipFaq && extras.faqs.length > 0);
 
   if (!hasBody) return null;

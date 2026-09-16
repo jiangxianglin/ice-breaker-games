@@ -171,6 +171,45 @@ export default async function NameGameIcebreakersPage() {
             <li>4. Repeat names as a group, but help quickly if someone forgets.</li>
             <li>5. Close by connecting the activity to the session purpose.</li>
           </ol>
+          <blockquote className="my-5 border-l-[3px] border-emerald-600 bg-emerald-50/70 py-4 pl-5 pr-4 not-italic dark:bg-emerald-950/30">
+            <p className="m-0 text-[1.05rem] italic leading-relaxed text-foreground">
+              Name games work as icebreakers when turns stay short, mistakes are normalized, and nobody is punished for
+              forgetting—learning names should feel safer, not like a memory test.
+            </p>
+            <cite className="mt-3 block text-sm not-italic text-muted-foreground">
+              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                Wikipedia, “Icebreaker (facilitation)”
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                SessionLab’s icebreaker library
+              </a>
+              .
+            </cite>
+          </blockquote>
+          <p className="text-sm text-muted-foreground">
+            Compare related short openers in{" "}
+            <a
+              href="https://www.sessionlab.com/library/icebreaker"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+            >
+              SessionLab’s icebreaker library
+            </a>
+            .
+          </p>
         </section>
 
         <section className="mb-10">
@@ -234,11 +273,52 @@ export default async function NameGameIcebreakersPage() {
           </p>
         </section>
 
-        <section className="prose max-w-none">
+        <section className="prose max-w-none mb-10">
           <h2>Related icebreaker guides</h2>
           <p>
             Start with <Link href="/games/the-name-game">The Name Game</Link>, then explore <Link href="/games/blind-name-tag">Blind Name Tag</Link>, <Link href="/games/alliterative-name-game">Alliterative Name Game</Link>, <Link href="/icebreaker-games-for-teens">ice breaker games for teens</Link>, <Link href="/icebreaker-games-for-meetings">meeting icebreakers</Link>, and <Link href="/games">the full games library</Link>.
           </p>
+        </section>
+
+        <section className="mb-10 border-t pt-7" aria-labelledby="sources-heading">
+          <h2 id="sources-heading" className="mb-3 text-2xl font-semibold">
+            Sources &amp; further reading
+          </h2>
+          <p className="mb-4 text-muted-foreground">
+            Facilitation framing below draws on established icebreaker references:
+          </p>
+          <ol className="list-decimal space-y-2 pl-5 text-sm">
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                Wikipedia — Icebreaker (facilitation)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                SessionLab — Icebreaker library
+              </a>
+            </li>
+            <li>
+              <Link href="/icebreaker-games-for-teens" className="font-semibold">
+                Ice Breaker Games — Ice breaker games for teens
+              </Link>
+            </li>
+            <li>
+              <Link href="/icebreaker-games-for-youth-group" className="font-semibold">
+                Ice Breaker Games — Ice breaker games for youth group
+              </Link>
+            </li>
+          </ol>
         </section>
       </main>
     </>

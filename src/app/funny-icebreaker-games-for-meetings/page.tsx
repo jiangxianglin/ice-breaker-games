@@ -348,15 +348,7 @@ export default async function FunnyIcebreakerGamesForMeetingsPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -446,6 +438,45 @@ export default async function FunnyIcebreakerGamesForMeetingsPage() {
                 you only have two minutes before a decision.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why funny icebreakers for meetings work</h2>
+            <p>
+              Shared laughter lowers tension faster than forced small talk—if nobody becomes the punchline.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Funny meeting openers land when the humor targets shared situations—not people—and when the round stays short enough that laughter hands off to the agenda.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a> and <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Keep prompts work-safe and passable, following the same inclusion pattern used in libraries like{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker collection
+              </a>
+              .
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -577,6 +608,15 @@ export default async function FunnyIcebreakerGamesForMeetingsPage() {
               references support both:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"

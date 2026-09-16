@@ -342,15 +342,7 @@ export default async function VirtualIcebreakerGamesPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -443,6 +435,51 @@ export default async function VirtualIcebreakerGamesPage() {
                 have two minutes before a decision.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why virtual icebreaker games work</h2>
+            <p>
+              Remote meetings lose hallway energy. Short, inclusive warm-ups restore shared attention without turning the call into a long go-around.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Structured, time-boxed openers help remote teams recreate the connection that no longer happens in hallways—without forcing long personal monologues.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://hbr.org/topic/subject/remote-work"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Harvard Business Review (Remote Work)
+                </a>, <a
+                  href="https://sloanreview.mit.edu/tag/remote-work/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  MIT Sloan Management Review
+                </a>, and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Chat-first formats from facilitation libraries such as{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker collection
+              </a>{" "}
+              scale better on Zoom than long unmute queues—especially when you keep rounds under twelve minutes.
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -577,6 +614,24 @@ export default async function VirtualIcebreakerGamesPage() {
               support both:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://hbr.org/topic/subject/remote-work"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Harvard Business Review — Remote Work
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://sloanreview.mit.edu/article/the-surprising-benefits-of-work-friends/"

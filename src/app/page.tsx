@@ -12,9 +12,11 @@ export const revalidate = 86400;
 
 const ogImage = "https://www.icebreakergames.site/img/home-hero.jpg";
 
-const title = "Free Ice Breaker Games for Meetings, Work & Teams (2026)";
+// Homepage targets ONE head term only: "ice breaker games".
+// Scene keywords (meetings / work / classroom / virtual) live on dedicated hub pages.
+const title = "Free Ice Breaker Games — 100+ Rules & Filters (2026)";
 const description =
-  "100+ free ice breaker games with clear rules, time, and group size. Pick activities for meetings, Zoom, work, and classrooms—no signup required.";
+  "Browse 100+ free ice breaker games with clear rules, time, group size, and materials. Filter by occasion and run one today—no signup required.";
 
 export const metadata: Metadata = {
   title,
@@ -54,7 +56,7 @@ export default async function Home() {
     name: "Ice Breaker Games",
     url: "https://www.icebreakergames.site",
     description:
-      "Find the right icebreaker game by setting, group size, time, and energy level. Browse free activities for meetings, work, virtual teams, and classrooms.",
+      "Free ice breaker games with clear rules, time, group size, and materials. Filter by occasion and facilitate with confidence.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://www.icebreakergames.site/games?q={search_term_string}",
@@ -142,17 +144,17 @@ export default async function Home() {
         <div className={styles.heroScrim} aria-hidden="true" />
         <div className={styles.heroInner}>
           <p className={styles.brand}>Ice Breaker Games</p>
-          <h1 className={styles.heroTitle}>Icebreaker games for meetings, work & classrooms</h1>
+          <h1 className={styles.heroTitle}>Free ice breaker games</h1>
           <p className={styles.heroLead}>
-            Find free ice breaker games by setting, group size, and time—each with rules,
-            materials, and facilitation tips you can run today.
+            100+ free ice breaker games with step-by-step rules, time estimates, group size,
+            and facilitation tips—filter by occasion and run one today.
           </p>
           <div className={styles.ctaRow}>
             <Link href="/games" className={styles.ctaPrimary}>
               Browse all games
             </Link>
-            <Link href="/icebreaker-games-for-meetings" className={styles.ctaGhost}>
-              Meeting icebreakers
+            <Link href="/best-icebreaker-games" className={styles.ctaGhost}>
+              Best icebreaker games
             </Link>
             <Link href="/games-like-human-bingo" className={styles.ctaGhost}>
               Games like Human Bingo
@@ -665,7 +667,7 @@ export default async function Home() {
           <h2>Ready for your next icebreaker?</h2>
           <p>
             Browse free ice breaker games with clear rules, materials, and facilitation tips—then
-            pick one that fits your meeting, classroom, or team.
+            pick one that fits your group and run it today.
           </p>
           <Link href="/games" className={styles.ctaPrimary}>
             Browse all games

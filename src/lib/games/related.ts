@@ -26,10 +26,16 @@ const CURATED_RELATED: Record<string, string[]> = {
     "find-your-match",
   ],
   "emoji-introduction": [
-    "portrait-gallery",
-    "the-name-game",
-    "picture-sharing",
     "emoji-check-in",
+    "one-word-check-in",
+    "weather-check-in",
+    "chat-waterfall",
+  ],
+  "weather-check-in": [
+    "one-word-check-in",
+    "emoji-check-in",
+    "the-check-in",
+    "chat-waterfall",
   ],
   "the-name-game": [
     "chainlink",

@@ -356,15 +356,7 @@ export default async function IcebreakerGamesForTeensPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -457,6 +449,45 @@ export default async function IcebreakerGamesForTeensPage() {
                 personal, or physical games are not adapted for comfort and safety.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why icebreaker games for teens work</h2>
+            <p>
+              Game structure gives teens a shared task and a finish line—often safer than open-ended “share something about yourself.”
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Icebreaker games for teens work when rules are clear, turns are short, and everyone can pass—so energy rises without awkward oversharing.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Established facilitation collections such as{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker library
+              </a>{" "}
+              frame these activities as brief openers before class, club, or camp agendas.
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -594,6 +625,15 @@ export default async function IcebreakerGamesForTeensPage() {
               student/youth cluster pages:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"

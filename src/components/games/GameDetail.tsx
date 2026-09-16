@@ -5,6 +5,7 @@ import { EmojiIntroductionPlay } from "./EmojiIntroductionPlay";
 import { GameActions } from "./GameActions";
 import { GamePageExtras } from "./GamePageExtras";
 import { RelatedGames } from "./RelatedGames";
+import { getGamePageExtras } from "@/data/game-page-extras";
 import { getGameHeroPath, getGameScenePath } from "@/lib/games/media";
 import type { GameDetailProps } from "@/types/game";
 import styles from "./game-detail.module.css";
@@ -16,13 +17,17 @@ function truncateLead(text: string, max = 180) {
 }
 
 export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
+  const extras = getGamePageExtras(game.slug);
   const materialsList = game.materials
     ? game.materials.split("\n").filter(Boolean)
     : [];
   const stepsList = game.steps ? game.steps.split("\n").filter(Boolean) : [];
+  const showBasicSteps =
+    stepsList.length > 0 && !(extras?.howToSteps && extras.howToSteps.length > 0);
   const heroSrc = getGameHeroPath(game);
   const sceneSrc = getGameScenePath(game);
   const lead = truncateLead(game.description);
+  const heroAlt = `${game.slug} — ${game.title} icebreaker game, group playing together`;
 
   return (
     <div className={styles.page}>
@@ -30,7 +35,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
         <div className={styles.heroMedia}>
           <Image
             src={heroSrc}
-            alt={`${game.title} icebreaker game — group playing together`}
+            alt={heroAlt}
             fill
             priority
             sizes="100vw"
@@ -152,18 +157,61 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               The Name Game is a simple name game icebreaker for helping a new group learn names quickly. Each person repeats the names of everyone who went before them, then adds their own name with a short memory cue such as a role, adjective, or hobby.
               It works well for meetings, classrooms, and workshops because it is structured, low-pressure, and gets everyone speaking early without needing materials.
             </p>
-          ) : game.title === "Chainlink" ? (
+          ) : game.slug === "chainlink" ? (
             <p>
-              Chainlink is an introduction chain where each person links a shared trait with the previous speaker, then adds a new fact—building memory and connection across the room.
+              Chainlink is an introduction chain: each person names a shared trait with the previous speaker, then adds a new fact. The spoken link—not reciting the whole circle—is what keeps the pace workable for 8–40 people.
+              Facilitation libraries such as{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab&apos;s icebreaker collection
+              </a>{" "}
+              and primers like{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Wikipedia&apos;s icebreaker (facilitation) overview
+              </a>{" "}
+              emphasize short, structured openers that build connection without long monologues.
               After the chain, follow with{" "}
               <Link href="/games/the-name-game">how to play the name game</Link>{" "}
               so faces stick to names, or browse more{" "}
               <Link href="/name-game-icebreakers">name game icebreakers</Link>.
             </p>
-          ) : game.title === "Emoji Introduction" ? (
+          ) : game.slug === "emoji-introduction" ? (
             <p>
-              Emoji Introduction is a low-pressure emoji icebreaker where each person introduces themselves using two or three emojis instead of a long verbal introduction.
+              Emoji Introduction is a low-pressure opener where each person shares 2–3 emojis instead of a long verbal introduction.
               It works especially well for virtual meetings, online classrooms, and hybrid teams because people can answer in chat first, then explain only as much as they feel comfortable sharing.
+            </p>
+          ) : game.slug === "weather-check-in" ? (
+            <p>
+              Weather Check-In is a 3–8 minute sentiment check: each person describes how they feel as weather (sunny, foggy, stormy, partly cloudy).
+              It gives facilitators a fast read of the room without forcing long personal stories—especially useful for remote and hybrid meetings before a full agenda.
+              Guidance on remote connection from{" "}
+              <a
+                href="https://hbr.org/topic/subject/remote-work"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Harvard Business Review&apos;s Remote Work topic
+              </a>{" "}
+              and short openers in{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab&apos;s icebreaker library
+              </a>{" "}
+              points the same way: keep warm-ups structured and time-boxed.
+              For a single-word version, see{" "}
+              <Link href="/games/one-word-check-in">One Word Check-In</Link>
+              ; for emoji mood shares, try{" "}
+              <Link href="/games/emoji-check-in">Emoji Check-In</Link>.
             </p>
           ) : game.title === "Name That Movie Quote" ? (
             <p>
@@ -250,6 +298,43 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
                 <li>One word for what you need from this meeting</li>
                 <li>One word for your mood</li>
                 <li>One word for your bandwidth</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "weather-check-in" && (
+            <div className={styles.tipBox}>
+              <h4>Weather examples</h4>
+              <ul>
+                <li>Mostly sunny with a chance of email thunder</li>
+                <li>Foggy but clearing after coffee</li>
+                <li>Light drizzle—tired but okay</li>
+                <li>Partly cloudy with bright spots</li>
+                <li>Windy—lots of context-switching today</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "chainlink" && (
+            <div className={styles.tipBox}>
+              <h4>Facilitator tips</h4>
+              <ul>
+                <li>Require an explicit shared trait before the new fact</li>
+                <li>Keep facts short and work-safe (hobbies, tools, places)</li>
+                <li>Split above ~15 people into sub-circles of 8–12</li>
+                <li>Debrief listening, not who remembered the most</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "emoji-introduction" && (
+            <div className={styles.tipBox}>
+              <h4>Facilitator tips</h4>
+              <ul>
+                <li>Ask for 2–3 emojis, not a long string</li>
+                <li>Model a vivid, work-safe example first</li>
+                <li>Prefer chat-first for hybrid and large rooms</li>
+                <li>Allow a pass; celebrate curiosity over perfect guesses</li>
               </ul>
             </div>
           )}
@@ -771,12 +856,12 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </div>
           )}
 
-          {game.title === "Emoji Introduction" && (
+          {game.slug === "emoji-introduction" && (
             <div className="flex justify-center my-6">
               <div className="relative overflow-hidden rounded-lg max-w-2xl w-full">
                 <img
                   src="/img/EmojiIntroduction-GameplayScene.png"
-                  alt="Emoji Introduction | Ice Breaker Games - Gameplay Scene"
+                  alt="emoji-introduction — participants sharing emoji self-intros in a virtual meeting"
                   className="object-contain w-full h-auto"
                 />
               </div>
@@ -795,7 +880,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           </section>
         )}
 
-        {stepsList.length > 0 && (
+        {showBasicSteps && (
           <section className={styles.section}>
             <h2>How to Play</h2>
             <ol>
@@ -1020,70 +1105,6 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           </div>
         )}
 
-        {game.title === "Emoji Introduction" && (
-          <div>
-            <h2>Frequently Asked Questions</h2>
-            <div className={styles.faqList}>
-              <details className={styles.faqItem}>
-                <summary>
-                  How do you play Emoji Introduction?
-                </summary>
-                <p>
-                  Participants think of 3-5 emojis that represent themselves. Each person then posts their emojis in the chat or shares their screen. The group tries to guess what each emoji represents, and the person explains the meaning behind their choices. This continues until everyone has shared.
-                </p>
-              </details>
-              <details className={styles.faqItem}>
-                <summary>
-                  How many people can play Emoji Introduction?
-                </summary>
-                <p>
-                  Emoji Introduction works best with 5-30 people. For smaller groups of 5-10, everyone can share and discuss each person&apos;s emojis in detail. For larger groups of 10-30, you may want to limit sharing time or use breakout rooms to keep the activity moving.
-                </p>
-              </details>
-              <details className={styles.faqItem}>
-                <summary>
-                  What materials do you need for Emoji Introduction?
-                </summary>
-                <p>
-                  You need a chat function in your video conferencing tool or a shared digital space where participants can post their emojis. If playing in person, you can use paper and markers for participants to write or draw their emojis. That&apos;s it - no special materials required!
-                </p>
-              </details>
-              <details className={styles.faqItem}>
-                <summary>
-                  How long does Emoji Introduction take?
-                </summary>
-                <p>
-                  Emoji Introduction typically takes 10-15 minutes, depending on group size. With a small group of 5-8 people, you can spend 1-2 minutes on each person for a total of 10-15 minutes. Larger groups may need to move faster, keeping introductions to 30-60 seconds each.
-                </p>
-              </details>
-              <details className={styles.faqItem}>
-                <summary>
-                  What are good emojis to use for self-introduction?
-                </summary>
-                <p>
-                  Choose emojis that represent your hobbies, interests, or personality. For example: 🏋️ for fitness lovers, 📚 for readers, 🎮 for gamers, 🍕 for foodies, 🐕 for pet owners, ✈️ for travelers. Try to pick emojis that spark conversation and reveal something meaningful about you.
-                </p>
-              </details>
-              <details className={styles.faqItem}>
-                <summary>
-                  Can Emoji Introduction be used in classroom settings?
-                </summary>
-                <p>
-                  Absolutely! Emoji Introduction is perfect for online classrooms, virtual training sessions, and hybrid learning environments. It&apos;s especially great for getting students comfortable with each other at the start of a new semester or course. Teachers can also use it as a fun way to check understanding of concepts.
-                </p>
-              </details>
-              <details className={styles.faqItem}>
-                <summary>
-                  What tips make Emoji Introduction more engaging?
-                </summary>
-                <p>
-                  First, create a welcoming environment where everyone feels comfortable participating. Give participants time to think about their emoji choices before sharing. Encourage creative emoji combinations rather than obvious ones. Allow discussion after each reveal. And follow up with a brief reflection to reinforce the connections made during the game.
-                </p>
-              </details>
-            </div>
-          </div>
-        )}
-
         {game.title === "Emoji Check-In" && (
           <div>
             <h3>Frequently Asked Questions</h3>
@@ -1169,10 +1190,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           </section>
         )}
 
-        <GamePageExtras
-          slug={game.slug}
-          skipFaq={game.slug === "emoji-introduction"}
-        />
+        <GamePageExtras slug={game.slug} />
 
         <RelatedGames
           items={relatedGames}

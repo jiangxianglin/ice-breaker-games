@@ -355,15 +355,7 @@ export default async function ShortVirtualIcebreakersPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": canonical,
@@ -462,6 +454,45 @@ export default async function ShortVirtualIcebreakersPage() {
                 the agenda is already tight.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why short virtual icebreakers work</h2>
+            <p>
+              Tight agendas punish sprawling warm-ups. Short virtual icebreakers keep inclusion high while protecting the working meeting.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Five-minute remote openers work best when they are simultaneous, optional, and clearly time-boxed—so the agenda stays intact.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://hbr.org/topic/subject/remote-work"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Harvard Business Review (Remote Work)
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              That is why chat waterfall and emoji check-ins beat long personal monologues when you only have a few minutes. Browse more formats in{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker library
+              </a>
+              .
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -577,6 +608,15 @@ export default async function ShortVirtualIcebreakersPage() {
               facilitation libraries:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://hbr.org/topic/subject/remote-work"

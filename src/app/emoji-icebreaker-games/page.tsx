@@ -221,9 +221,45 @@ export default async function EmojiIcebreakerGamesPage() {
             <li>Transition to the meeting purpose: energy, focus, or connection.</li>
           </ol>
 
+          <blockquote className="my-5 border-l-[3px] border-emerald-600 bg-emerald-50/70 py-4 pl-5 pr-4 not-italic dark:bg-emerald-950/30">
+            <p className="m-0 text-[1.05rem] italic leading-relaxed text-foreground">
+              Chat-first emoji openers help remote teams recreate hallway-level connection without forcing long personal
+              monologues—especially when answers stay simultaneous and optional.
+            </p>
+            <cite className="mt-3 block text-sm not-italic text-muted-foreground">
+              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              <a
+                href="https://hbr.org/topic/subject/remote-work"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                Harvard Business Review (Remote Work)
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                SessionLab’s icebreaker library
+              </a>
+              .
+            </cite>
+          </blockquote>
+
           <h2>Facilitator notes</h2>
           <p>
-            Keep the prompt simple and give people permission to pass. For remote teams, chat-first participation helps introverted participants join without being called on. If emojis may not display consistently, allow short words as an alternative.
+            Keep the prompt simple and give people permission to pass. For remote teams, chat-first participation helps introverted participants join without being called on. If emojis may not display consistently, allow short words as an alternative. More chat-scale formats live in{" "}
+            <a
+              href="https://www.sessionlab.com/library/icebreaker"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              SessionLab’s icebreaker library
+            </a>
+            .
           </p>
         </section>
 
@@ -238,11 +274,52 @@ export default async function EmojiIcebreakerGamesPage() {
           ))}
         </section>
 
-        <section className="prose max-w-none">
+        <section className="prose max-w-none mb-10">
           <h2>Related icebreaker guides</h2>
           <p>
             Continue with <Link href="/games/emoji-introduction">Emoji Introduction</Link>, <Link href="/games/emoji-check-in">Emoji Check-In</Link>, <Link href="/virtual-icebreaker-games">Virtual Icebreaker Games</Link>, or <Link href="/icebreaker-games-for-meetings">Icebreaker Games for Meetings</Link>.
           </p>
+        </section>
+
+        <section className="mb-10 border-t pt-7" aria-labelledby="sources-heading">
+          <h2 id="sources-heading" className="mb-3 text-2xl font-semibold">
+            Sources &amp; further reading
+          </h2>
+          <p className="mb-4 text-muted-foreground">
+            Remote inclusion guidance draws on remote-work topic hubs and facilitation libraries:
+          </p>
+          <ol className="list-decimal space-y-2 pl-5 text-sm">
+            <li>
+              <a
+                href="https://hbr.org/topic/subject/remote-work"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                Harvard Business Review — Remote Work
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                SessionLab — Icebreaker library
+              </a>
+            </li>
+            <li>
+              <Link href="/virtual-icebreaker-games" className="font-semibold">
+                Ice Breaker Games — Virtual icebreaker games
+              </Link>
+            </li>
+            <li>
+              <Link href="/short-virtual-icebreakers" className="font-semibold">
+                Ice Breaker Games — Short virtual icebreakers
+              </Link>
+            </li>
+          </ol>
         </section>
       </main>
     </>

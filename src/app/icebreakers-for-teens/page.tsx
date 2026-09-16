@@ -319,15 +319,7 @@ export default async function IcebreakersForTeensPage() {
       name: authorName,
       url: "https://www.icebreakergames.site/about",
     },
-    publisher: {
-      "@type": "Organization",
-      "@id": "https://www.icebreakergames.site/#organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/home-hero.jpg",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
   };
 
@@ -420,6 +412,45 @@ export default async function IcebreakersForTeensPage() {
                 is not adapted for comfort and safety.
               </p>
             </div>
+          </section>
+
+          <section className={styles.guide}>
+            <h2>Why icebreakers for teens work</h2>
+            <p>
+              Teens read social risk quickly. The right opener lowers that risk without putting anyone on a spotlight they did not choose.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Teen-friendly icebreakers succeed when participation is optional, prompts stay age-appropriate, and formats match energy—quiet options for shy students, play before talk for high-energy rooms.
+              </p>
+              <cite className={styles.cite}>
+                — {authorName}, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Facilitation libraries such as{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker collection
+              </a>{" "}
+              treat openers as short, intentional warm-ups—not forced oversharing—before the real agenda.
+            </p>
           </section>
 
           <section className={styles.sectionHead}>
@@ -559,6 +590,15 @@ export default async function IcebreakersForTeensPage() {
               student cluster pages:
             </p>
             <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
               <li>
                 <a
                   href="https://www.sessionlab.com/library/icebreaker"

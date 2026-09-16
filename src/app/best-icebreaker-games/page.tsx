@@ -140,14 +140,7 @@ export default async function BestIcebreakerGamesPage() {
       "@type": "Organization",
       name: "Ice Breaker Games",
     },
-    publisher: {
-      "@type": "Organization",
-      name: "Ice Breaker Games",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.icebreakergames.site/img/Hero.png",
-      },
-    },
+    publisher: { "@id": "https://www.icebreakergames.site/#organization" },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": canonical,
@@ -225,20 +218,97 @@ export default async function BestIcebreakerGamesPage() {
           </div>
         </section>
 
-        <section className="prose max-w-none">
+        <section className="prose max-w-none mb-10">
           <h2>How to choose the best icebreaker games</h2>
           <p>
             Start by choosing an activity that matches your time, group size, and comfort level. For professional settings,
             prefer prompts that are light and optional. For large groups, pick games that scale and avoid long turns.
           </p>
+          <blockquote className="my-5 border-l-[3px] border-emerald-600 bg-emerald-50/70 py-4 pl-5 pr-4 not-italic dark:bg-emerald-950/30">
+            <p className="m-0 text-[1.05rem] italic leading-relaxed text-foreground">
+              Icebreakers work best as short, intentional openers—clear rules, optional depth, and a handoff to the real
+              agenda—rather than forced oversharing.
+            </p>
+            <cite className="mt-3 block text-sm not-italic text-muted-foreground">
+              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                Wikipedia, “Icebreaker (facilitation)”
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                SessionLab’s icebreaker library
+              </a>
+              .
+            </cite>
+          </blockquote>
           <p>
-            If you want a faster way to browse, use the filters on the main games page to narrow by time, difficulty, and type.
+            Facilitation libraries such as{" "}
+            <a
+              href="https://www.sessionlab.com/library/icebreaker"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              SessionLab’s icebreaker collection
+            </a>{" "}
+            catalog time-boxed formats you can adapt. If you want a faster way to browse, use the filters on the main games
+            page to narrow by time, difficulty, and type.
           </p>
           <p>
             <Link href="/games" className="font-semibold">
               Browse and filter all icebreaker games
             </Link>
           </p>
+        </section>
+
+        <section className="mb-10 border-t pt-7" aria-labelledby="sources-heading">
+          <h2 id="sources-heading" className="mb-3 text-2xl font-semibold">
+            Sources &amp; further reading
+          </h2>
+          <p className="mb-4 text-muted-foreground">
+            Timing and inclusion guidance draws on established facilitation references:
+          </p>
+          <ol className="list-decimal space-y-2 pl-5 text-sm">
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                Wikipedia — Icebreaker (facilitation)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="font-semibold text-emerald-700 underline underline-offset-4 dark:text-emerald-400"
+              >
+                SessionLab — Icebreaker library
+              </a>
+            </li>
+            <li>
+              <Link href="/icebreaker-games-for-meetings" className="font-semibold">
+                Ice Breaker Games — Ice breaker games for meetings
+              </Link>
+            </li>
+            <li>
+              <Link href="/free-fun-icebreaker-games" className="font-semibold">
+                Ice Breaker Games — Free fun icebreaker games
+              </Link>
+            </li>
+          </ol>
         </section>
       </div>
     </>

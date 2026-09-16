@@ -412,6 +412,45 @@ export default async function IcebreakerGamesForYouthGroupPage() {
             </div>
           </section>
 
+          <section className={styles.guide}>
+            <h2>Why icebreaker games for youth group work</h2>
+            <p>
+              Youth nights mix regulars and first-timers. A structured game creates shared momentum before small-group talk.
+            </p>
+            <blockquote className={styles.quote}>
+              <p>
+                Youth-group icebreakers succeed when newcomers can join without cliques, prompts stay clean, and high-energy games have a clear stop before discussion.
+              </p>
+              <cite className={styles.cite}>
+                — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia, “Icebreaker (facilitation)”
+                </a> and <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab’s icebreaker library
+                </a>.
+              </cite>
+            </blockquote>
+            <p>
+              Facilitation libraries such as{" "}
+              <a
+                href="https://www.sessionlab.com/library/icebreaker"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SessionLab’s icebreaker collection
+              </a>{" "}
+              treat these as short openers—not the whole night.
+            </p>
+          </section>
+
           <section className={styles.sectionHead}>
             <h2>Best ice breaker games for youth group</h2>
             <p>
@@ -527,6 +566,43 @@ export default async function IcebreakerGamesForYouthGroupPage() {
                 <p>{item.a}</p>
               </div>
             ))}
+          </section>
+
+          <section className={styles.sources} aria-labelledby="sources-heading">
+            <h2 id="sources-heading">Sources &amp; further reading</h2>
+            <p>
+              Timing and inclusion guidance draws on established facilitation libraries and our teen/youth cluster pages:
+            </p>
+            <ol>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Wikipedia — Icebreaker (facilitation)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sessionlab.com/library/icebreaker"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SessionLab — Icebreaker library
+                </a>
+              </li>
+              <li>
+                <Link href="/icebreaker-games-for-teens">
+                  Ice Breaker Games — Ice breaker games for teens
+                </Link>
+              </li>
+              <li>
+                <Link href="/icebreaker-games-for-church-youth-group">
+                  Ice Breaker Games — Church youth group icebreakers
+                </Link>
+              </li>
+            </ol>
           </section>
 
           <section className={styles.related}>

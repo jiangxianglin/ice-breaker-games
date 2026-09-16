@@ -83,6 +83,7 @@ export const GAME_SLUGS = [
   "two-truths-and-a-lie",
   "unique-and-shared",
   "virtual-background-story",
+  "weather-check-in",
   "what-are-you-bringing-to-the-meeting",
   "whats-on-your-phone-christmas-edition",
   "wheel-of-fortune-introductions",
