@@ -51,6 +51,18 @@ IMAGE_PROMPTS.md
 knowledge.md
 **/knowledge.md
 
+# SEO ops / content plans — local only, do not push to GitHub
+/seo/
+../seo/
+*优化指南*.md
+*adsense*.md
+*-content-depth-plan.md
+*-depth-plan.md
+content-map.csv
+published-content.csv
+product-knowledge.md
+style-guide.md
+
 # summary and documentation files (internal use only)
 *_SUMMARY.md
 *_FEATURE.md
@@ -58,6 +70,7 @@ knowledge.md
 *_OPTIMIZATION.md
 *_INTEGRATION.md
 *_FIX.md
+
 
 # database files
 seed-games.sql
