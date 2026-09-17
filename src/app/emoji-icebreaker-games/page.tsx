@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const revalidate = 86400;
 
-const title = "Emoji Icebreaker Games and Check-In Activities for Meetings";
+const title = "Emoji Icebreaker Games | Meeting Check-Ins";
 const description =
-  "Use emoji icebreaker games for quick meeting check-ins, remote team warmups, classrooms, and low-pressure introductions. Includes prompts, rules, and facilitation tips.";
+  "Emoji icebreaker games for meeting check-ins and remote warmups—introductions, mood polls, and chat prompts with rules and facilitation tips.";
 const canonical = "https://www.icebreakergames.site/emoji-icebreaker-games";
 
 const targetSlugs = [

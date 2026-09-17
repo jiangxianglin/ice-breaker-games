@@ -88,8 +88,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: "Icebreaker Games for Adults: Large Groups",
-      description: "Practical icebreaker games for large adult groups, including high-energy, networking, and seated options.",
+      title: "Large-Group Icebreakers for Adults | 30–100+",
+      description: "Icebreaker games for adults in groups of 30–100+: high-energy, networking, and seated options with facilitation tips.",
     };
   }
 

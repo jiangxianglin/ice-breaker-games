@@ -6,9 +6,9 @@ import styles from "./church-small.module.css";
 
 export const revalidate = 86400;
 
-const title = "Icebreaker Games for Church Small Groups (Living Room Ready)";
+const title = "Church Small Group Icebreakers | Living Room";
 const description =
-  "Church small-group icebreakers for home Bible studies and living-room circles—12 seated run cards, a visitor-safe chooser, and what to skip before prayer.";
+  "Church small-group icebreakers for home Bible studies—12 seated run cards, a visitor-safe chooser, and what to skip before prayer.";
 const canonical =
   "https://www.icebreakergames.site/icebreaker-games-for-church-small-groups";
 const ogImage =

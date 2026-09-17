@@ -5,9 +5,9 @@ import styles from "./church-questions.module.css";
 
 export const revalidate = 86400;
 
-const title = "Church Icebreaker Questions (Visitor-Safe Prompt Bank)";
+const title = "Church Icebreaker Questions | Visitor-Safe Bank";
 const description =
-  "Church icebreaker questions for small groups, youth, and Bible study—organized by depth, with funny options, a pass rule, and what to skip on week one.";
+  "Church icebreaker questions by depth for small groups, youth, and Bible study—funny options, a pass rule, and what to skip on week one.";
 const canonical = "https://www.icebreakergames.site/church-icebreaker-questions";
 const ogImage =
   "https://www.icebreakergames.site/img/church-icebreaker-questions-hero.jpg";

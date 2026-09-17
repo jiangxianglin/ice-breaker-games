@@ -6,9 +6,9 @@ import styles from "./church-youth.module.css";
 
 export const revalidate = 86400;
 
-const title = "Icebreaker Games for Church Youth Group (That Don’t Feel Awkward)";
+const title = "Church Youth Group Icebreakers | 12 Run Cards";
 const description =
-  "Church youth group icebreakers with a chooser for energy, shy teens, and visitors—plus 12 run cards, faith-optional twists, and what to skip on week one.";
+  "Church youth icebreakers with a chooser for energy, shy teens, and visitors—12 run cards, faith-optional twists, and what to skip on week one.";
 const canonical =
   "https://www.icebreakergames.site/icebreaker-games-for-church-youth-group";
 const ogImage =

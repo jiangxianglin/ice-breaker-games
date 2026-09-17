@@ -1,6 +1,7 @@
 import { getGameBySlug, getGameById } from "@/db/queries/games";
 import { getRelatedGames } from "@/lib/games/related";
 import { getGamePageFaqs } from "@/data/game-page-extras";
+import { getGameSeoMeta } from "@/data/game-seo-meta";
 import { GameDetail } from "@/components/games/GameDetail";
 import { TwoTruthsAndALieDetail } from "@/components/games/TwoTruthsAndALieDetail";
 import {
@@ -530,21 +531,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
                                     ? "Chainlink Icebreaker | How to Play"
         : buildDefaultTitle(game.title);
 
+  const seoOverride = getGameSeoMeta(game.slug);
+  const finalTitle = seoOverride?.title ?? title;
+  const finalDescription = seoOverride?.description ?? description;
+
   const openGraphImageUrl = toAbsoluteUrl(
     game.title === "Emoji Check-In" ? "/img/EmojiCheck-In-social.jpg" : imageUrl
   );
 
   return {
-    title,
-    description,
+    title: finalTitle,
+    description: finalDescription,
     alternates: {
       canonical: gameUrl,
     },
     openGraph: {
       type: "article",
       url: gameUrl,
-      title,
-      description,
+      title: finalTitle,
+      description: finalDescription,
       siteName: "Ice Breaker Games",
       images: [
         {
@@ -569,8 +574,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: finalTitle,
+      description: finalDescription,
       images: [openGraphImageUrl],
     },
     robots: {
@@ -873,13 +878,18 @@ export default async function GameDetailPage({ params }: Props) {
       "Chainlink is an introduction chain activity where each person links a shared trait with the previous person and adds a new fact. It builds memory, connection, and a visual chain across the group, and works for 8–40 people in 10–15 minutes.";
   }
 
+  const seoOverride = getGameSeoMeta(game.slug);
+  if (seoOverride) {
+    jsonLdDescription = seoOverride.description;
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
         "@id": `https://www.icebreakergames.site/games/${game.slug}#article`,
-        headline: game.title === "Find Your Match" ? "Find Your Match | Ice Breaker Games" : game.title === "Human Bingo" ? "Human Bingo - Ice Breaker Game" : game.title === "Chat Waterfall" ? "Chat Waterfall | Ice Breaker Games" : game.title === "Emoji Introduction" ? "Emoji Introduction Icebreaker Game | How to Play" : game.title === "Emoji Check-In" ? "Emoji Check-In Icebreaker | Quick Mood Sharing" : game.title === "Alliterative Name Game" ? "Alliterative Name Game (Adjective Name Game) | How to Play + Examples" : game.title === "One Word Check-In" ? "One Word Check-In Icebreaker | Quick Team Check-In Prompts" : game.title === "Two Truths and a Lie" ? "Two Truths and a Lie Icebreaker | Rules, Examples & Questions" : game.title === "Minefield" ? "Minefield Team Building Game | How to Play + Debrief" : game.title === "The Name Game" ? "The Name Game Icebreaker | How to Play + Examples" : game.title === "The Question Web" ? "The Question Web Icebreaker | How to Play + Prompts" : game.title === "Count Up" ? "Count Up Team Building Game | Rules + Tips" : game.title === "Dicebreakers" ? "Dicebreakers Icebreaker Game | How to Play + Prompts" : game.slug === "topics-tables" ? "Topics Tables Icebreaker | How to Run + Prompts" : game.slug === "unique-and-shared" ? "Unique and Shared Icebreaker | How to Play" : game.title,
+        headline: seoOverride?.title ?? (game.title === "Find Your Match" ? "Find Your Match | Ice Breaker Games" : game.title === "Human Bingo" ? "Human Bingo - Ice Breaker Game" : game.title === "Chat Waterfall" ? "Chat Waterfall | Ice Breaker Games" : game.title === "Emoji Introduction" ? "Emoji Introduction Icebreaker Game | How to Play" : game.title === "Emoji Check-In" ? "Emoji Check-In Icebreaker | Quick Mood Sharing" : game.title === "Alliterative Name Game" ? "Alliterative Name Game (Adjective Name Game) | How to Play + Examples" : game.title === "One Word Check-In" ? "One Word Check-In Icebreaker | Quick Team Check-In Prompts" : game.title === "Two Truths and a Lie" ? "Two Truths and a Lie Icebreaker | Rules, Examples & Questions" : game.title === "Minefield" ? "Minefield Team Building Game | How to Play + Debrief" : game.title === "The Name Game" ? "The Name Game Icebreaker | How to Play + Examples" : game.title === "The Question Web" ? "The Question Web Icebreaker | How to Play + Prompts" : game.title === "Count Up" ? "Count Up Team Building Game | Rules + Tips" : game.title === "Dicebreakers" ? "Dicebreakers Icebreaker Game | How to Play + Prompts" : game.slug === "topics-tables" ? "Topics Tables Icebreaker | How to Run + Prompts" : game.slug === "unique-and-shared" ? "Unique and Shared Icebreaker | How to Play" : game.title),
         description: jsonLdDescription,
         image: jsonLdImage,
         author: { "@id": "https://www.icebreakergames.site/#organization" },

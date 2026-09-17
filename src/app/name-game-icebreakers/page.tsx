@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const revalidate = 86400;
 
-const title = "Name Game Icebreakers: Fun Name Games for Groups and Students";
+const title = "Name Game Icebreakers | Rules & Variations";
 const description =
-  "Find name game icebreakers for students, teams, teens, and large groups. Includes how to play The Name Game, examples, variations, and facilitation tips.";
+  "Name game icebreakers for students, teams, and teens—The Name Game plus alliterative and motion options with examples and facilitation tips.";
 const canonical = "https://www.icebreakergames.site/name-game-icebreakers";
 
 const targetSlugs = [
