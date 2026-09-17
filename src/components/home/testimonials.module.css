@@ -62,11 +62,22 @@
 }
 
 .quote {
-  margin: 0 0 0.85rem;
+  margin: 0.5rem 0 0.85rem;
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--hk-pine);
-  font-style: italic;
+  font-style: normal;
+}
+
+.trustLink {
+  font-weight: 600;
+  color: var(--hk-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.trustLink:hover {
+  color: var(--hk-pine);
 }
 
 .meta {

@@ -157,6 +157,36 @@ const categoryData: CategoryData = {
         "difficulty": "Easy"
       }
     ],
+    "team_building_deep": [
+      {
+        "title": "Helium Stick",
+        "description": "Team must lower a stick to the ground while everyone keeps finger contact—builds shared focus.",
+        "duration": "10-15 minutes",
+        "players": "8-20 people",
+        "difficulty": "Medium"
+      },
+      {
+        "title": "Desert Island",
+        "description": "Group decides which items to keep for survival, revealing values and negotiation habits.",
+        "duration": "15-25 minutes",
+        "players": "6-30 people",
+        "difficulty": "Medium"
+      },
+      {
+        "title": "Marshmallow Challenge",
+        "description": "Build the tallest freestanding tower with spaghetti, tape, string, and a marshmallow on top.",
+        "duration": "18-25 minutes",
+        "players": "8-40 people",
+        "difficulty": "Medium"
+      },
+      {
+        "title": "Minefield",
+        "description": "Blindfolded participants navigate obstacles guided only by teammates' voices.",
+        "duration": "10-15 minutes",
+        "players": "8-20 people",
+        "difficulty": "Medium"
+      }
+    ],
     "fun_icebreakers": [
       {
         "title": "Portrait Gallery",

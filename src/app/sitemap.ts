@@ -2,15 +2,7 @@ import { MetadataRoute } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { blogPosts } from "@/data/blog";
 import { GAME_SLUGS } from "@/data/game-slugs";
-
-/** Dirty / duplicate game URLs — never emit in sitemap even if still in Supabase. */
-const SITEMAP_EXCLUDED_GAME_SLUGS = new Set([
-  "security-audit-probe-do-not-keep",
-  "runners-seerrunnerbuilder",
-  "name-game",
-  "two-truths-and-one-lie",
-  "desert-island",
-]);
+import { EXCLUDED_GAME_SLUGS } from "@/lib/games/excluded-slugs";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
@@ -143,7 +135,7 @@ async function getGamePages(): Promise<MetadataRoute.Sitemap> {
   const slugs = new Set<string>([...GAME_SLUGS, ...live.keys()]);
 
   return [...slugs]
-    .filter((slug) => !SITEMAP_EXCLUDED_GAME_SLUGS.has(slug))
+    .filter((slug) => !EXCLUDED_GAME_SLUGS.has(slug))
     .sort()
     .map((slug) => ({
       url: `${baseUrl}/games/${slug}`,

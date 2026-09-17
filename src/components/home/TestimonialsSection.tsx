@@ -1,145 +1,54 @@
-import Image from "next/image";
+import Link from "next/link";
 import styles from "./testimonials.module.css";
 
-interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  content: string;
-  rating: number;
-  avatar?: string;
-  image?: string;
-}
-
-const testimonials: Testimonial[] = [
+/**
+ * Real editorial trust signals only — never invent named quotes or employer
+ * affiliations. Fake Microsoft/Google/etc. testimonials were removed for AdSense policy.
+ */
+const trustSignals = [
   {
-    id: 1,
-    name: "Sarah Mitchell",
-    role: "Team Lead",
-    company: "Microsoft",
-    content:
-      "These ice breaker games completely transformed our virtual team meetings. Our team engagement increased by 40% and everyone looks forward to our sessions now!",
-    rating: 5,
-    avatar: "SM",
-    image: "/SarahMitchell.png",
+    title: "How we choose games",
+    body: "Every published guide is checked for pass rules, honest timing, scene fit, and psychological safety—not just novelty.",
+    href: "/how-we-choose-icebreakers",
+    label: "Read the checklist",
   },
   {
-    id: 2,
-    name: "Michael Rodriguez",
-    role: "HR Director",
-    company: "Google",
-    content:
-      "As someone who facilitates workshops regularly, this collection of ice breaker games has been invaluable. The variety and quality are outstanding.",
-    rating: 4,
-    avatar: "MR",
-    image: "/MichaelRodriguez.png",
+    title: "When we skip an icebreaker",
+    body: "Some activities fail the bar: invasive prompts, humiliation risk, or timing that cannot work in a real meeting. We document those skips.",
+    href: "/when-to-skip-an-icebreaker",
+    label: "See skip criteria",
   },
   {
-    id: 3,
-    name: "Emily Clarke",
-    role: "Training Manager",
-    company: "Amazon",
-    content:
-      "I've used dozens of ice breaker games from this site. They're well-structured, easy to follow, and always get great results with our new hire orientations.",
-    rating: 5,
-    avatar: "EC",
-    image: "/EmilyClarke.png",
-  },
-  {
-    id: 4,
-    name: "David Kim",
-    role: "Scrum Master",
-    company: "Netflix",
-    content:
-      "The virtual ice breaker games section saved our remote team culture. These activities help us maintain that personal connection despite being distributed globally.",
-    rating: 4,
-    avatar: "DK",
-    image: "/DavidKim.png",
-  },
-  {
-    id: 5,
-    name: "Lisa Thompson",
-    role: "Professor",
-    company: "Stanford University",
-    content:
-      "My students love starting each class with these ice breaker games. It creates such a positive learning environment and helps shy students participate more.",
-    rating: 5,
-    avatar: "LT",
-    image: "/LisaThompson.png",
-  },
-  {
-    id: 6,
-    name: "James Wilson",
-    role: "Event Coordinator",
-    company: "TED Conferences",
-    content:
-      "We use these ice breaker games at our conferences worldwide. They consistently help attendees network and create meaningful connections.",
-    rating: 4,
-    avatar: "JW",
-    image: "/JamesWilson.png",
+    title: "Sources on the page",
+    body: "Where we lean on established facilitation practice or reference material, we cite it—SessionLab libraries, Wikipedia topic pages, and our own game guides.",
+    href: "/games",
+    label: "Browse the library",
   },
 ];
 
-function StarRating({ rating }: { rating: number }) {
-  return (
-    <div className={styles.stars} aria-label={`${rating} out of 5 stars`}>
-      {[...Array(5)].map((_, i) => (
-        <svg
-          key={i}
-          width="14"
-          height="14"
-          viewBox="0 0 20 20"
-          className={i < rating ? styles.starOn : styles.starOff}
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
-
 export function TestimonialsSection() {
   return (
-    <section className={styles.section} aria-labelledby="testimonials-heading">
+    <section className={styles.section} aria-labelledby="trust-heading">
       <div className={styles.inner}>
         <div className={styles.head}>
-          <p className={styles.eyebrow}>Community</p>
-          <h2 id="testimonials-heading">What facilitators say</h2>
+          <p className={styles.eyebrow}>Editorial standards</p>
+          <h2 id="trust-heading">How we pick what to publish</h2>
           <p>
-            Notes from team leads, trainers, and teachers who use these ice breaker
-            games in meetings, classrooms, and events.
+            No celebrity endorsements—just a public checklist, skip rules, and
+            cited sources so facilitators can judge the work for themselves.
           </p>
         </div>
 
         <div className={styles.list}>
-          {testimonials.map((t) => (
-            <article key={t.id} className={styles.item}>
-              <blockquote className={styles.quote}>“{t.content}”</blockquote>
-              <div className={styles.meta}>
-                <div className={styles.avatar}>
-                  {t.image ? (
-                    <Image
-                      src={t.image}
-                      alt=""
-                      width={40}
-                      height={40}
-                      className="object-cover w-full h-full"
-                    />
-                  ) : (
-                    <div className={styles.avatarFallback}>{t.avatar}</div>
-                  )}
-                </div>
-                <div className={styles.who}>
-                  <p className={styles.name}>{t.name}</p>
-                  <p className={styles.role}>
-                    {t.role}, {t.company}
-                  </p>
-                </div>
-                <StarRating rating={t.rating} />
-              </div>
+          {trustSignals.map((item) => (
+            <article key={item.href} className={styles.item}>
+              <h3 className={styles.name}>{item.title}</h3>
+              <p className={styles.quote}>{item.body}</p>
+              <p className={styles.role}>
+                <Link href={item.href} className={styles.trustLink}>
+                  {item.label}
+                </Link>
+              </p>
             </article>
           ))}
         </div>
