@@ -324,6 +324,14 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         body: "Ask for one emoji for energy, one for focus, and one for what people need from the meeting—closer to a check-in than a full intro.",
       },
       {
+        title: "Classroom prompts",
+        body: "Use three school-safe prompts: mood today, favorite activity, and one thing they are curious about. Offer a pass option and keep explanations under 30 seconds.",
+      },
+      {
+        title: "Large-group pattern share",
+        body: "One emoji per person in chat. Discuss patterns (lots of coffee cups, lots of sleepy faces) instead of asking everyone to explain individually.",
+      },
+      {
         title: "Fake-emoji round",
         body: "Optional Two Truths twist: include one misleading emoji and let the group spot it. Use only with groups that enjoy light bluffing.",
       },
@@ -344,6 +352,36 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         label: "Setup",
         body: "Shared chat (Zoom/Teams/Slack) or paper/sticky notes for in-person groups.",
+      },
+    ],
+    whyItWorks:
+      "Emoji Introduction works because people can show something personal without a long monologue—chat-first sharing lowers the barrier for quieter voices, and a one-sentence decode keeps the room curious instead of bored. It fails when everyone must unmute and explain, when the prompt asks for status symbols (job level, salary vibe, exclusivity), or when you treat wrong guesses as a quiz. Skip it if the group cannot use chat or sticky notes, or if you need name learning more than mood/hobby signals—use a name game instead.",
+    facilitatorScript: [
+      {
+        speaker: "Open",
+        line: "Pick two or three emojis that represent you—or your week. Post them in chat at the same time. Pass is fine. I’ll model first.",
+      },
+      {
+        speaker: "Model",
+        line: "Mine are coffee, books, and a bike. One sentence: I live on caffeine, learn for fun, and ride when I can.",
+      },
+      {
+        speaker: "Close",
+        line: "I’m hearing lots of [theme]. We’ll keep explanations short and move into the agenda while that curiosity is still up.",
+      },
+    ],
+    pitfalls: [
+      {
+        title: "Unlimited unmute tour",
+        body: "If every person explains aloud in a 20+ room, the opener eats the meeting. Cap spoken shares or keep most answers chat-only.",
+      },
+      {
+        title: "Vague or status-heavy emojis",
+        body: "Generic hearts or flex symbols invite awkward guesses. Ask for concrete hobbies, tools, pets, or places—and ban anything that ranks people.",
+      },
+      {
+        title: "No pass rule",
+        body: "Forcing a share turns a light visual intro into pressure. Say pass is full participation before the first post.",
       },
     ],
     adultsWork:
@@ -373,6 +411,12 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Can Emoji Introduction work in classrooms?",
         a: "Yes. Use school-safe prompts (weekend plans, favorite subject energy, one hobby). Offer a pass option and keep explanations short so class time stays on track.",
       },
+    ],
+    sources: [
+      { label: "Emoji icebreaker games", href: "/emoji-icebreaker-games" },
+      { label: "Emoji Check-In", href: "/games/emoji-check-in" },
+      { label: "Short virtual icebreakers", href: "/short-virtual-icebreakers" },
+      { label: "Funny icebreaker games for meetings", href: "/funny-icebreaker-games-for-meetings" },
     ],
   },
 
@@ -1227,7 +1271,19 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         title: "Role-first work meeting",
-        body: "Name + team. Skip adjectives if the culture is formal.",
+        body: "Name + role + one current project if useful. Skip adjectives if the culture is formal.",
+      },
+      {
+        title: "Classroom memory hooks",
+        body: "Pair each name with a favorite subject, hobby, or simple adjective so students have a memory cue without turning it into a talent show.",
+      },
+      {
+        title: "Split circles for large groups",
+        body: "Break into circles of 6–10 instead of one long round, then invite a few names to be shared back to the full room.",
+      },
+      {
+        title: "Shy groups with name tags",
+        body: "Let people read from visible name tags and treat blanks as normal—neighbors may help immediately so forgotten names never become a test.",
       },
     ],
     rulesTiming: [
@@ -2099,7 +2155,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         title: "Classroom whiteboard",
-        body: "Students sketch a quick face; teacher samples three.",
+        body: "Students sketch a quick face; teacher samples three. Keep prompts school-safe (mood, focus, curiosity)—never grade the emoji.",
+      },
+      {
+        title: "Large-group pattern only",
+        body: "One emoji per person in chat or reactions. Facilitator mirrors the pattern in one sentence; no individual call-outs.",
       },
       {
         title: "Project emoji",

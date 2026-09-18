@@ -1561,42 +1561,9 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
       </aside>
 
       <div className={styles.bodyAfterStory}>
-        <section className={styles.section}>
-          <h2>Tips for Success</h2>
-          <ul>
-            <li>Create a welcoming and inclusive environment where everyone feels comfortable participating</li>
-            <li>Clearly explain the rules and objectives before starting the activity</li>
-            <li>Be flexible and adapt the game based on your group&apos;s energy and engagement levels</li>
-            <li>Encourage participation but respect those who prefer to observe</li>
-            <li>Follow up with a brief reflection or discussion to reinforce connections made during the game</li>
-          </ul>
-        </section>
-{(game.title === "Emoji Introduction" || game.title === "Emoji Check-In") && (
-          <div className={styles.section}>
-            <h2>Best Variations</h2>
-            <div className={styles.variationGrid}>
-              <div>
-                <h3>For meetings</h3>
-                <p>Ask for one emoji for energy, one for focus, and one word about what people need from the meeting.</p>
-              </div>
-              <div>
-                <h3>For students</h3>
-                <p>Use three safe prompts: mood today, favorite activity, and one thing they are curious about.</p>
-              </div>
-              <div>
-                <h3>For remote teams</h3>
-                <p>Have everyone post at the same time in chat, then invite only volunteers to explain their emoji choices.</p>
-              </div>
-              <div>
-                <h3>For large groups</h3>
-                <p>Keep it to one emoji per person and discuss patterns instead of asking everyone to explain individually.</p>
-              </div>
-            </div>
-            <p>
-              See more options in our <a href="/emoji-icebreaker-games">emoji icebreaker games guide</a>.
-            </p>
-          </div>
-        )}
+        {/* No shared Tips for Success — identical copy across 100+ game URLs
+            looked like template near-duplicates (indexing). Page-specific pitfalls
+            live in GamePageExtras when present. */}
 
         {game.title === "Emoji Introduction" && (
           <div className={styles.section}>
@@ -1631,32 +1598,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           </div>
         )}
 
-        {game.title === "The Name Game" && (
-          <div className={styles.section}>
-            <h2>Variations for Different Groups</h2>
-            <div className={styles.variationGrid}>
-              <div>
-                <h3>For classrooms</h3>
-                <p>Pair each name with a favorite subject, hobby, or simple adjective so students have a memory hook.</p>
-              </div>
-              <div>
-                <h3>For work meetings</h3>
-                <p>Use name, role, and one current project. This keeps the activity professional and useful.</p>
-              </div>
-              <div>
-                <h3>For large groups</h3>
-                <p>Split into circles of 6–10 people instead of one long round, then invite a few names to be shared back.</p>
-              </div>
-              <div>
-                <h3>For shy groups</h3>
-                <p>Let people read from visible name tags and avoid turning forgotten names into a test.</p>
-              </div>
-            </div>
-            <p>
-              Compare more options in our <a href="/name-game-icebreakers">name game icebreakers guide</a>.
-            </p>
-          </div>
-        )}
+        {/* Name Game variations live only in game-page-extras (avoid second Variations H2). */}
 
         {game.title === "Virtual Background Story" && (
           <div className="flex justify-center my-6">
