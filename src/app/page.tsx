@@ -48,7 +48,26 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const allGames = await getAllGames();
-  const featuredGames = allGames.slice(0, 6);
+  // Indexing priority (2026-09): A-class high-volume game pages + proven engines.
+  // Do not use allGames.slice(0, N) — that follows DB order, not SEO priority.
+  const featuredSlugOrder = [
+    "this-or-that-questions",
+    "six-word-memoirs",
+    "5-4-3-2-1-grounding-technique",
+    "find-your-match",
+    "weather-check-in",
+    "emoji-introduction",
+    "marshmallow-challenge",
+    "dicebreakers",
+    "story-swap",
+    "beach-ball-qa",
+    "icebreaker-bingo",
+  ];
+  const bySlug = new Map(allGames.map((g) => [g.slug, g]));
+  const featuredGames = featuredSlugOrder
+    .map((slug) => bySlug.get(slug))
+    .filter((g): g is NonNullable<typeof g> => Boolean(g))
+    .slice(0, 8);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -93,34 +112,34 @@ export default async function Home() {
 
   const popularGames = [
     {
-      href: "/free-fun-icebreaker-games",
-      title: "Free fun icebreaker games",
-      description: "12 no-signup openers with laughs, not cringe—meetings, small groups, Zoom.",
-    },
-    {
-      href: "/icebreaker-games-for-church",
-      title: "Ice breaker games for church",
-      description: "Visitor-safe chooser plus 12 run cards for small groups and youth nights.",
-    },
-    {
       href: "/games-like-two-truths-and-a-lie",
       title: "Games like Two Truths and a Lie",
-      description: "12 get-to-know-you substitutes with rules, variations, and facilitator tips.",
+      description: "Top traffic guide—12 get-to-know substitutes with rules and facilitator tips.",
     },
     {
-      href: "/icebreaker-games-for-high-school-students",
-      title: "Ice breaker games for high school students",
-      description: "14 classroom-safe openers for advisory, first day, clubs, and PE.",
+      href: "/games/this-or-that-questions",
+      title: "This or That questions",
+      description: "Fast either/or openers for meetings, classrooms, and virtual rooms.",
     },
     {
-      href: "/virtual-icebreaker-games",
-      title: "Virtual ice breaker games",
-      description: "Zoom and Teams hub: chat-first warm-ups, shortlists, and riddle formats.",
+      href: "/games/six-word-memoirs",
+      title: "Six Word Memoirs",
+      description: "Short writing icebreaker with facilitator script, variations, and pitfalls.",
     },
     {
-      href: "/icebreaker-games-for-meetings",
-      title: "Ice breaker games for meetings",
-      description: "Quick, low-pressure openers for standups, workshops, and team meetings.",
+      href: "/games/5-4-3-2-1-grounding-technique",
+      title: "5-4-3-2-1 grounding technique",
+      description: "Sensory reset for anxious or high-energy groups—run it as a calm opener.",
+    },
+    {
+      href: "/games/find-your-match",
+      title: "Find Your Match",
+      description: "Famous-pairs mixer near page one—pair cards, rules, and networking tips.",
+    },
+    {
+      href: "/games/weather-check-in",
+      title: "Weather Check-In",
+      description: "One-sentence mood forecast for standups and hybrid meetings.",
     },
   ];
 
@@ -183,10 +202,11 @@ export default async function Home() {
       <section className={styles.popularBand} aria-labelledby="popular-games-heading">
         <div className={styles.popularInner}>
           <div className={styles.sectionHead}>
-            <p className={styles.eyebrow}>Most used guides</p>
+            <p className={styles.eyebrow}>Priority openers</p>
             <h2 id="popular-games-heading">Popular Games</h2>
             <p>
-              Start with the guides people use most—then open full rules and related alternatives.
+              Start with high-intent openers and our strongest similar-games guide—then open full
+              rules, scripts, and related activities.
             </p>
           </div>
           <div className={styles.popularList}>

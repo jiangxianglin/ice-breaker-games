@@ -52,6 +52,49 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const priorityGames = [
+  {
+    href: "/games/this-or-that-questions",
+    title: "This or That questions",
+    description: "High-intent either/or opener—rules, scripts, and classroom/work variations.",
+  },
+  {
+    href: "/games/six-word-memoirs",
+    title: "Six Word Memoirs",
+    description: "Short writing icebreaker with facilitator script and common pitfalls.",
+  },
+  {
+    href: "/games/5-4-3-2-1-grounding-technique",
+    title: "5-4-3-2-1 grounding technique",
+    description: "Sensory grounding as a calm meeting or classroom opener.",
+  },
+  {
+    href: "/games/find-your-match",
+    title: "Find Your Match",
+    description: "Famous-pairs mixer near the top of search—pair cards and networking tips.",
+  },
+  {
+    href: "/games/weather-check-in",
+    title: "Weather Check-In",
+    description: "One-sentence mood forecast for standups and hybrid calls.",
+  },
+  {
+    href: "/games/marshmallow-challenge",
+    title: "Marshmallow Challenge",
+    description: "Classic team build with timing, consent notes, and debrief prompts.",
+  },
+  {
+    href: "/games/dicebreakers",
+    title: "Dicebreakers",
+    description: "Roll-and-prompt openers when you want low-prep variety.",
+  },
+  {
+    href: "/games/emoji-introduction",
+    title: "Emoji Introduction",
+    description: "Chat-first self-intro with examples, variations, and FAQ.",
+  },
+];
+
 const clusterGuides = [
   {
     href: "/icebreaker-games-for-meetings",
@@ -120,6 +163,12 @@ const clusterGuides = [
       "No signup, no paywall—twelve fun openers for meetings, small groups, and Zoom.",
   },
   {
+    href: "/emoji-icebreaker-games",
+    title: "Emoji icebreaker games",
+    description:
+      "Emoji Introduction, Check-In, and related chat-first openers for Zoom and classrooms.",
+  },
+  {
     href: "/name-game-icebreakers",
     title: "Name game icebreakers",
     description:
@@ -164,21 +213,21 @@ const faqs = [
   },
   {
     q: "What is a good 5-minute ice breaker game?",
-    a: "For a quick 5-minute ice breaker, try One Word Check-In, Emoji Check-In, or a short This or That round. These require no materials and work well for most groups.",
-    linkHref: "/short-virtual-icebreakers",
-    linkLabel: "Browse short virtual icebreakers",
+    a: "For a quick 5-minute ice breaker, try This or That Questions, Weather Check-In, or Emoji Check-In. These require no materials and work well for most groups.",
+    linkHref: "/games/this-or-that-questions",
+    linkLabel: "Open This or That questions",
   },
   {
     q: "What ice breaker games work best for meetings?",
-    a: "Meeting-friendly ice breaker games are low-pressure and time-boxed. One Word Check-In, Weather Check-In, and This or That Questions help everyone participate without long turns.",
-    linkHref: "/icebreaker-games-for-meetings",
-    linkLabel: "See ice breaker games for meetings",
+    a: "Meeting-friendly ice breaker games are low-pressure and time-boxed. Weather Check-In, This or That Questions, and Six Word Memoirs help everyone participate without long turns.",
+    linkHref: "/games/weather-check-in",
+    linkLabel: "Open Weather Check-In",
   },
   {
     q: "What are the best virtual ice breaker games?",
-    a: "Virtual ice breaker games that work well online include Chat Waterfall, Emoji Introduction, Emoji Check-In, and Virtual Background Story. These formats make it easy for everyone to join using chat and quick sharing.",
-    linkHref: "/virtual-icebreaker-games",
-    linkLabel: "Explore virtual ice breaker games",
+    a: "Virtual ice breaker games that work well online include Emoji Introduction, Weather Check-In, This or That, and Chat Waterfall. These formats make it easy for everyone to join using chat and quick sharing.",
+    linkHref: "/games/emoji-introduction",
+    linkLabel: "Open Emoji Introduction",
   },
   {
     q: "How do I choose the right ice breaker game?",
@@ -330,6 +379,33 @@ export default async function GamesPage() {
         >
           <FilterableGameGrid games={games} />
         </Suspense>
+      </section>
+
+      <section className={styles.guidesBand} aria-labelledby="priority-heading">
+        <div className={styles.guidesInner}>
+          <div className={styles.sectionHead}>
+            <p className={styles.eyebrow}>Start here</p>
+            <h2 id="priority-heading">High-intent ice breaker games</h2>
+            <p>
+              Open these detail pages first when you need a specific activity with rules,
+              facilitator scripts, and variations—then browse hubs below by occasion.
+            </p>
+          </div>
+          <div className={styles.guideList}>
+            {priorityGames.map((game, index) => (
+              <Link key={game.href} href={game.href} className={styles.guideItem}>
+                <span className={styles.guideIndex} aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className={styles.guideTitle}>{game.title}</h3>
+                  <p className={styles.guideDesc}>{game.description}</p>
+                </div>
+                <span className={styles.guideLink}>Open game →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className={styles.guidesBand} aria-labelledby="guides-heading">
