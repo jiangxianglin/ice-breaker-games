@@ -33,7 +33,6 @@ export const GAME_SLUGS = [
   "find-your-match",
   "guess-that-team-member",
   "guess-the-gift-by-sound",
-  "guess-who",
   "guess-who-personal-trivia",
   "group-map",
   "have-you-ever-stand-up-if",

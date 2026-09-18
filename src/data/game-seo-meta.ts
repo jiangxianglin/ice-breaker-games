@@ -15,14 +15,14 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
       "Pairs find non-obvious commonalities in timed rounds. 6–40 players, 8–12 min. Category cards, pass rules, and when to skip intimacy prompts.",
   },
   "this-or-that-questions": {
-    title: "This or That Questions | 5-Minute Preference Poll",
+    title: "This or That Questions (2026) | Free Icebreaker List",
     description:
-      "Binary preference polls with hands, sides, or chat. 4–50 players, 5–8 min. Meeting-safe prompts and a two-channel vote variant included.",
+      "Ready this or that questions for meetings, class, and Zoom—hands, sides, or chat. 4–50 players, 5–8 min. 12 prompt pairs, pass rules, and when to skip.",
   },
   "six-word-memoirs": {
-    title: "Six Word Memoirs Icebreaker | Write-Then-Share",
+    title: "Six Word Memoirs Icebreaker | Writing Warm-Up",
     description:
-      "Write exactly six words on a prompt, then optional share. 4–30 players, 10–15 min. Pass-as-write-only and sticky-note variant for quiet rooms.",
+      "Write exactly six words, then optional share. Great for writing class, workshops, and meetings. 4–30 players, 10–15 min. Pass-as-write-only included.",
   },
   "scavenger-hunt": {
     title: "Scavenger Hunt Icebreaker | Short Team Hunt",
@@ -70,19 +70,34 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
       "Build one silly sentence together—one word each turn. Not the same as One Word Check-In. Best after names are known; pass anytime.",
   },
   "5-4-3-2-1-grounding-technique": {
-    title: "5-4-3-2-1 Grounding | Optional Sensory Reset",
+    title: "5-4-3-2-1 Grounding Technique | Calm Meeting Reset",
     description:
-      "Private sensory reset—not a party game or therapy claim. 3–6 min. Offer opt-out; use before tense agendas, not as forced entertainment.",
+      "Optional 5-4-3-2-1 grounding technique for meetings and class—private answers, not therapy. 3–6 min. Opt-out rules and when to skip included.",
   },
   dicebreakers: {
-    title: "Dicebreakers Icebreaker | Roll-for-Prompt Talk",
+    title: "Dicebreakers Game | Roll-for-Prompt Icebreaker",
     description:
-      "Roll a die to pick conversation prompts. 4–30 players. Keep decks school- and work-safe; swap candy mechanics for tokens when needed.",
+      "How to play Dicebreakers: roll a die, answer a prompt. 4–30 players. School- and work-safe decks; swap candy for tokens when needed.",
+  },
+  "marshmallow-challenge": {
+    title: "Marshmallow Challenge Rules | Team Tower Build",
+    description:
+      "Marshmallow challenge icebreaker: spaghetti tower that holds a marshmallow. 8–40 players, 15–25 min. Allergen stand-ins and seated roles included.",
+  },
+  "icebreaker-bingo": {
+    title: "Icebreaker Bingo Rules | Mingling Card Game",
+    description:
+      "Icebreaker bingo with custom prompts for large rooms. Soft line wins and pass anytime. How it differs from classic Human Bingo included.",
   },
   "story-swap": {
     title: "Story Swap Icebreaker | Paired Prompt Stories",
     description:
-      "Partners exchange short stories from visual or text prompts. 6–40 players, 10–15 min. Visitor-safe options for church small groups.",
+      "Partners swap short stories from prompts. 6–40 players, 10–15 min. Visitor-safe options for church and work small groups.",
+  },
+  "beach-ball-qa": {
+    title: "Beach Ball Questions Icebreaker | Toss & Answer",
+    description:
+      "Beach ball Q&A: catch, answer the nearest prompt, toss on. Pass allowed. Great for teens and youth nights with light prompts.",
   },
   "fantasy-vacation": {
     title: "Fantasy Vacation Icebreaker | Dream Trip Share",
@@ -98,11 +113,6 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
     title: "News Headline Warm-up | Funny Meeting Opener",
     description:
       "Invent a playful headline about the meeting topic, then share one line. 4–30 players, 8–12 min. Keep satire kind; no real-news trauma.",
-  },
-  "beach-ball-qa": {
-    title: "Beach Ball Q&A Icebreaker | Toss-and-Answer",
-    description:
-      "Catch a soft ball, answer the nearest prompt, toss on. Pass allowed. Zone large rooms; great for teens and youth nights with light prompts.",
   },
   "sole-mate": {
     title: "Sole Mate Icebreaker | Pair by Prompt Match",
@@ -145,16 +155,6 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
     title: "Guess That Team Member | Anonymous Fact Guess",
     description:
       "Anonymous safe facts; the group guesses who wrote each. 6–40 players, 10–15 min. Owners may refuse reveal—screen prompts first.",
-  },
-  "icebreaker-bingo": {
-    title: "Icebreaker Bingo | Theme-Deck Mingling Game",
-    description:
-      "Custom bingo prompts for large mingling rooms. Soft line wins and pass anytime. Distinct from classic Human Bingo decks.",
-  },
-  "marshmallow-challenge": {
-    title: "Marshmallow Challenge | Tower Team Build",
-    description:
-      "Teams build a spaghetti tower that holds a marshmallow. 8–40 players, 15–25 min. Allergen stand-ins and seated roles included.",
   },
   "motion-name-game": {
     title: "Motion Name-Game | Gesture Name Recall",
@@ -233,11 +233,7 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
   },
 
   // Related not-indexed (URL unknown) — same SERP pass
-  "guess-who": {
-    title: "Guess Who Icebreaker | Classroom Fact Bowl",
-    description:
-      "Collect fun facts and guess who they belong to. Distinct from screened Personal Trivia—use for classes that need a simple bowl format.",
-  },
+  // guess-who → 301 to guess-who-personal-trivia (2026-09-18)
   "mystery-envelope": {
     title: "Mystery Envelope Icebreaker | Draw-a-Prompt",
     description:

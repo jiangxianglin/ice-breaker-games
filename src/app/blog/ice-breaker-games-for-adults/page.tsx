@@ -327,8 +327,8 @@ export default function AdultsIcebreakersPage() {
                 text: "Fast, honest status round at the start of a workshop or training.",
               },
               {
-                name: "Guess Who",
-                href: "/games/guess-who",
+                name: "Guess Who Personal Trivia",
+                href: "/games/guess-who-personal-trivia",
                 text: "Anonymous personal facts become a light guessing game that sparks stories.",
               },
               {

@@ -32,6 +32,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/games/guess-who",
+        destination: "/games/guess-who-personal-trivia",
+        permanent: true,
+      },
+      {
         source: "/icebreaker-games-for-adults",
         destination: "/blog/ice-breaker-games-for-adults",
         permanent: true,

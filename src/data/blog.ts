@@ -614,7 +614,7 @@ Set clear safety rules: no running, no pushing, and allow people to opt out if t
 
 These games focus on meaningful conversation rather than big physical movement.
 
-### [Guess Who](/games/guess-who) (Personal Trivia)
+### [Guess Who Personal Trivia](/games/guess-who-personal-trivia)
 
 **Best for:** Teams that already know each other a little  
 **Group size:** 8–40 adults  

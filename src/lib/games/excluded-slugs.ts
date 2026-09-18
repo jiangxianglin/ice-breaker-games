@@ -8,6 +8,7 @@ export const EXCLUDED_GAME_SLUGS = new Set([
   "name-game",
   "two-truths-and-one-lie",
   "desert-island",
+  "guess-who", // 301 → guess-who-personal-trivia (canonical screened version)
 ]);
 
 export function isExcludedGameSlug(slug: string | null | undefined): boolean {

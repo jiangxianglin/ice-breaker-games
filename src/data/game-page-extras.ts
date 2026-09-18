@@ -1137,46 +1137,58 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     howToSteps: [
       {
         title: "Build a short preference list",
-        body: "Prepare 8–12 this-or-that pairs. Keep them fast: coffee or tea; books or movies; morning or night. Avoid moral traps.",
+        body: "Prepare 8–12 this-or-that pairs. Keep them fast and clean—taste, tools, and light process choices. Avoid moral traps, identity tests, and politics. Ready meeting + school-safe pairs you can copy: coffee or tea; books or movies; morning person or night owl; slides or docs; chat or unmute; early standup or later standup; indoor break or outdoor walk; cats or dogs; pizza or tacos; summer or winter; playlist or podcast; handwritten notes or typed notes. Swap in project pairs when the agenda needs a real pulse.",
       },
       {
         title: "Choose a response channel",
-        body: "Hands, stand-to-side, or chat. Tell people they can pass. Model one answer in five seconds.",
+        body: "Hands, stand-to-side, emoji reactions, or chat A/B. Tell people they can pass. Model one answer in five seconds so the room knows silence and speed are both fine.",
       },
       {
         title: "Run brisk rounds",
-        body: "Read pair. Collect answers. Optionally ask two people for a one-line why. Advance every 30–45 seconds.",
+        body: "Read the pair. Collect answers. Optionally ask two people for a one-line why. Advance every 30–45 seconds so it stays a poll, not a panel.",
       },
       {
         title: "Bridge to the meeting",
-        body: "If you used a process pair, note the majority. Otherwise thank the room and start the agenda.",
+        body: "If you used a process pair, note the majority in one sentence. Otherwise thank the room and start the agenda while energy is still high.",
       },
     ],
     variations: [
       {
         title: "Emoji this-or-that",
-        body: "Assign two emojis for the options. Everyone drops one emoji in chat on three.",
+        body: "Assign two emojis for the options. Everyone drops one emoji in chat on three. Fastest format for hybrid standups.",
       },
       {
         title: "Silent continuum",
-        body: "People stand along a wall from “this” to “that.” No talking. Photograph for fun only if everyone consents—default is no photos.",
+        body: "People stand along a wall from “this” to “that.” No talking. Photograph only if everyone consents—default is no photos. Seated hand-raise works if standing is hard.",
       },
       {
         title: "Project this-or-that",
-        body: "Replace lifestyle pairs with project choices before a planning session.",
+        body: "Replace lifestyle pairs with project choices before a planning session: ship Tuesday or Thursday; big demo or small demo; whiteboard or shared doc.",
+      },
+      {
+        title: "Classroom warm-up deck",
+        body: "Use school-safe taste pairs only (pizza or tacos; recess outdoors or indoors; group work or solo work). Keep pass real and never grade the answers.",
+      },
+      {
+        title: "Meeting opener + process closer",
+        body: "Run four fun pairs, then one process pair that feeds the agenda. Capture the process majority on a sticky and move on.",
+      },
+      {
+        title: "Breakout micro-polls",
+        body: "For 20+ people, send pairs into breakouts of four for two rounds, then harvest one surprising split in the main room.",
       },
     ],
     rulesTiming: [
       { label: "Players", body: "4–60+ with a clear signal." },
-      { label: "Time", body: "5–8 minutes." },
-      { label: "Materials", body: "Prompt list or slide." },
+      { label: "Time", body: "5–8 minutes for about eight pairs." },
+      { label: "Materials", body: "Prompt list or slide—no props required." },
       {
         label: "House rules",
-        body: "No shame for minority answers. Pass allowed. Keep school/work decks clean.",
+        body: "No shame for minority answers. Pass allowed. Keep school/work decks clean. Cut any loaded pair on the spot.",
       },
     ],
     whyItWorks:
-      "This or That is Would You Rather’s calmer cousin: shorter prompts, less hypothetical drama, easy chat play. Use it when you need energy without a story. Skip when the room needs names first—run a name game, then preferences.",
+      "This or That is Would You Rather’s calmer cousin: shorter prompts, less hypothetical drama, easy chat play. Use it when you need energy without a story. Skip when the room needs names first—run a name game, then preferences—or when the agenda is already heavy and a poll would feel tone-deaf.",
     facilitatorScript: [
       {
         speaker: "Open",
@@ -1204,40 +1216,58 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         title: "Loaded pairs",
         body: "Replace identity or politics pairs with taste and process pairs.",
       },
+      {
+        title: "Too many rounds",
+        body: "Twelve-plus pairs turn a warm-up into a quiz show. Eight is usually enough.",
+      },
     ],
     originalVariant: {
       title: "Two-channel vote (site original)",
       body: "Run the first four pairs as silent hand-raises. Run the last two as chat-only. Then ask: which channel felt easier? That 30-second meta question helps hybrid rooms agree how they will vote in the real meeting—without a second icebreaker.",
     },
     adultsWork:
-      "Ideal for standups and workshops that need a two-minute pulse. For church rooms with visitors, keep prompts about food, weather, and weekends. For teens, keep it light and optional. Pair with One Word Check-In when you need words instead of binaries.",
+      "Ideal for standups, workshops, and classroom openers that need a two-minute pulse without personal disclosure. For church rooms with visitors, keep prompts about food, weather, and weekends. For teens and students, keep it light, optional, and school-safe. Pair with One Word Check-In when you need words instead of binaries, or Would You Rather when you want sillier hypotheticals.",
     faqs: [
       {
         q: "How do you play This or That Questions?",
-        a: "Offer two options. People choose with hands, movement, or chat. Optionally hear a short why, then move to the next pair.",
+        a: "Offer two options. People choose with hands, movement, emoji, or chat. Optionally hear a short why from one person per side, then move to the next pair.",
+      },
+      {
+        q: "What are good This or That examples for meetings and school?",
+        a: "Copy these: coffee or tea; books or movies; morning or night; slides or docs; chat or unmute; early or later standup; indoor or outdoor break; cats or dogs; pizza or tacos; summer or winter; playlist or podcast; handwritten or typed notes.",
       },
       {
         q: "How is This or That different from Would You Rather?",
-        a: "This or That is usually shorter lifestyle or process pairs. Would You Rather often uses bigger hypotheticals. Both should stay optional and clean.",
+        a: "This or That is usually shorter lifestyle or process pairs. Would You Rather often uses bigger hypotheticals. Both should stay optional and clean for work and school.",
       },
       {
         q: "How long should This or That take?",
-        a: "Five to eight minutes for about eight pairs.",
+        a: "Five to eight minutes for about eight pairs. Cap each round at roughly 45 seconds including an optional why.",
       },
       {
-        q: "Can it work on Zoom?",
-        a: "Yes. Use chat letters or reactions. Keep unmutes optional.",
+        q: "What materials do you need?",
+        a: "Only a prompt list or one slide. No props, teams, or scoring required.",
       },
       {
-        q: "What are good This or That examples?",
-        a: "Coffee or tea; books or movies; early or late meetings; slides or docs; indoor or outdoor breaks.",
+        q: "Can This or That work on Zoom or virtual meetings?",
+        a: "Yes. Use chat letters (A/B), reactions, or two assigned emojis. Keep unmutes optional and avoid calling on people who pass.",
+      },
+      {
+        q: "Is This or That good for work meetings and students?",
+        a: "Yes—when the deck stays work- or school-safe. Use taste and process pairs, allow pass, and skip anything that tests identity, politics, or private life.",
+      },
+      {
+        q: "When should you skip This or That?",
+        a: "Skip when names are still unknown and people need introductions first, when the topic is heavy, when time is already gone, or when you only have loaded prompts on hand. See when to skip an icebreaker for more cues.",
       },
     ],
     sources: [
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
+      { label: "Virtual ice breaker games", href: "/virtual-icebreaker-games" },
       { label: "Short virtual icebreakers", href: "/short-virtual-icebreakers" },
-      { label: "Icebreaker games for work", href: "/icebreaker-games-for-work" },
+      { label: "Would You Rather", href: "/games/would-you-rather" },
       { label: "One Word Check-In", href: "/games/one-word-check-in" },
+      { label: "Funny icebreaker games for meetings", href: "/funny-icebreaker-games-for-meetings" },
     ],
   },
 
@@ -1477,46 +1507,58 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     howToSteps: [
       {
         title: "Explain the constraint",
-        body: "Everyone writes exactly six words about a prompt: today, this team, this week, or a goal. Not a life story unless the group already trusts each other.",
+        body: "Everyone writes exactly six words about a prompt: today, this team, this week, a class takeaway, or a goal. Frame it as a brief-share writing warm-up—not a life story—unless the group already trusts each other. Model a boring, work-safe line so people do not feel pressure to perform.",
       },
       {
         title: "Silent write for 60–90 seconds",
-        body: "Paper or chat draft. No judging spelling. Pass allowed—people may write and not share.",
+        body: "Paper, sticky notes, or a chat draft. No judging spelling or cleverness. Pass allowed—people may write and not share.",
       },
       {
         title: "Share selectively",
-        body: "Volunteers read aloud, or everyone pastes in chat. Cap spoken shares so you finish in time.",
+        body: "Volunteers read aloud, or everyone pastes in chat. In a writing class or workshop, sample a few voices instead of forcing a full go-around. Cap spoken shares so you finish in time.",
       },
       {
         title: "Optional theme board",
-        body: "Note two recurring words on a flip chart. Do not critique anyone’s memoir.",
+        body: "Note two recurring words on a flip chart or slide. Do not critique anyone’s memoir or turn it into a performance review.",
       },
     ],
     variations: [
       {
+        title: "Writing-class brief share",
+        body: "Prompt a craft focus (“six words about today’s draft,” “six words about revision”) so the icebreaker doubles as a low-stakes writing exercise before workshop critique.",
+      },
+      {
         title: "Team six words",
-        body: "Small groups write one shared six-word line about the project.",
+        body: "Small groups write one shared six-word line about the project, then one spokesperson reads it. Good after names are known.",
       },
       {
         title: "Humor round",
-        body: "Prompt for a funny six-word day summary—still school/work safe.",
+        body: "Prompt for a funny six-word day summary—still school/work safe. Keep jokes kind and optional.",
       },
       {
         title: "Chat-only virtual",
-        body: "Paste six words; reactions only; no unmutes required.",
+        body: "Paste six words; reactions only; no unmutes required. Best for large Zoom rooms and shy writers.",
+      },
+      {
+        title: "Goal-week memoirs",
+        body: "Ask for six words about one work or class goal this week. Harvest themes (“clarify,” “ship,” “listen”) into the agenda without diagnosing people.",
+      },
+      {
+        title: "Memoir → sticky title",
+        body: "After shares, the group may keep one six-word line as the meeting’s working title on a sticky, then retire it next week.",
       },
     ],
     rulesTiming: [
       { label: "Players", body: "4–30 for spoken shares; larger with chat-only." },
-      { label: "Time", body: "8–12 minutes." },
-      { label: "Materials", body: "Paper or digital notes." },
+      { label: "Time", body: "8–12 minutes including write + brief share." },
+      { label: "Materials", body: "Paper, sticky notes, or digital notes—nothing fancy." },
       {
         label: "House rules",
-        body: "No grading writing. No requiring personal trauma. Pass on reading aloud.",
+        body: "No grading writing. No requiring personal trauma. Pass on reading aloud. Celebrate brevity, not drama.",
       },
     ],
     whyItWorks:
-      "The six-word limit forces brevity and often invites wit. It works after people already know names. It fails as a first-minute stranger opener when the prompt is “your life story,” or when managers treat memoirs as performance reviews.",
+      "The six-word limit forces brevity and often invites wit—useful as a writing-class warm-up and as a meeting brief-share. It works after people already know names. It fails as a first-minute stranger opener when the prompt is “your life story,” or when managers treat memoirs as performance reviews.",
     facilitatorScript: [
       {
         speaker: "Open",
@@ -1538,11 +1580,15 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     pitfalls: [
       {
         title: "Life-story prompt on day one",
-        body: "Use today/this week prompts for new groups.",
+        body: "Use today/this week/class prompts for new groups.",
       },
       {
         title: "Forced reading",
         body: "Chat paste or pass must be real options.",
+      },
+      {
+        title: "Workshop critique creep",
+        body: "Do not line-edit or rank memoirs in an icebreaker. Save critique for the real writing activity.",
       },
     ],
     originalVariant: {
@@ -1550,34 +1596,52 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       body: "After shares, the group may keep only one six-word line as the meeting’s working title on a sticky. Retire it next week. Turns memoirs into a disposable framing device instead of a keepsake performance.",
     },
     adultsWork:
-      "Good for workshops and offsites after a check-in. For teens, keep prompts about the day or class, not family history. For church visitors, avoid testimony pressure—use “this week” prompts. Links well after Common Ground when the room is warm.",
+      "Strong for workshops, offsites, and writing-class openers that need a brief share without a long go-around. At work, prompt today/this week/this project—not biography—and keep reading aloud optional so introverts can paste in chat. For teens and students, keep prompts about the day, draft, or class goal, not family history. For church visitors, avoid testimony pressure. Pair after Common Ground or One Word Check-In when the room is warm; skip if names are still unknown or the agenda is already heavy.",
     faqs: [
       {
-        q: "How do you play Six Word Memoirs?",
-        a: "People write exactly six words on a prompt, then optionally share aloud or in chat.",
+        q: "How do you play Six Word Memoirs as an icebreaker?",
+        a: "People write exactly six words on a prompt, then optionally share aloud or in chat. Keep the share brief and voluntary.",
       },
       {
         q: "Do the six words have to be about your whole life?",
-        a: "No. For icebreakers, prompt today, this week, this team, or a goal.",
+        a: "No. For icebreakers and brief-share warm-ups, prompt today, this week, this team, a class draft, or a goal—not a full life story.",
       },
       {
-        q: "How long does it take?",
-        a: "About 8–12 minutes including writing and a short share.",
+        q: "How long does Six Word Memoirs take?",
+        a: "About 8–12 minutes: 60–90 seconds to write, then a short volunteer or chat share.",
       },
       {
-        q: "Can introverts participate without speaking?",
-        a: "Yes. Writing-only or chat paste is enough.",
+        q: "What materials do you need?",
+        a: "Paper, sticky notes, or a chat window. No special software or props.",
+      },
+      {
+        q: "Is Six Word Memoirs good for writing classes and workshops?",
+        a: "Yes. The constraint is a natural brief-share writing warm-up before critique or discussion—as long as you do not grade the icebreaker lines.",
+      },
+      {
+        q: "Can introverts join without speaking?",
+        a: "Yes. Writing-only or chat paste is enough. Never force a spoken read.",
+      },
+      {
+        q: "Does it work for virtual meetings and students?",
+        a: "Yes. Use chat paste for remote rooms. For students, keep prompts school-safe and optional; skip personal trauma prompts.",
       },
       {
         q: "What are example six-word memoirs?",
-        a: "“Coffee first, then clear decisions.” “Learning names, still finding rhythm.” “Quiet week, loud inbox.”",
+        a: "“Coffee first, then clear decisions.” “Learning names, still finding rhythm.” “Quiet week, loud inbox.” “Draft messy, revise tomorrow morning.” “Six words beat long speeches.”",
+      },
+      {
+        q: "When should you skip Six Word Memoirs?",
+        a: "Skip when strangers need names first, when the prompt would demand biography, when time is under five minutes, or when writing would exclude someone without a chat alternative. Prefer a preference poll or One Word Check-In instead.",
       },
     ],
     sources: [
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
-      { label: "Ice breaker games for small groups", href: "/icebreaker-games-for-small-groups" },
-      { label: "Icebreaker games for church small groups", href: "/icebreaker-games-for-church-small-groups" },
-      { label: "Common Ground", href: "/games/common-ground" },
+      { label: "Virtual ice breaker games", href: "/virtual-icebreaker-games" },
+      { label: "One Word Check-In", href: "/games/one-word-check-in" },
+      { label: "Weather Check-In", href: "/games/weather-check-in" },
+      { label: "When to skip an icebreaker", href: "/when-to-skip-an-icebreaker" },
+      { label: "Short virtual icebreakers", href: "/short-virtual-icebreakers" },
     ],
   },
 
@@ -8526,29 +8590,41 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         title: "Offer a seated, eyes-open option",
-        body: "Nobody has to close their eyes. Camera-off is fine. Pass any sense that is hard (smell/taste in a meeting).",
+        body: "Nobody has to close their eyes. Camera-off is fine. Pass any sense that is hard (smell/taste in a meeting). Participation is optional from the first sentence.",
       },
       {
         title: "Lead slowly",
-        body: "About 30–45 seconds per step. Facilitator models with ordinary office details (monitor, chair, HVAC, coffee, water).",
+        body: "About 30–45 seconds per step. Facilitator models with ordinary office or classroom details (monitor, chair, HVAC, coffee, water)—never dramatic or clinical language.",
       },
       {
         title: "Do not treat it as therapy",
-        body: "This is a meeting reset. If someone is in acute distress, stop the activity and follow your organization’s support path. You are not running clinical care.",
+        body: "This is an optional meeting or class reset, not clinical care. Do not claim medical outcomes. If someone is in acute distress, stop the activity and follow your organization’s support path.",
       },
     ],
     variations: [
       {
         title: "See-touch-hear only",
-        body: "Skip smell and taste in shared rooms.",
+        body: "Skip smell and taste in shared rooms, open offices, or anywhere those senses feel awkward or inaccessible.",
       },
       {
         title: "Chat private list",
-        body: "People type to themselves, not the channel.",
+        body: "People type notes to themselves (or a personal doc), not the meeting channel. No share-out afterward.",
       },
       {
         title: "One Word instead",
-        body: "If a countdown feels too intimate, use One Word Check-In.",
+        body: "If a countdown feels too intimate, switch to One Word Check-In or Weather Check-In and keep answers optional.",
+      },
+      {
+        title: "Breath-only closer",
+        body: "After see-touch-hear, skip smell/taste and end with one shared slow breath—still no verbal report required.",
+      },
+      {
+        title: "Silent desk reset",
+        body: "Everyone stays at their desk or seat. Facilitator reads the steps once; the room stays quiet. Useful before exams, hard feedback, or a tense agenda item.",
+      },
+      {
+        title: "Opt-out + stretch alternative",
+        body: "Offer a seated stretch or water break as a full alternative so nobody has to fake a sensory list.",
       },
     ],
     rulesTiming: [
@@ -8557,11 +8633,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       { label: "Materials", body: "None." },
       {
         label: "House rules",
-        body: "Private answers. No sharing required. Skip senses that are inaccessible. Not a diagnosis tool.",
+        body: "Private answers. No sharing required. Skip senses that are inaccessible. Optional participation. Not a diagnosis or treatment tool.",
       },
     ],
     whyItWorks:
-      "Used gently, 5-4-3-2-1 can slow a rattled room before a hard agenda. It fails when it is sold as a party icebreaker or when people are forced to disclose. Skip it as entertainment.",
+      "Used gently, 5-4-3-2-1 can slow a rattled room before a hard agenda. It fails when it is sold as a party icebreaker, when people are forced to disclose, or when facilitators overclaim clinical results. Skip it as entertainment—and skip it when the room needs professional support instead of an activity.",
     facilitatorScript: [
       {
         speaker: "Open",
@@ -8583,7 +8659,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         title: "Clinical overclaim",
-        body: "Do not call this treatment or quote unverified success rates.",
+        body: "Do not call this treatment, therapy, or quote unverified success rates or percentages.",
+      },
+      {
+        title: "Party framing",
+        body: "Do not score, compete, or turn grounding into a funny game show.",
       },
     ],
     originalVariant: {
@@ -8591,27 +8671,43 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       body: "After the countdown, one silent 10-second look at the written agenda. Marks the shift from reset to work without a second icebreaker.",
     },
     adultsWork:
-      "Meetings after bad news or high tension, if people can opt out. Classrooms: keep it optional. Not a youth party game. See when-to-skip if the room needs professional support instead of an activity.",
+      "Use only as an optional reset after bad news, before a hard agenda item, or when the room asks for a pause—not as a team-building party game. Classrooms and work meetings: keep answers private, cameras optional, and alternatives available. Never present it as clinical care. If people need real support, stop and follow your workplace or school process; see when to skip an icebreaker.",
     faqs: [
       {
         q: "How do you run 5-4-3-2-1 grounding in a meeting?",
         a: "Lead a quiet sensory countdown. Answers stay private. Skip any sense that is hard. Do not turn it into a share-out game.",
       },
       {
-        q: "Is this an icebreaker game?",
-        a: "Treat it as an optional reset, not entertainment.",
+        q: "Is 5-4-3-2-1 an icebreaker game?",
+        a: "Treat it as an optional reset, not entertainment. It appears on icebreaker lists because facilitators sometimes use it before hard topics—not because it is meant to be funny or competitive.",
       },
       {
-        q: "How long does it take?",
-        a: "About 3–6 minutes.",
+        q: "How long does 5-4-3-2-1 take?",
+        a: "About 3–6 minutes when you leave ~30–45 seconds per step and allow opt-outs.",
       },
       {
-        q: "Can it be virtual?",
-        a: "Yes. Cameras off. No chat dump of private lists.",
+        q: "What materials do you need?",
+        a: "None. A calm voice and permission to pass are enough.",
+      },
+      {
+        q: "Can it be virtual or for students?",
+        a: "Yes. Cameras off is fine. Keep lists private—no chat dump. For students, emphasize optional participation and never grade or collect answers.",
+      },
+      {
+        q: "Do people have to share their answers?",
+        a: "No. Private answers are the default. There should be no circle share-out.",
+      },
+      {
+        q: "Is this therapy or a clinical technique for work?",
+        a: "No. This page describes an optional facilitation reset, not medical advice or treatment. Do not claim clinical outcomes.",
       },
       {
         q: "What if someone is very distressed?",
-        a: "Stop the exercise and follow your workplace or school support process. This page is not medical advice.",
+        a: "Stop the exercise and follow your workplace or school support process. You are not running clinical care.",
+      },
+      {
+        q: "When should you skip 5-4-3-2-1?",
+        a: "Skip when people need professional support, when the room wants energy and laughter instead of a quiet reset, when someone cannot opt out safely, or when you would feel pressure to force sharing. Prefer One Word or Weather Check-In for a lighter pulse.",
       },
     ],
     sources: [
@@ -8619,6 +8715,8 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       { label: "One Word Check-In", href: "/games/one-word-check-in" },
       { label: "Weather Check-In", href: "/games/weather-check-in" },
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
+      { label: "Virtual ice breaker games", href: "/virtual-icebreaker-games" },
+      { label: "Short virtual icebreakers", href: "/short-virtual-icebreakers" },
     ],
   },
 

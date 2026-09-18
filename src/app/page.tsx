@@ -14,9 +14,9 @@ const ogImage = "https://www.icebreakergames.site/img/home-hero.jpg";
 
 // Homepage targets ONE head term only: "ice breaker games".
 // Scene keywords (meetings / work / classroom / virtual) live on dedicated hub pages.
-const title = "Free Ice Breaker Games — 100+ Rules & Filters (2026)";
+const title = "Free Ice Breaker Games (2026) — 100+ Rules & Filters";
 const description =
-  "Browse 100+ free ice breaker games with clear rules, time, group size, and materials. Filter by occasion and run one today—no signup required.";
+  "100+ free icebreakers with clear rules, minutes, and group size. Filter for meetings, Zoom, or class—open facilitator scripts and run one today. No signup.";
 
 export const metadata: Metadata = {
   title,
