@@ -37,6 +37,14 @@ const nextConfig = {
         permanent: true,
       },
       {
+        // 2026-09-23: merge the "lines" twin into the head-term page.
+        // GSC showed /games/telephone-charades-lines indexed while
+        // /games/telephone-charades stayed out — consolidate on the keyword owner.
+        source: "/games/telephone-charades-lines",
+        destination: "/games/telephone-charades",
+        permanent: true,
+      },
+      {
         source: "/icebreaker-games-for-adults",
         destination: "/blog/ice-breaker-games-for-adults",
         permanent: true,

@@ -9,6 +9,7 @@ export const EXCLUDED_GAME_SLUGS = new Set([
   "two-truths-and-one-lie",
   "desert-island",
   "guess-who", // 301 → guess-who-personal-trivia (canonical screened version)
+  "telephone-charades-lines", // 301 → telephone-charades (head-term page owns the keyword; twin was the indexed one)
 ]);
 
 export function isExcludedGameSlug(slug: string | null | undefined): boolean {

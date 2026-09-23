@@ -79,7 +79,6 @@ export const GAME_SLUGS = [
   "take-a-picture-of-your-shoes",
   "team-superpower-collage",
   "telephone-charades",
-  "telephone-charades-lines",
   "the-check-in",
   "the-great-christmas-candy-pass",
   "the-movie-pitch-icebreaker",
