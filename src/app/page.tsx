@@ -12,11 +12,10 @@ export const revalidate = 86400;
 
 const ogImage = "https://www.icebreakergames.site/img/home-hero.jpg";
 
-// Homepage targets ONE head term only: "ice breaker games".
-// Scene keywords (meetings / work / classroom / virtual) live on dedicated hub pages.
-const title = "Free Ice Breaker Games (2026) — 100+ Rules & Filters";
+// Keep library is ~36 facilitator-ready pages (AdSense reduce-volume). Never claim 100+.
+const title = "Free Ice Breaker Games (2026) — Rules, Filters & Scripts";
 const description =
-  "100+ free icebreakers with clear rules, minutes, and group size. Filter for meetings, Zoom, or class—open facilitator scripts and run one today. No signup.";
+  "Free icebreaker games with clear rules, minutes, and group size. Filter for meetings, Zoom, or class—open facilitator scripts and run one today. No signup.";
 
 export const metadata: Metadata = {
   title,
@@ -48,8 +47,8 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const allGames = await getAllGames();
-  // Indexing priority (2026-09): A-class high-volume game pages + proven engines.
-  // Do not use allGames.slice(0, N) — that follows DB order, not SEO priority.
+  const libraryCount = allGames.length;
+  // Featured = Keep set only (never Cut / noindex slugs).
   const featuredSlugOrder = [
     "this-or-that-questions",
     "six-word-memoirs",
@@ -59,9 +58,10 @@ export default async function Home() {
     "emoji-introduction",
     "marshmallow-challenge",
     "dicebreakers",
-    "story-swap",
     "beach-ball-qa",
     "icebreaker-bingo",
+    "would-you-rather",
+    "human-bingo",
   ];
   const bySlug = new Map(allGames.map((g) => [g.slug, g]));
   const featuredGames = featuredSlugOrder
@@ -114,7 +114,7 @@ export default async function Home() {
     {
       href: "/games-like-two-truths-and-a-lie",
       title: "Games like Two Truths and a Lie",
-      description: "Top traffic guide—12 get-to-know substitutes with rules and facilitator tips.",
+      description: "Twelve get-to-know substitutes with rules and facilitator tips.",
     },
     {
       href: "/games/this-or-that-questions",
@@ -134,7 +134,7 @@ export default async function Home() {
     {
       href: "/games/find-your-match",
       title: "Find Your Match",
-      description: "Famous-pairs mixer near page one—pair cards, rules, and networking tips.",
+      description: "Famous-pairs mixer with pair cards, rules, and networking tips.",
     },
     {
       href: "/games/weather-check-in",
@@ -165,8 +165,8 @@ export default async function Home() {
           <p className={styles.brand}>Ice Breaker Games</p>
           <h1 className={styles.heroTitle}>Free ice breaker games</h1>
           <p className={styles.heroLead}>
-            100+ free ice breaker games with step-by-step rules, time estimates, group size,
-            and facilitation tips—filter by occasion and run one today.
+            {libraryCount} facilitator-ready ice breaker games with step-by-step rules, time
+            estimates, group size, and facilitation tips—filter by occasion and run one today.
           </p>
           <div className={styles.ctaRow}>
             <Link href="/games" className={styles.ctaPrimary}>
@@ -202,11 +202,11 @@ export default async function Home() {
       <section className={styles.popularBand} aria-labelledby="popular-games-heading">
         <div className={styles.popularInner}>
           <div className={styles.sectionHead}>
-            <p className={styles.eyebrow}>Priority openers</p>
+            <p className={styles.eyebrow}>Start here</p>
             <h2 id="popular-games-heading">Popular Games</h2>
             <p>
-              Start with high-intent openers and our strongest similar-games guide—then open full
-              rules, scripts, and related activities.
+              Start with reliable openers and our similar-games guide—then open full rules,
+              scripts, and related activities.
             </p>
           </div>
           <div className={styles.popularList}>

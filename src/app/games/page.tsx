@@ -9,9 +9,9 @@ import styles from "./games.module.css";
 
 export const revalidate = 86400;
 
-const title = "100+ Free Ice Breaker Games | Filter by Time & Size";
+const title = "Free Ice Breaker Games | Filter by Time & Size";
 const description =
-  "Filter 100+ free ice breaker games by minutes, players, and audience. Open step-by-step rules for meetings, work, Zoom, and classrooms—start in under a minute.";
+  "Filter free ice breaker games by minutes, players, and audience. Open step-by-step rules for meetings, work, Zoom, and classrooms—start in under a minute.";
 const canonical = "https://www.icebreakergames.site/games";
 const ogImage = "https://www.icebreakergames.site/img/games-og.jpg";
 
@@ -63,7 +63,7 @@ const priorityGames = [
   {
     href: "/games/find-your-match",
     title: "Find Your Match",
-    description: "Famous-pairs mixer near the top of search—pair cards and networking tips.",
+    description: "Famous-pairs mixer with pair cards and networking tips.",
   },
   {
     href: "/games/weather-check-in",
@@ -315,7 +315,7 @@ export default async function GamesPage() {
           <p className={styles.brand}>Ice Breaker Games</p>
           <h1 className={styles.heroTitle}>Browse all ice breaker games</h1>
           <p className={styles.heroLead}>
-            Filter {games.length}+ free activities by time, group size, type, and
+            Filter {games.length} free activities by time, group size, type, and
             audience—then open full rules and facilitation tips.
           </p>
           <div className={styles.ctaRow}>

@@ -5383,7 +5383,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     rulesTiming: [
       { label: "Players", body: "6–20." },
-      { label: "Time", body: "2–5 minutes." },
+      {
+        label: "Time",
+        body: "8–12 minutes total (one soft laugh round is about 1–2 minutes; stop before it becomes a tournament).",
+      },
       { label: "Materials", body: "None." },
       {
         label: "House rules",
@@ -5437,7 +5440,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         q: "How long does it take?",
-        a: "Two to five minutes for one soft round—do not run it as a long tournament.",
+        a: "Plan 8–12 minutes for explain + one soft round: about 1–2 minutes of actual word play, then sit. Do not stretch it into a long elimination tournament.",
       },
       {
         q: "Can it be virtual?",
@@ -8954,7 +8957,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     rulesTiming: [
       { label: "Players", body: "8–25; above 25, split circles or skip." },
-      { label: "Time", body: "2–5 minutes (one soft round; do not stretch to a tournament)." },
+      {
+        label: "Time",
+        body: "5–10 minutes total (one soft pointing round is about 60–90 seconds; do not stretch into a tournament).",
+      },
       { label: "Materials", body: "None." },
       {
         label: "House rules",
@@ -9008,7 +9014,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         q: "How long does it take?",
-        a: "Two to five minutes for one soft round—do not run it as a long tournament.",
+        a: "Plan 5–10 minutes for the whole spike: explain soft rules, run one 60–90 second pointing round, sit. Do not stretch it into a tournament.",
       },
       {
         q: "Can I rename it?",
@@ -9022,7 +9028,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     sources: [
       { label: "When to skip an icebreaker", href: "/when-to-skip-an-icebreaker" },
       { label: "Rock Paper Scissors Tournament", href: "/games/rock-paper-scissors-tournament" },
-      { label: "Pterodactyl", href: "/games/pterodactyl" },
+      { label: "Chat Waterfall", href: "/games/chat-waterfall" },
       { label: "Ice breaker games for youth group", href: "/icebreaker-games-for-youth-group" },
     ],
   },

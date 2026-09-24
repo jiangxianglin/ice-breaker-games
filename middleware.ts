@@ -1,6 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { updateSession } from "@/lib/supabase/middleware";
 import { createClient } from "@/lib/supabase/server";
+import { isNoindexGameSlug } from "@/lib/games/excluded-slugs";
 
 export async function middleware(request: NextRequest) {
   const hostHeader = request.headers.get("host") ?? "";
@@ -44,6 +45,14 @@ export async function middleware(request: NextRequest) {
     } catch (error) {
       console.error("Error redirecting UUID to slug:", error);
     }
+  }
+
+  // AdSense Cut set: reinforce noindex via response header (meta already set in generateMetadata)
+  const gameSlugMatch = pathname.match(/^\/games\/([^/]+)\/?$/);
+  if (gameSlugMatch && isNoindexGameSlug(gameSlugMatch[1])) {
+    const response = await updateSession(request);
+    response.headers.set("X-Robots-Tag", "noindex, follow");
+    return response;
   }
 
   return await updateSession(request);

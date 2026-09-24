@@ -105,7 +105,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
         </section>
 
 <section className={styles.lede}>
-          <h2>What is {game.title}?</h2>
+          <h2>{`What is ${String(game.title).replace(/\s*[!?]+$/, "")}?`}</h2>
           <p>{game.description}</p>
         </section>
 
