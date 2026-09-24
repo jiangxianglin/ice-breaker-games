@@ -1758,7 +1758,11 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           </section>
         )}
 
-        <GamePageExtras slug={game.slug} />
+        <GamePageExtras
+          slug={game.slug}
+          players={game.players}
+          duration={game.duration}
+        />
 
         <RelatedGames
           items={relatedGames}

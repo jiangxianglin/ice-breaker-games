@@ -15,7 +15,8 @@
     "db:seed:supabase": "tsx src/db/seed/games-supabase.ts",
     "db:add-type-column": "tsx scripts/add-type-column-direct.ts",
     "db:setup-game-types": "tsx scripts/setup-game-types.ts",
-    "db:setup-all": "tsx scripts/add-type-column-direct.ts && tsx scripts/setup-game-types.ts"
+    "db:setup-all": "tsx scripts/add-type-column-direct.ts && tsx scripts/setup-game-types.ts",
+    "check:extras": "tsx scripts/check-game-extras.ts"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.2",

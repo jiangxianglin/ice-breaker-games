@@ -18,8 +18,10 @@ declare global {
 
 /**
  * SPA-safe GA4 pageviews + engagement.
- * Custom `page_view` events alone often report ~0s engagement time because
- * GA4 never receives `user_engagement` / config-driven page transitions.
+ *
+ * send_page_view is disabled on the initial gtag config in layout.tsx so we
+ * own every hit. Always send an explicit `page_view` with page_location —
+ * missing location is a common cause of Landing page = (not set) in GA4.
  */
 export function GoogleAnalyticsPageView() {
   const pathname = usePathname();
@@ -54,6 +56,8 @@ export function GoogleAnalyticsPageView() {
       window.gtag("event", "user_engagement", {
         engagement_time_msec: engaged,
         page_path: pathRef.current,
+        page_location: window.location.href,
+        page_title: document.title.trim() || DEFAULT_PAGE_TITLE,
         send_to: GOOGLE_ANALYTICS_ID,
       });
 
@@ -61,7 +65,6 @@ export function GoogleAnalyticsPageView() {
       pageStartRef.current = Date.now();
     };
 
-    // Close out previous virtual page before opening the new one
     if (pathRef.current && pathRef.current !== pagePath) {
       flushEngagement("route");
     }
@@ -73,11 +76,20 @@ export function GoogleAnalyticsPageView() {
 
     const timeoutId = window.setTimeout(() => {
       const pageTitle = document.title.trim() || DEFAULT_PAGE_TITLE;
-      // `config` page_path is the supported SPA pattern (resets engagement clock)
+      const pageLocation = window.location.href;
+
       window.gtag?.("config", GOOGLE_ANALYTICS_ID, {
         page_title: pageTitle,
-        page_location: window.location.href,
+        page_location: pageLocation,
         page_path: pagePath,
+        send_page_view: false,
+      });
+
+      window.gtag?.("event", "page_view", {
+        page_title: pageTitle,
+        page_location: pageLocation,
+        page_path: pagePath,
+        send_to: GOOGLE_ANALYTICS_ID,
       });
     }, 120);
 

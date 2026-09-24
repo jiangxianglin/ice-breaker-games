@@ -5,9 +5,33 @@ import styles from "./game-detail.module.css";
 
 type GamePageExtrasProps = {
   slug: string;
+  /** Canonical meta from DB — overrides rulesTiming Players / Time bodies */
+  players?: string | null;
+  duration?: string | null;
   /** When true, skip FAQ block (e.g. emoji already has FAQ in GameDetail) */
   skipFaq?: boolean;
 };
+
+/** Keep Rules & timing Players/Time aligned with hero/snapshot (AdSense Q3). */
+export function syncRulesTimingWithGame(
+  rulesTiming: NonNullable<GamePageExtrasContent["rulesTiming"]>,
+  players?: string | null,
+  duration?: string | null
+) {
+  return rulesTiming.map((item) => {
+    const label = item.label.trim().toLowerCase();
+    if (players && (label === "players" || label.startsWith("players"))) {
+      return { ...item, body: players };
+    }
+    if (
+      duration &&
+      (label === "time" || label === "duration" || label.startsWith("time "))
+    ) {
+      return { ...item, body: duration };
+    }
+    return item;
+  });
+}
 
 function QuoteBlock({
   quote,
@@ -207,9 +231,26 @@ function ExtrasBody({
   );
 }
 
-export function GamePageExtras({ slug, skipFaq }: GamePageExtrasProps) {
-  const extras = getGamePageExtras(slug);
-  if (!extras) return null;
+export function GamePageExtras({
+  slug,
+  players,
+  duration,
+  skipFaq,
+}: GamePageExtrasProps) {
+  const raw = getGamePageExtras(slug);
+  if (!raw) return null;
+
+  const extras: GamePageExtrasContent =
+    raw.rulesTiming && raw.rulesTiming.length > 0
+      ? {
+          ...raw,
+          rulesTiming: syncRulesTimingWithGame(
+            raw.rulesTiming,
+            players,
+            duration
+          ),
+        }
+      : raw;
 
   const hasBody =
     (extras.howToSteps && extras.howToSteps.length > 0) ||

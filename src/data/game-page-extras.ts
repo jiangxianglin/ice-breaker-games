@@ -2408,6 +2408,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Can it work online?",
         a: "Yes—pick a color emoji, then answer in breakouts or chat.",
       },
+    
+      {
+        q: "When should you skip Skittles Sharing?",
+        a: "Skip when allergies cannot be accommodated with tokens, when prompts would go intimate, or in formal boardrooms. Prefer a check-in or This or That.",
+      },
     ],
     sources: [
       { label: "Ice breaker games for youth group", href: "/icebreaker-games-for-youth-group" },
@@ -2632,6 +2637,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from regular charades?",
         a: "The message mutates through multiple people like telephone, which is the joke.",
       },
+    
+      {
+        q: "When should you skip Telephone Charades?",
+        a: "Skip when the room cannot move or stay silent, when phrases would exclude visitors, or when time is under five minutes. Prefer a seated preference poll.",
+      },
     ],
     sources: [
       { label: "Funny ice breaker games for meetings", href: "/funny-icebreaker-games-for-meetings" },
@@ -2847,6 +2857,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "How is it different from Two Truths and a Lie?",
         a: "Guess Who uses one true fact per person. Two Truths mixes truths with a lie.",
+      },
+    
+      {
+        q: "When should you skip Guess Who Personal Trivia?",
+        a: "Skip in low-trust rooms, when facts cannot be screened, or when anyone refuses anonymous sharing. Prefer The Name Game or Chat Waterfall.",
       },
     ],
     sources: [
@@ -3292,6 +3307,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How do you keep it work-safe?",
         a: "Use a custom clean word list and private rooms.",
       },
+    
+      {
+        q: "When should you skip Skribbl / Pictionary online?",
+        a: "Skip if you cannot open a private room or keep a clean word list, or if third-party tools are blocked. Use a shared whiteboard draw-and-guess instead—or skip the opener.",
+      },
     ],
     sources: [
       { label: "Virtual ice breaker games", href: "/virtual-icebreaker-games" },
@@ -3399,6 +3419,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Should I screenshot the gallery?",
         a: "Only with clear consent. Default is no screenshots.",
+      },
+    
+      {
+        q: "When should you skip Take A Picture Of Your Shoes?",
+        a: "Skip in low-trust rooms, when cameras feel like status checks, or when anyone prefers off-camera. Prefer Chat Waterfall.",
       },
     ],
     sources: [
@@ -3844,6 +3869,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How long does it take?",
         a: "About 10–15 minutes including debrief.",
       },
+    
+      {
+        q: "When should you skip The Question Web?",
+        a: "Skip when yarn or soft tosses are impractical, prompts would go intimate, or the room is a standup not a workshop. Prefer One Word Check-In.",
+      },
     ],
     sources: [
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
@@ -3951,6 +3981,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What if people cannot move between tables?",
         a: "Rotate the card stacks instead of the people.",
+      },
+    
+      {
+        q: "When should you skip Topics Tables?",
+        a: "Skip when seating cannot support table talks, prompts are invasive, or you only have five minutes. Prefer Speed Networking or a check-in.",
       },
     ],
     sources: [
@@ -4060,6 +4095,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "What are good example answers?",
         a: "“Draft slides,” “a blocking question,” “fresh eyes,” “I need a decision on owners.”",
       },
+    
+      {
+        q: "When should you skip What Are You Bringing to the Meeting?",
+        a: "Skip after bad news, during formal reviews, or if “bringing” would pressure status. Prefer a neutral preference poll or no opener.",
+      },
     ],
     sources: [
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
@@ -4167,6 +4207,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What if someone hates hypotheticals?",
         a: "Allow pass or switch to What Are You Bringing to the Meeting.",
+      },
+    
+      {
+        q: "When should you skip Desert Island Scenario?",
+        a: "Skip when hypotheticals feel tone-deaf, time is tight, or the room needs decisions not fantasy. Prefer This or That.",
       },
     ],
     sources: [
@@ -4387,6 +4432,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What squares should I avoid?",
         a: "Anything that outs private identity, wealth, or health status.",
+      },
+    
+      {
+        q: "When should you skip Passions Tic Tac Toe?",
+        a: "Skip under about eight people, when the room cannot mingle, or when squares are identity-sensitive. Prefer Common Ground or pair prompts.",
       },
     ],
     sources: [
@@ -4724,6 +4774,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Virtual tips?",
         a: "Hold the object to camera or paste a photo; stop shares before slides.",
       },
+    
+      {
+        q: "When should you skip Show And Tell?",
+        a: "Skip when objects would create status pressure, when sampling would take too long, or cameras are required. Prefer Chat Waterfall.",
+      },
     ],
     sources: [
       { label: "Virtual ice breaker games", href: "/virtual-icebreaker-games" },
@@ -4831,6 +4886,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "How long does it take?",
         a: "Usually 8–12 minutes.",
+      },
+    
+      {
+        q: "When should you skip Crossword Names?",
+        a: "Skip for recurring teams that already know names, or when spelling games would exclude non-native speakers without help. Prefer The Name Game.",
       },
     ],
     sources: [
@@ -4940,6 +5000,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from Guess Who Personal Trivia?",
         a: "Same family; this framing emphasizes teammates and work-safe clues.",
       },
+    
+      {
+        q: "When should you skip Guess That Team Member?",
+        a: "Skip when clues cannot be screened, trust is low, or owners cannot refuse reveal. Prefer The Name Game.",
+      },
     ],
     sources: [
       { label: "Riddle icebreakers for virtual meetings", href: "/riddle-icebreakers-for-virtual-meetings" },
@@ -5048,6 +5113,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How many envelopes?",
         a: "Prepare more than people, but only reveal six to eight in an icebreaker.",
       },
+    
+      {
+        q: "When should you skip Mystery Envelope?",
+        a: "Skip when prompts would humiliate, when you cannot screen the deck, or the room needs gravity. Prefer This or That.",
+      },
     ],
     sources: [
       { label: "Riddle icebreakers for virtual meetings", href: "/riddle-icebreakers-for-virtual-meetings" },
@@ -5155,6 +5225,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Is voting required?",
         a: "No. Soft snaps are optional; skip winners entirely if you prefer.",
+      },
+    
+      {
+        q: "When should you skip Invention Pitch?",
+        a: "Skip in cold client rooms, when pitches would shame quieter people, or time is under ten minutes. Prefer a check-in.",
       },
     ],
     sources: [
@@ -5716,6 +5791,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Can it be virtual?",
         a: "Yes—use breakout rooms and a shared doc or chat list.",
       },
+    
+      {
+        q: "When should you skip 10 Things in Common?",
+        a: "Skip when pairs freeze without category cards, categories go intimate, or the agenda is under five minutes. Prefer This or That.",
+      },
     ],
     sources: [
       { label: "Best icebreaker games", href: "/best-icebreaker-games" },
@@ -6154,6 +6234,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from Speed Networking?",
         a: "Reception Line is a simple shift-and-greet; Speed Networking often uses more prompts and professional goals.",
       },
+    
+      {
+        q: "When should you skip Reception Line?",
+        a: "Skip when space cannot form two lines, mobility needs are ignored, or trust is too low for timed hellos. Prefer Chat Waterfall.",
+      },
     ],
     sources: [
       { label: "Games like Human Bingo", href: "/games-like-human-bingo" },
@@ -6261,6 +6346,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Can it be virtual?",
         a: "Yes—match on mugs, backgrounds, or snacks visible on camera (camera optional with chat descriptions).",
+      },
+    
+      {
+        q: "When should you skip Sole Mate?",
+        a: "Skip when shoe-matching would shame anyone, or safer prompts are unavailable. Prefer Find Your Match with work-safe pairs.",
       },
     ],
     sources: [
@@ -6590,6 +6680,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from Two Truths?",
         a: "No guessing or lies—just listening and a one-line introduce.",
       },
+    
+      {
+        q: "When should you skip Story Swap?",
+        a: "Skip when visitor-safe prompts are missing, time is under eight minutes, or personal stories feel forced. Prefer Two Truths and a Dream.",
+      },
     ],
     sources: [
       { label: "Icebreaker games for church small groups", href: "/icebreaker-games-for-church-small-groups" },
@@ -6698,6 +6793,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Is it good for visitors?",
         a: "Yes with mild models and a clear pass.",
       },
+    
+      {
+        q: "When should you skip Two Truths and a Dream?",
+        a: "Skip when trust is fragile, the agenda is under five minutes, or personal hopes feel exposed. Prefer One Word Check-In.",
+      },
     ],
     sources: [
       { label: "Games like Two Truths and a Lie", href: "/games-like-two-truths-and-a-lie" },
@@ -6801,6 +6901,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What should people avoid saying?",
         a: "Appearance, romance, or comparisons that rank people.",
+      },
+    
+      {
+        q: "When should you skip Appreciation Circle?",
+        a: "Skip in brand-new groups, after conflict without repair, or when praise would feel performative. Prefer a preference poll.",
       },
     ],
     sources: [
@@ -6910,6 +7015,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "What if the year is painful?",
         a: "Pass or redraw—no explanation needed.",
       },
+    
+      {
+        q: "When should you skip Year Of The Coin?",
+        a: "Skip when coin years would exclude visitors, or the game becomes a money story. Prefer a light preference poll.",
+      },
     ],
     sources: [
       { label: "Icebreaker games for church", href: "/icebreaker-games-for-church" },
@@ -7017,6 +7127,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What categories are safe?",
         a: "Hobbies, food, routines, learning goals. Skip trauma, politics, and salary.",
+      },
+    
+      {
+        q: "When should you skip Unique And Shared?",
+        a: "Skip when groups freeze without prompts, categories go intimate, or time is under eight minutes. Prefer Common Ground.",
       },
     ],
     sources: [
@@ -7346,6 +7461,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Is it an icebreaker or a teamwork drill?",
         a: "Both—a short listening drill that warms collaboration norms.",
       },
+    
+      {
+        q: "When should you skip Count Up?",
+        a: "Skip when restarts would shame people, or the room needs gravity not a listening stunt. Prefer a check-in.",
+      },
     ],
     sources: [
       { label: "Ice breaker games for work", href: "/icebreaker-games-for-work" },
@@ -7567,6 +7687,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from Dicebreakers?",
         a: "Same random-prompt idea. This page is introduction-shaped (name + one light detail); Dicebreakers is a conversation starter at any point in a meeting.",
       },
+    
+      {
+        q: "When should you skip Wheel Of Fortune Introductions?",
+        a: "Skip when wedges would force personal disclosure, or a full circle would eat the agenda. Prefer The Name Game.",
+      },
     ],
     sources: [
       { label: "Name game icebreakers", href: "/name-game-icebreakers" },
@@ -7674,6 +7799,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What if someone does not want to share a hometown?",
         a: "They pick a park, a fictional place, or pass.",
+      },
+    
+      {
+        q: "When should you skip Where Do We Come From?",
+        a: "Skip when origin questions feel excluding or unsafe, or famous-place prompts exclude newcomers. Prefer a preference poll.",
       },
     ],
     sources: [
@@ -7783,6 +7913,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from Desert Island Scenario?",
         a: "Vacation is a wish trip. Desert island is a packing constraint that can bridge to project tools.",
       },
+    
+      {
+        q: "When should you skip Fantasy Vacation?",
+        a: "Skip when travel talk creates status pressure, or time is under five minutes. Prefer This or That.",
+      },
     ],
     sources: [
       { label: "Desert Island Scenario", href: "/games/desert-island-scenario" },
@@ -7890,6 +8025,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What prompts should I avoid?",
         a: "Anything romantic, appearance-based, or about family status.",
+      },
+    
+      {
+        q: "When should you skip Speed Dating Icebreaker?",
+        a: "Skip when the “dating” frame is wrong for work/school, space cannot rotate, or trust is low. Prefer Speed Networking with work prompts.",
       },
     ],
     sources: [
@@ -8319,6 +8459,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from This or That?",
         a: "This or That is two sides. Near and Far allows a full spectrum, including the middle.",
       },
+    
+      {
+        q: "When should you skip Near And Far?",
+        a: "Skip when movement is unsafe, criteria are sensitive, or a seated option is missing. Prefer Line-Up seated continuum.",
+      },
     ],
     sources: [
       { label: "This or That Questions", href: "/games/this-or-that-questions" },
@@ -8535,6 +8680,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Can it be virtual?",
         a: "Yes with optional camera waves or typed beat patterns.",
       },
+    
+      {
+        q: "When should you skip Crazy Handshake?",
+        a: "Skip when contact is unwelcome, formal attire constrains movement, or trust is low. Prefer a no-contact name game.",
+      },
     ],
     sources: [
       { label: "The Name Game", href: "/games/the-name-game" },
@@ -8642,6 +8792,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Can it be virtual?",
         a: "Not well. Use Count Up or a shared-doc Line-Up instead.",
+      },
+    
+      {
+        q: "When should you skip Helium Stick?",
+        a: "Skip when props are missing, contact/close quarters are unwanted, or the room needs gravity. Prefer Line-Up.",
       },
     ],
     sources: [
@@ -9108,6 +9263,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What if someone does not want to share a place?",
         a: "Use the no-pin box. That is full participation.",
+      },
+    
+      {
+        q: "When should you skip Group Map?",
+        a: "Skip when floor space is missing, origin questions feel unsafe, or standing is required without alternatives. Prefer a chat continuum.",
       },
     ],
     sources: [
