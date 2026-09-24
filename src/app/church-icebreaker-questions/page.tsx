@@ -13,7 +13,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/church-icebreaker-questions-hero.jpg";
 const ogImageAlt =
   "Adults answering church-icebreaker-questions in a living-room small group";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-09-16";
 const dateModified = "2026-09-16";
 

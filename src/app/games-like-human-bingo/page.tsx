@@ -113,20 +113,20 @@ const gameEntries = [
     variation: "Shorten to five things for a tighter 6-minute round.",
   },
   {
-    slug: "category-mixer",
-    name: "Category Mixer",
-    bestFor: "Large rooms that need fast cluster movement with almost no prep",
-    players: "12–60",
-    time: "8–12 min",
-    materials: "None",
+    slug: "icebreaker-bingo",
+    name: "Icebreaker Bingo",
+    bestFor: "Large rooms that need Human Bingo energy with easier custom decks",
+    players: "10–60",
+    time: "10–20 min",
+    materials: "Printed or digital bingo cards",
     steps: [
-      "Call categories (morning people, tea drinkers, travel lovers).",
-      "People move to matching zones and greet two strangers.",
-      "Ask one person from each zone to share a one-line reason.",
-      "Run 4–6 rounds, then transition to the main agenda.",
+      "Hand out themed bingo cards with light prompts.",
+      "People mingle for initials; require a different person per square when possible.",
+      "Celebrate lines without a single-winner stampede.",
+      "Transition to the main agenda.",
     ],
-    whySimilar: "Creates Human Bingo style discovery through movement clusters.",
-    variation: "Use workplace-safe categories like “remote today” or “first conference.”",
+    whySimilar: "Same find-people discovery loop as Human Bingo with customizable themes.",
+    variation: "Four corners only when time is short.",
   },
   {
     slug: "reception-line",
@@ -393,7 +393,7 @@ export default async function GamesLikeHumanBingoPage() {
                 Mingling icebreakers like Human Bingo work because they give shy people a reason to approach strangers and surface shared traits without long speeches.
               </p>
               <cite className={styles.cite}>
-                — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+                — Elena Hart, summarizing guidance from{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
                   rel="noopener noreferrer"

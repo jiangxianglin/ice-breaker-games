@@ -210,6 +210,61 @@
   color: var(--hk-muted);
 }
 
+.crawlIndex {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--hk-line);
+}
+
+.crawlIndexTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: var(--hk-ink);
+}
+
+.crawlIndexLead {
+  margin: 0 0 1.25rem;
+  max-width: 40rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--hk-muted);
+}
+
+.crawlIndexList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .crawlIndexList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .crawlIndexList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.crawlIndexList a {
+  color: var(--hk-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.crawlIndexList a:hover {
+  color: var(--hk-accent, #1a5f4a);
+}
+
 /* —— Snapshot —— */
 .snapshot {
   display: grid;

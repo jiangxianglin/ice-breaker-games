@@ -37,7 +37,11 @@ const jsonLd = {
   description,
   datePublished,
   dateModified,
-  author: { "@type": "Organization", name: "Ice Breaker Games Editorial Team" },
+  author: {
+    "@type": "Person",
+    name: "Elena Hart",
+    url: "https://www.icebreakergames.site/about",
+  },
   publisher: { "@type": "Organization", name: "Ice Breaker Games" },
   mainEntityOfPage: canonical,
 };
@@ -59,7 +63,11 @@ export default function WhenToSkipAnIcebreakerPage() {
 
       <h1 className="mb-4 text-4xl font-bold tracking-tight">{title}</h1>
       <p className="mb-2 text-sm text-muted-foreground">
-        By the Ice Breaker Games editorial team · Updated {dateModified}
+        By{" "}
+        <Link href="/about" className="underline underline-offset-2">
+          Elena Hart
+        </Link>{" "}
+        · Updated {dateModified}
       </p>
       <p className="mb-8 text-lg text-muted-foreground">
         Skipping the opener is often the professional move. This guide lists the situations where we
@@ -152,13 +160,13 @@ export default function WhenToSkipAnIcebreakerPage() {
           variant in the first sentence or pick a different game.
         </p>
         <p>
-          Name learning still matters. Use a seated motion or a verbal cue instead of a full-body
-          sequence—see{" "}
+          Name learning still matters. Use a seated verbal cue or a short chain instead of a
+          full-body sequence—see{" "}
           <Link
-            href="/games/motion-name-game"
+            href="/games/the-name-game"
             className="font-medium text-foreground underline underline-offset-2"
           >
-            Motion Name-Game
+            The Name Game
           </Link>{" "}
           and{" "}
           <Link
@@ -192,14 +200,15 @@ export default function WhenToSkipAnIcebreakerPage() {
           it.
         </p>
         <p>
-          Collages, pitches, and superhero metaphors belong after people share a project. Running{" "}
+          Preference games and deep metaphors belong after people share a project. Running{" "}
           <Link
-            href="/games/team-superpower-collage"
+            href="/games/would-you-rather"
             className="font-medium text-foreground underline underline-offset-2"
           >
-            Team Superpower Collage
+            Would You Rather
           </Link>{" "}
-          with strangers produces capes, not agreements. Use a mixer instead, then collage later.
+          with strangers on invasive prompts produces awkward silence, not agreements. Use a light
+          mixer first, then deeper prompts later.
         </p>
       </section>
 

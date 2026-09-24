@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { blogPosts } from "@/data/blog";
 import { GAME_SLUGS } from "@/data/game-slugs";
-import { EXCLUDED_GAME_SLUGS } from "@/lib/games/excluded-slugs";
+import { isSitemapExcludedGameSlug } from "@/lib/games/excluded-slugs";
 
 export const dynamic = "force-static";
 export const revalidate = 3600;
@@ -41,6 +41,7 @@ function getStaticPages(): MetadataRoute.Sitemap {
     { path: "/games-like-human-bingo", changeFrequency: weekly, priority: 0.9 },
     { path: "/games-like-the-human-knot", changeFrequency: weekly, priority: 0.9 },
     { path: "/games-like-two-truths-and-a-lie", changeFrequency: weekly, priority: 0.9 },
+    { path: "/games-like-never-have-i-ever", changeFrequency: weekly, priority: 0.9 },
     { path: "/icebreaker-games-for-youth-group", changeFrequency: weekly, priority: 0.9 },
     { path: "/riddle-icebreakers-for-virtual-meetings", changeFrequency: weekly, priority: 0.9 },
     { path: "/short-virtual-icebreakers", changeFrequency: weekly, priority: 0.9 },
@@ -135,7 +136,7 @@ async function getGamePages(): Promise<MetadataRoute.Sitemap> {
   const slugs = new Set<string>([...GAME_SLUGS, ...live.keys()]);
 
   return [...slugs]
-    .filter((slug) => !EXCLUDED_GAME_SLUGS.has(slug))
+    .filter((slug) => !isSitemapExcludedGameSlug(slug))
     .sort()
     .map((slug) => ({
       url: `${baseUrl}/games/${slug}`,

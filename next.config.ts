@@ -45,6 +45,12 @@ const nextConfig = {
         permanent: true,
       },
       {
+        // 2026-09-24 AdSense Phase 1: twin of would-you-rather
+        source: "/games/would-you-rather-training",
+        destination: "/games/would-you-rather",
+        permanent: true,
+      },
+      {
         source: "/icebreaker-games-for-adults",
         destination: "/blog/ice-breaker-games-for-adults",
         permanent: true,

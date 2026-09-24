@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Print student-safe Two Truths and a Lie worksheets for class, advisory, and orientation—with example statements and teacher tips.",
     date: "2026-08-29",
-    author: "IceBreaker Editorial Team",
+    author: "Elena Hart",
     image: "/small-group-icebreaker-activity.jpg",
     tags: [
       "Two Truths and a Lie",
@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     title: "Human Bingo for Students Printable: 3 Ready-to-Print Cards",
     excerpt: "Download and print student-friendly Human Bingo cards for class, orientation, and first day of school activities, with prompts that work for high school, college, and mixed groups.",
     date: "2026-05-05",
-    author: "IceBreaker Editorial Team",
+    author: "Elena Hart",
     image: "/large-group-icebreaker-event.jpg",
     tags: ["Human Bingo", "Printable", "Student Icebreakers", "First Day of School", "Orientation"],
     content: `Printable Human Bingo cards for students with classroom-safe prompts, quick teacher directions, and multiple versions for school and orientation use.`
@@ -42,7 +42,7 @@ export const blogPosts: BlogPost[] = [
     title: "Icebreaker Games for Students That Actually Work in Class",
     excerpt: "Icebreaker Games for Students for class, high school, college, and online learning, with non-cheesy ideas, low-prep picks, and a teacher-friendly comparison table.",
     date: "2026-05-05",
-    author: "IceBreaker Editorial Team",
+    author: "Elena Hart",
     image: "/small-group-icebreaker-activity.jpg",
     tags: ["Student Icebreakers", "Classroom Games", "First Day of School", "High School", "College"],
     content: `Practical guide to icebreaker games for students, including low-pressure classroom ideas, online options, and age-appropriate picks for high school and college.`
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
     title: "Christmas Table Icebreaker Games - 15 Fun Holiday Activities",
     excerpt: "Discover 15 engaging Christmas table icebreaker games perfect for holiday dinners. Easy-to-play activities that keep guests entertained while seated.",
     date: "2026-02-07",
-    author: "Holiday Events Team",
+    author: "Elena Hart",
     image: "/christmas-dinner-connection.jpg",
     tags: ["Christmas Games", "Holiday Party", "Table Games", "Dinner Party", "Family Activities"],
     content: `Complete guide to Christmas table icebreaker games for holiday dinners and festive gatherings.`
@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
     title: "Effective Icebreaker Games Tips: Expert Guide for Teams",
     excerpt: "Master icebreaker games with proven tips from experts. Learn to choose, facilitate & engage teams with professional activities for meetings & events.",
     date: "2025-01-07",
-    author: "IceBreaker Team",
+    author: "Elena Hart",
     image: "/icebreaker-facilitator-training.jpg",
     tags: ["Icebreaker Tips", "Team Leadership", "Meeting Management", "Facilitation Skills", "Team Building"],
     content: `
@@ -120,7 +120,7 @@ Pay attention to energy levels and adjust accordingly. Start with lower-risk act
 ### For Established Teams: Energizing
 - [One Word Check-In](/games/one-word-check-in) - Quick emotional temperature check
 - [Speed Networking](/games/speed-networking) - Facilitates cross-team connections
-- [Virtual Background Story](/games/virtual-background-story) - Creative sharing for remote teams
+- [Picture Sharing](/games/picture-sharing) - Creative sharing for remote teams
 
 ### For Large Groups: Inclusive Participation
 ![Wide shot of large conference room with participants in energetic icebreaker activity](/large-group-icebreaker-event.jpg)
@@ -184,7 +184,7 @@ Successful facilitators develop a repertoire of go-to **icebreaker games** for d
 **Essential starter collection:**
 - [Two Truths and a Lie](/games/two-truths-and-a-lie) - Versatile classic
 - [One Word Check-In](/games/one-word-check-in) - Quick and effective
-- [Virtual Background Story](/games/virtual-background-story) - Perfect for remote teams
+- [Picture Sharing](/games/picture-sharing) - Perfect for remote teams
 - [Human Bingo](/games/human-bingo) - Great for large groups
 
 ## Conclusion
@@ -235,7 +235,7 @@ Add one rotation or a short share-out. Cap how many people speak to the whole ro
 
 - [Two Truths and a Lie](/games/two-truths-and-a-lie) — model first; ban salary, dating, and private family drama
 - [Common Ground](/games/common-ground) — pairs find non-obvious overlaps; harvest two examples only
-- [Virtual Background Story](/games/virtual-background-story) — themed background plus a 15-second why
+- [Picture Sharing](/games/picture-sharing) — themed background plus a 15-second why
 - [Rock Paper Scissors Tournament](/games/rock-paper-scissors-tournament) — large rooms that need noise and cheering
 
 ### Twenty minutes or more
@@ -354,7 +354,7 @@ One rotation or a short share-out. Cap full-room reporting.
 
 - [Two Truths and a Lie](/games/two-truths-and-a-lie) — clean deck; ban money, dating, family conflict
 - [Common Ground](/games/common-ground) — pairs find non-obvious overlaps
-- [Virtual Background Story](/games/virtual-background-story) — themed background + 15-second why
+- [Picture Sharing](/games/picture-sharing) — themed background + 15-second why
 - [Would You Rather](/games/would-you-rather) — work-safe pairs; stop after six to ten prompts
 
 For laugh-forward meeting rooms, see [funny ice breaker games for meetings](/funny-icebreaker-games-for-meetings).
@@ -425,7 +425,7 @@ Pick one format that fits your clock, open its rules page, and run it with a tim
     title: "Icebreaker Games for Adults That Actually Work",
     excerpt: "Discover tested icebreaker games for adult groups of all sizes, with quick no-prep, large-group, and online options plus clear steps and practical tips.",
     date: "2026-04-22",
-    author: "IceBreaker Team",
+    author: "Elena Hart",
     image: "/img/blog/icebreaker-games-for-adults-online-vs-inperson.jpg",
     tags: ["Icebreaker Games", "Adult Groups", "Team Building", "Party Games", "Remote Teams"],
     content: `
@@ -939,7 +939,7 @@ Use this quick guide to choose a game for your large group:
 - Need a **high-energy opener** to wake everyone up? Try [Rock Paper Scissors Tournament](/games/rock-paper-scissors-tournament) or [Train Wreck](/games/train-wreck).
 - Want structured **networking and mingling**? Use [Human Bingo](/games/human-bingo), [Icebreaker Bingo](/games/icebreaker-bingo), or [Speed Networking](/games/speed-networking).
 - Have a **conference crowd that cannot move much**? Choose seated games like [Beach Ball Q&A](/games/beach-ball-qa) or [This or That Questions](/games/this-or-that-questions).
-- Need something **low-prep and flexible**? Use [Category Mixer](/games/category-mixer) or [Line-Up](/games/line-up) as simple, scalable options.
+- Need something **low-prep and flexible**? Use [Icebreaker Bingo](/games/icebreaker-bingo) or [Line-Up](/games/line-up) as simple, scalable options.
 
 In the sections below, you will find detailed guidance on how to use each of these icebreaker games with large adult groups.
 
@@ -981,11 +981,11 @@ These icebreaker games are ideal for conferences, corporate events, or professio
   - Why choose it: highly efficient, introvert-friendly structure, and easy to frame as “professional speed dating”.  
   - View full game: [How to run Speed Networking →](/games/speed-networking)
 
-- **[Category Mixer](/games/category-mixer)**  
-  - Best for: big rooms where you want people to move and meet by shared interests without complex rules.  
+- **[Reception Line](/games/reception-line)**  
+  - Best for: big rooms where you want guaranteed introductions without complex bingo cards.  
   - Group size: 30–100 adults  
-  - Why choose it: zero materials, easy to theme around your event, and encourages people to rotate between different groups.  
-  - View full game: [How to run Category Mixer →](/games/category-mixer)
+  - Why choose it: zero materials, easy to theme around your event, and rotates people through short pair chats.  
+  - View full game: [How to run Reception Line →](/games/reception-line)
 
 ## Seated or low-movement icebreaker games for large rooms
 

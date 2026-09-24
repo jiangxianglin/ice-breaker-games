@@ -40,8 +40,8 @@ const CURATED_RELATED: Record<string, string[]> = {
   "the-name-game": [
     "chainlink",
     "alliterative-name-game",
-    "motion-name-game",
     "blind-name-tag",
+    "emoji-introduction",
   ],
   "two-truths-and-a-lie": [
     "emoji-introduction",

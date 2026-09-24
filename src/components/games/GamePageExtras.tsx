@@ -19,7 +19,7 @@ function QuoteBlock({
     <blockquote className={styles.quote}>
       <p>{quote.text}</p>
       <cite className={styles.cite}>
-        — {quote.citeLead ?? "Ice Breaker Games Editorial Team"}{" "}
+        — {quote.citeLead ?? "Elena Hart"}{" "}
         {links.map((link, index) => {
           let sep = "";
           if (index > 0) {
@@ -172,8 +172,18 @@ function ExtrasBody({
 
       {extras.sources && extras.sources.length > 0 ? (
         <section className={styles.sources} aria-labelledby="game-sources-heading">
-          <h2 id="game-sources-heading">Sources &amp; further reading</h2>
-          {extras.sourcesIntro ? <p>{extras.sourcesIntro}</p> : null}
+          <h2 id="game-sources-heading">
+            {extras.sources.some((s) => s.external)
+              ? "Sources & further reading"
+              : "Related guides"}
+          </h2>
+          {extras.sourcesIntro ? (
+            <p>{extras.sourcesIntro}</p>
+          ) : extras.sources.every((s) => !s.external) ? (
+            <p>
+              More facilitation notes from this library—not external citations.
+            </p>
+          ) : null}
           <ol>
             {extras.sources.map((source) => (
               <li key={source.href}>

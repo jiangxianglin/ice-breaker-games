@@ -83,6 +83,44 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     adultsWork:
       "For work meetings, pick PG workplace-friendly films (Office Space lines can get spicy—set a clean-quote rule). Use it after a long agenda block when you want laughs without personal disclosure. Remote teams can run the chat variation in 5 minutes.",
+    whyItWorks:
+      "Name That Movie Quote works because shared pop culture creates laughs without personal disclosure—people can pass on quoting and still join the guessing. It fails when quotes are niche deep cuts, when spoilers land on recent releases, or when one film buff dominates every round. Skip it in cold client kickoffs, cross-cultural rooms with uneven movie fluency, or when you only have a few minutes before a formal talk—use This or That or Chat Waterfall instead.",
+    facilitatorScript: [
+      {
+        speaker: "Open",
+        line: "One short movie line each turn—no titles, actors, or humming. Group guesses the film. Pass is fine. I’ll model a clean, widely known quote first.",
+      },
+      {
+        speaker: "Model",
+        line: "Here’s looking at you, kid. … Casablanca. Keep quotes under one sentence.",
+      },
+      {
+        speaker: "Mid",
+        line: "If guesses stall at fifteen seconds, reveal and move on. Theme next round if the room is stuck—Pixar, sports movies, or one decade.",
+      },
+      {
+        speaker: "Close",
+        line: "Last quote. Then we start the agenda while the laughs are still up.",
+      },
+    ],
+    pitfalls: [
+      {
+        title: "Trivia-exam energy",
+        body: "Remind the room this is play, not a film-studies quiz. Celebrate wrong guesses and allow passes.",
+      },
+      {
+        title: "Obscure or spoiler-heavy lines",
+        body: "Prefer widely known PG quotes. Ban fresh-release spoilers if anyone asks.",
+      },
+      {
+        title: "One person quoting forever",
+        body: "Cap at one quote per turn and rotate. Team mode helps large rooms share the mic.",
+      },
+    ],
+    originalVariant: {
+      title: "Quote → seating seed",
+      body: "After three rounds, people who guessed the same film (or shared a themed round) sit together for the first discussion block. Announce it up front so guessing builds working pairs, not only laughs. If matches are uneven, facilitator seats leftovers into existing pairs.",
+    },
     faqs: [
       {
         q: "How do you play Name That Movie Quote?",
@@ -104,6 +142,16 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How do you keep it inclusive?",
         a: "Offer themed rounds (animated films, sports movies) and allow a “pass” if someone cannot think of a quote. Avoid spoilers and quotes that need cultural knowledge only a few people share.",
       },
+      {
+        q: "When should you skip Name That Movie Quote?",
+        a: "Skip in cold client kickoffs, rooms with very uneven pop-culture fluency, or when you only have a few minutes before a formal talk. Use This or That, Chat Waterfall, or jump to the agenda.",
+      },
+    ],
+    sources: [
+      { label: "Funny icebreaker games for meetings", href: "/funny-icebreaker-games-for-meetings" },
+      { label: "Ice breaker games for teens", href: "/icebreaker-games-for-teens" },
+      { label: "Ice breaker games for youth group", href: "/icebreaker-games-for-youth-group" },
+      { label: "Virtual icebreaker games", href: "/virtual-icebreaker-games" },
     ],
   },
 
@@ -156,6 +204,44 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     adultsWork:
       "At networking events and conferences, Find Your Match creates movement and a built-in conversation partner. For corporate offsites, use work-safe pairs (calendar + meeting, coffee + Monday) so nobody needs pop-culture fluency.",
+    whyItWorks:
+      "Find Your Match works because the card gives shy people a scripted reason to approach strangers, and every successful pair already has a built-in intro partner. It fails when the deck assumes shared pop culture (half the room never saw the movie), when odd headcounts leave someone cardless, or when people shout their card text and kill the yes/no mechanic. Skip it in tiny rooms under ~10 (switch to a seated pair prompt) or when the group cannot stand/mingle—use Chat Waterfall or This or That instead.",
+    facilitatorScript: [
+      {
+        speaker: "Open",
+        line: "You each have one half of a pair. Ask only yes/no questions. Do not read your card aloud. When you think you match, confirm cards, then stay together for intros.",
+      },
+      {
+        speaker: "Model",
+        line: "If my card said peanut butter, I might ask “Am I a food?” not “Are you jelly?”",
+      },
+      {
+        speaker: "Mid",
+        line: "Two minutes left. If you are stuck, ask broader questions—place, story, tool—not the exact name.",
+      },
+      {
+        speaker: "Close",
+        line: "Pairs: ten seconds—your famous duo, then name and role. Then we sit.",
+      },
+    ],
+    pitfalls: [
+      {
+        title: "Pop-culture-only decks",
+        body: "Build a work-tool or everyday-object deck for mixed ages and international teams. Keep Romeo/Juliet for parties that want it.",
+      },
+      {
+        title: "Odd number with no plan",
+        body: "Prepare a wildcard or have the facilitator sit in. Never leave one person hunting alone.",
+      },
+      {
+        title: "Reading cards aloud",
+        body: "Stop the room and restate yes/no only. The puzzle is the conversation starter.",
+      },
+    ],
+    originalVariant: {
+      title: "Match → working pair",
+      body: "After intros, keep the pairs for the first breakout or discussion question on the real agenda. The icebreaker becomes the seating chart instead of dissolving when cards are collected. Announce that plan up front so people know the match matters.",
+    },
     faqs: [
       {
         q: "How do you play Find Your Match?",
@@ -181,6 +267,16 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Can Find Your Match be played virtually?",
         a: "Yes. Send each person their half via chat or email, then use breakout rooms for questioning. Reconvene so pairs announce themselves in the main room.",
       },
+      {
+        q: "When should you skip Find Your Match?",
+        a: "Skip under about 10 people, when the room cannot mingle, or when you only have a pop-culture deck for a mixed international team. Use a seated preference poll or Chat Waterfall instead.",
+      },
+    ],
+    sources: [
+      { label: "Games like Human Bingo", href: "/games-like-human-bingo" },
+      { label: "Human Bingo", href: "/games/human-bingo" },
+      { label: "Speed Networking", href: "/games/speed-networking" },
+      { label: "Icebreaker games for meetings", href: "/icebreaker-games-for-meetings" },
     ],
   },
 
@@ -220,7 +316,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     rulesTiming: [
       {
         label: "Players",
-        body: "8–40 people (split above 15).",
+        body: "8–40 people (split above 15 into circles of 8–12).",
       },
       {
         label: "Time",
@@ -232,11 +328,49 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     adultsWork:
-      "Chainlink works well as a meeting opener when you want names plus common ground without a long icebreaker. Follow it with how to play the name game if the group still needs name recall.",
+      "Chainlink works as a meeting opener when you want common ground without a long icebreaker. Follow with The Name Game if faces still need names. Skip it for recurring teams that already know each other—use a check-in instead.",
+    whyItWorks:
+      "Chainlink works because the required spoken link forces listening for overlap, not performing a polished bio. Each turn stays short, and the group hears real common ground before collaboration. It fails when people skip the link and dump a monologue, when facts are too vague to connect (“I like stuff”), or when a 30-person room tries one mega-circle and memory collapses. Skip it under about eight people (a seated pair intro is faster), when the group already knows each other well, or when you need name drill more than shared-trait practice—use The Name Game or Alliterative Name Game instead.",
+    facilitatorScript: [
+      {
+        speaker: "Open",
+        line: "We’ll build a chain. Person one shares a short fact. The next person must name a shared trait with the previous speaker, then add a new fact. The link is required—no skipping to a speech.",
+      },
+      {
+        speaker: "Model",
+        line: "I run on weekends. If you’re next and you also run, say that out loud, then add something new—like you have a dog.",
+      },
+      {
+        speaker: "Mid",
+        line: "If you’re stuck, ask one clarifying question, or pass once and we’ll come back. Vague facts are hard to link—keep them concrete.",
+      },
+      {
+        speaker: "Close",
+        line: "One minute: what made linking easy or hard? Then we move to the agenda—listening for overlap was the warm-up.",
+      },
+    ],
+    pitfalls: [
+      {
+        title: "Skipping the spoken link",
+        body: "Stop and ask for the shared trait before the new fact. Without the link, this is just another go-around of bios.",
+      },
+      {
+        title: "One giant circle above ~15",
+        body: "Split into sub-circles of 8–12. A long chain becomes forgettable and eats the clock.",
+      },
+      {
+        title: "Status or sensitive facts",
+        body: "Ban job-level flexing, salary vibes, and trauma shares. Prompt hobbies, tools, places, or “one thing that helps me focus.”",
+      },
+    ],
+    originalVariant: {
+      title: "Link → breakout seating",
+      body: "After the chain, keep adjacent people as the first discussion pair or trio on the real agenda item. Announce that plan up front: the icebreaker becomes the seating chart. People listen harder because the next link may be their working partner.",
+    },
     quote: {
       text: "Introduction chains work when each person must name a shared trait before adding their own fact—so listening for overlap becomes the skill, not memorizing the whole circle.",
       citeLead:
-        "Ice Breaker Games Editorial Team, summarizing guidance from",
+        "Elena Hart, summarizing guidance from",
       citeLinks: [
         {
           label: "Wikipedia, “Icebreaker (facilitation)”",
@@ -295,6 +429,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What does Chainlink reveal?",
         a: "It shows how people listen for overlap and build on each other’s contributions—useful before collaboration or brainstorming.",
+      },
+      {
+        q: "When should you skip Chainlink?",
+        a: "Skip under about eight people, when the team already knows each other well, or when you need name drill more than shared-trait practice. Use The Name Game, a preference poll, or jump straight to the agenda.",
       },
     ],
   },
@@ -386,6 +524,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     adultsWork:
       "For work meetings, keep emojis work-safe (role, tools, weekend hobbies). Remote teams can post in chat first, then unmute only if they want to explain—good for mixed introvert/extrovert groups. Pair with short virtual icebreakers when the agenda is tight.",
+    originalVariant: {
+      title: "Need-tag harvest",
+      body: "Ask for two identity emojis plus one “need from this meeting” emoji (clarity, decision, break, brainstorm). After chat posts, the facilitator only names the need-tag patterns—“lots of decision faces”—and adjusts the agenda order. The intro becomes a lightweight intake, not a parade of hobbies.",
+    },
     faqs: [
       {
         q: "How do you play Emoji Introduction?",
@@ -410,6 +552,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Can Emoji Introduction work in classrooms?",
         a: "Yes. Use school-safe prompts (weekend plans, favorite subject energy, one hobby). Offer a pass option and keep explanations short so class time stays on track.",
+      },
+      {
+        q: "When should you skip Emoji Introduction?",
+        a: "Skip if the group has no chat or sticky notes, if you need name learning more than mood signals, or if everyone would have to unmute in a 20+ room. Use The Name Game or a chat waterfall instead.",
       },
     ],
     sources: [
@@ -469,10 +615,48 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     adultsWork:
       "Weather Check-In is a meeting-friendly opener when you need a fast energy read before decisions or a long agenda. Pair it with One Word Check-In or Emoji Check-In if the team already likes short rituals. Keep examples work-safe and move on once you’ve named the room pattern.",
+    whyItWorks:
+      "Weather metaphors let people signal bandwidth without a therapy-session monologue. Facilitators get a room forecast in under eight minutes, then can adjust pace (more breaks if “stormy,” faster decisions if “sunny”). It fails when managers quiz people on sad forecasts in public, when the meeting is already a crisis debrief, or when you treat the round as a wellbeing diagnosis. Skip it after layoffs, during formal performance reviews, or if anyone cannot opt out safely—use a neutral preference poll or jump straight to the agenda instead.",
+    facilitatorScript: [
+      {
+        speaker: "Open",
+        line: "One sentence: how are you arriving today as weather? Sunny, foggy, stormy, partly cloudy—whatever fits. Pass is fine. I’ll go first.",
+      },
+      {
+        speaker: "Model",
+        line: "Mostly sunny with a chance of email thunder. Short is enough.",
+      },
+      {
+        speaker: "Collect",
+        line: "Chat posts all at once on three-two-one, or go around once. One sentence max.",
+      },
+      {
+        speaker: "Close",
+        line: "I’m hearing a lot of partly cloudy—we’ll keep the next block tight and leave room for questions. Agenda starts now.",
+      },
+    ],
+    pitfalls: [
+      {
+        title: "Public interrogation of stormy answers",
+        body: "Thank the share and move on. Do not ask “why so stormy?” in front of the group unless the person volunteers.",
+      },
+      {
+        title: "Letting spoken rounds sprawl",
+        body: "Above about 12 people, chat-first is kinder. Cap each unmute at one sentence.",
+      },
+      {
+        title: "Using it as a therapy opener",
+        body: "If the room needs support, this is the wrong tool. Stop the game and use your real support path—or skip the icebreaker entirely.",
+      },
+    ],
+    originalVariant: {
+      title: "Agenda weather map",
+      body: "After the round, write three agenda blocks on a whiteboard. Ask people to drop a sticky (or chat emoji) on the block that matches their weather—“stormy” near the densest item means that block needs more time or a break beforehand. The check-in changes the meeting plan instead of evaporating as small talk.",
+    },
     quote: {
       text: "Short, metaphorical check-ins help remote and hybrid teams recreate hallway connection—without forcing long personal monologues before the real agenda.",
       citeLead:
-        "Ice Breaker Games Editorial Team, summarizing guidance from",
+        "Elena Hart, summarizing guidance from",
       citeLinks: [
         {
           label: "Harvard Business Review (Remote Work)",
@@ -540,6 +724,14 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "How is Weather Check-In different from One Word Check-In?",
         a: "One Word Check-In asks for a single word (energy, focus, mood). Weather Check-In uses a metaphor, which often feels safer when people want nuance without a long personal story.",
+      },
+      {
+        q: "How many people can play Weather Check-In?",
+        a: "Plan for about 5–25 people. Under 12, a spoken circle works. Above 15, prefer simultaneous chat posts so the opener stays inside eight minutes.",
+      },
+      {
+        q: "When should you skip Weather Check-In?",
+        a: "Skip after layoffs or other acute stress, during formal reviews, or if you would feel pressure to interrogate stormy answers. Prefer a preference poll—or no opener—when the room needs gravity, not a metaphor.",
       },
     ],
   },
@@ -634,7 +826,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Preference Passport (site original)",
+      title: "Preference Passport",
       body: "Give each person a small card with three empty boxes. Each mingle wave, they collect one “stamp” (initials) from someone who matched them. They may not stamp the same person twice. After three stamps they sit with their last match and compare passports for 60 seconds. This keeps popular answers from forming a 20-person blob and gives quieter guests a concrete task besides talking.",
     },
     adultsWork:
@@ -754,7 +946,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Silent Replay (site original)",
+      title: "Silent Replay",
       body: "After one pass around the circle, you (the facilitator) perform three motions with no names. The group calls the names together. Then one volunteer does the same with two motions. No individual is put on the spot to recite the whole room. You still test memory, but the unit of success is the group, which keeps psychological safety intact.",
     },
     adultsWork:
@@ -875,7 +1067,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Two-tile contract (site original)",
+      title: "Two-tile contract",
       body: "After the collage, the group may keep only two tiles as a 30-day contract. Photograph those two. At the next meeting, spend 3 minutes scoring each tile: observed / not observed this week. Retire or rewrite a tile that never showed up. This turns a creative icebreaker into a lightweight working-agreement loop without extra software.",
     },
     adultsWork:
@@ -986,7 +1178,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Three-strike card (site original)",
+      title: "Three-strike card",
       body: "Each person gets a card with three blank lines. In round one they fill one shared item with partner A; round two, one with partner B; they leave the third blank on purpose. At the end they keep the card as a personal memory aid—no group read-aloud of the full card. Quieter people leave with notes without performing.",
     },
     adultsWork:
@@ -1011,6 +1203,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Is Common Ground good for shy groups?",
         a: "Yes if you model a boring example, use categories, and do not force every pair to report out.",
+      },
+      {
+        q: "When should you skip Common Ground?",
+        a: "Skip when names are still unknown and people freeze without category cards, when categories would go intimate, or when the agenda is under five minutes. Use This or That, a name game, or jump to the agenda.",
       },
     ],
     sources: [
@@ -1098,7 +1294,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Rather → Retro (site original)",
+      title: "Rather → Retro",
       body: "After three fun prompts, ask one work- or class-relevant rather (“document decisions in the room or in chat?”). Capture the majority on a sticky. That single sticky becomes a 30-day trial norm—turning a silly opener into a lightweight agreement without a second activity.",
     },
     adultsWork:
@@ -1222,7 +1418,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Two-channel vote (site original)",
+      title: "Two-channel vote",
       body: "Run the first four pairs as silent hand-raises. Run the last two as chat-only. Then ask: which channel felt easier? That 30-second meta question helps hybrid rooms agree how they will vote in the real meeting—without a second icebreaker.",
     },
     adultsWork:
@@ -1293,7 +1489,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     variations: [
       {
         title: "Name + gesture",
-        body: "Small seated motion instead of a long verbal list. See also Motion Name-Game.",
+        body: "Small seated motion instead of a long verbal list—keep gestures optional and work-safe.",
       },
       {
         title: "Chat backup (virtual)",
@@ -1360,11 +1556,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Neighbor-only recall (site original)",
+      title: "Neighbor-only recall",
       body: "After one pass, each person turns to the person on their right and says that one name aloud. No full-room recital. You still test memory, but failure is private and recoverable. Then everyone faces center and you start the session.",
     },
     adultsWork:
-      "Use on onboarding days and first workshops. For teens and high school advisory, keep cues school-safe. For recurring meetings, skip name games. Compare Chainlink and Motion Name-Game when you want linking or movement instead of a list.",
+      "Use on onboarding days and first workshops. For teens and high school advisory, keep cues school-safe. For recurring meetings, skip name games. Compare Chainlink and Alliterative Name Game when you want linking or a letter hook instead of a plain list.",
     faqs: [
       {
         q: "How do you play The Name Game icebreaker?",
@@ -1383,13 +1579,17 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         a: "Name tags, a boring model, immediate help, and no shaming for blanks.",
       },
       {
-        q: "How is it different from Motion Name-Game?",
-        a: "The Name Game uses a verbal cue; Motion Name-Game uses a small gesture. Both should avoid long cumulative lists in big rooms.",
+        q: "How is it different from Alliterative Name Game?",
+        a: "The Name Game uses any short cue (role, hobby, adjective). Alliterative Name Game requires a same-letter adjective. Both should avoid long cumulative lists in big rooms.",
+      },
+      {
+        q: "When should you skip The Name Game?",
+        a: "Skip for recurring teams that already know each other, or when the room is so large you cannot chunk into circles of ~12. Use a check-in or Chat Waterfall instead.",
       },
     ],
     sources: [
       { label: "Name game icebreakers", href: "/name-game-icebreakers" },
-      { label: "Motion Name-Game", href: "/games/motion-name-game" },
+      { label: "Alliterative Name Game", href: "/games/alliterative-name-game" },
       { label: "Chainlink icebreaker", href: "/games/chainlink" },
       { label: "Ice breaker games for high school students", href: "/icebreaker-games-for-high-school-students" },
     ],
@@ -1468,7 +1668,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Word + need (site original)",
+      title: "Word + need",
       body: "After the one-word round in chat, ask optionally for a second word that is a need from the meeting (clarity, decision, quiet). Facilitator only reads needs in aggregate (“three clarity, two decision”)—never attaches needs to names. Shapes the agenda without a second icebreaker.",
     },
     adultsWork:
@@ -1493,6 +1693,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "How is it different from Weather Check-In?",
         a: "One Word asks for a single word. Weather Check-In uses a weather metaphor for more nuance without a long story.",
+      },
+      {
+        q: "When should you skip One Word Check-In?",
+        a: "Skip after layoffs or acute stress, during formal reviews, or if you would feel pressure to diagnose someone’s word in public. Prefer a neutral preference poll—or no opener—when the room needs gravity.",
       },
     ],
     sources: [
@@ -1592,7 +1796,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Six words → one sticky (site original)",
+      title: "Six words → one sticky",
       body: "After shares, the group may keep only one six-word line as the meeting’s working title on a sticky. Retire it next week. Turns memoirs into a disposable framing device instead of a keepsake performance.",
     },
     adultsWork:
@@ -1718,7 +1922,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Squad interview (site original)",
+      title: "Squad interview",
       body: "When someone joins a cheer squad, they must learn the champion’s first name before the next bout. Finalists introduce their squad by name. Adds name learning without a second game—use only if acoustics allow.",
     },
     adultsWork:
@@ -1743,6 +1947,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Does it work virtually?",
         a: "Only for small groups with typed R/P/S. In-person is the native format.",
+      },
+      {
+        q: "When should you skip Rock Paper Scissors Tournament?",
+        a: "Skip in tight rows, formal ceremonies, crisis meetings, or when anyone cannot stand and you have no seated cheer role. Prefer a seated preference poll or jump to the agenda.",
       },
     ],
     sources: [
@@ -1830,7 +2038,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Never Have I Facilitated (site original)",
+      title: "Never Have I Facilitated",
       body: "Only facilitators or hosts answer, with prompts about meeting design (“never have I ever ended on time,” “never have I ever used breakout rooms”). Participants guess which are true. Flips exposure onto the host and keeps guests safer—use for facilitator meetups, not for vulnerable student groups.",
     },
     adultsWork:
@@ -1855,6 +2063,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What are safe example prompts?",
         a: "Never have I ever traveled solo; cooked for five+; given a talk to 50+; learned a new language; worked remotely for a year.",
+      },
+      {
+        q: "When should you skip Never Have I Ever?",
+        a: "Skip when you only have party-game or alcohol prompts, when trust is low, or when a crowded room would invent cruel questions. Use Would You Rather, This or That, or jump to the agenda.",
       },
     ],
     sources: [
@@ -1899,8 +2111,8 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     rulesTiming: [
-      { label: "Players", body: "15–150; under 12 feels thin." },
-      { label: "Time", body: "10–20 minutes." },
+      { label: "Players", body: "10–50; under 12 feels thin—use a shorter card or pairs instead." },
+      { label: "Time", body: "20–30 minutes; stop at a line if energy drops." },
       { label: "Materials", body: "Printed cards; pens." },
       {
         label: "House rules",
@@ -1942,7 +2154,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Bingo → breakout seed (site original)",
+      title: "Bingo → breakout seed",
       body: "After mingling, people sit with someone whose initial is on their card. That pair becomes the first discussion partner for the real agenda item. The icebreaker directly seeds working pairs instead of dissolving when cards are collected.",
     },
     adultsWork:
@@ -1954,7 +2166,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         q: "How many people do you need?",
-        a: "It works best with about 15 or more so mingling feels natural.",
+        a: "Plan for about 10–50 people. Under 12, shorten the card or switch to pair prompts; above 50, zone the room or run parallel cards.",
+      },
+      {
+        q: "How long does Human Bingo take?",
+        a: "About 20–30 minutes. You can stop earlier when several people have a line so late finishers are not shamed.",
       },
       {
         q: "What materials do you need?",
@@ -1967,6 +2183,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Where can I find student cards?",
         a: "Use our Human Bingo for students printable guide for classroom-safe grids.",
+      },
+      {
+        q: "When should you skip Human Bingo?",
+        a: "Skip under about 12 people without a shortened card, when the room cannot mingle, when you only have invasive squares, or when the agenda is under ten minutes. Use pair prompts, Find Your Match, or jump to the agenda.",
       },
     ],
     sources: [
@@ -2050,7 +2270,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Waterfall → agenda vote (site original)",
+      title: "Waterfall → agenda vote",
       body: "After the energy waterfall, run a second silent send with A/B/C options for how to spend the next 15 minutes. Majority letter becomes the working plan. Turns a warm-up into a micro-decision without a second icebreaker.",
     },
     adultsWork:
@@ -2075,6 +2295,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Can you use it in person?",
         a: "Yes with sticky notes posted on a count, or phones into a shared chat.",
+      },
+      {
+        q: "When should you skip Chat Waterfall?",
+        a: "Skip when chat is disabled and reactions will not work, when the prompt would force personal disclosure, or when you need name learning on day one of a new team. Use reactions-only, One Word Check-In with volunteers, or a name game instead.",
       },
     ],
     sources: [
@@ -2158,7 +2382,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Color → partner seed (site original)",
+      title: "Color → partner seed",
       body: "After the circle, people find someone who spoke the same color prompt and sit together for the next agenda item. The candy game seeds working pairs without a second mixer.",
     },
     adultsWork:
@@ -2270,7 +2494,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Emoji → need tag (site original)",
+      title: "Emoji → need tag",
       body: "After the energy emoji, optionally add a second emoji that means a need (hourglass = more time, wrench = help, check = ready to decide). Facilitator only summarizes needs in aggregate. Shapes the meeting without naming individuals.",
     },
     adultsWork:
@@ -2295,6 +2519,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What are good Emoji Check-In prompts?",
         a: "One emoji for energy; one for focus; one for what you need from today’s session.",
+      },
+      {
+        q: "When should you skip Emoji Check-In?",
+        a: "Skip after layoffs or acute stress, during formal reviews, or if you would feel pressure to quiz people on sad emojis in public. Prefer a neutral preference poll—or no opener—when the room needs gravity.",
       },
     ],
     sources: [
@@ -2378,7 +2606,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Chat caption telephone (site original)",
+      title: "Chat caption telephone",
       body: "Virtual-only: person 1 types a phrase to person 2 in DM; person 2 acts on camera; person 3 types a guess in chat; continue. Mixes text and gesture so camera-shy people can take text roles.",
     },
     adultsWork:
@@ -2486,7 +2714,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Background → working metaphor (site original)",
+      title: "Background → working metaphor",
       body: "After shares, the group votes (chat A/B/C) on one metaphor background to keep as the meeting’s motif for 30 minutes (“we are in workshop mode”). Then everyone resets to neutral for docs. Links play to purpose without keeping distracting images up.",
     },
     adultsWork:
@@ -2594,7 +2822,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Fact → follow-up coffee (site original)",
+      title: "Fact → follow-up coffee",
       body: "After three reveals, people star one fact they want to ask about later. They message that person after the meeting—not during—for a optional 5-minute chat. Moves curiosity off the public stage.",
     },
     adultsWork:
@@ -2702,7 +2930,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Line-up → pair neighbors (site original)",
+      title: "Line-up → pair neighbors",
       body: "After the line is set, people turn to one neighbor and exchange names plus one work-safe fact for 30 seconds. Converts a sorting game into name learning without a second full icebreaker.",
     },
     adultsWork:
@@ -2727,6 +2955,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Is it a good Human Knot alternative?",
         a: "Yes when you want movement and teamwork with less physical contact.",
+      },
+      {
+        q: "When should you skip Line-Up?",
+        a: "Skip when the only criteria you have are sensitive (money, grades, body), when standing is required with no seated option, or when the room cannot move. Use a chat continuum or a preference poll instead.",
       },
     ],
     sources: [
@@ -2810,7 +3042,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Two-ball slow lane (site original)",
+      title: "Two-ball slow lane",
       body: "In rooms over 40, run two balls in opposite halves. Each half only tosses inside its zone. Doubles answers without cross-room missiles.",
     },
     adultsWork:
@@ -2835,6 +3067,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What prompts work?",
         a: "Favorite food, weekend hobby, one show you like, a skill you are learning—keep it light.",
+      },
+      {
+        q: "When should you skip Beach Ball Q&A?",
+        a: "Skip in formal boards, crowded rooms with no aisle plan, or when you only have invasive prompts. Prefer a seated check-in or Chat Waterfall.",
       },
     ],
     sources: [
@@ -2918,7 +3154,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Hunt → gratitude sticky (site original)",
+      title: "Hunt → gratitude sticky",
       body: "One required item is a sticky note thanking a behind-the-scenes person (facilities, TA, host). Teams post stickies on a recognition wall before sitting. Links play energy to appreciation.",
     },
     adultsWork:
@@ -2943,6 +3179,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What items should I avoid?",
         a: "Anything that risks injury, trespass, privacy invasion, or property damage.",
+      },
+      {
+        q: "When should you skip a scavenger hunt icebreaker?",
+        a: "Skip when you cannot keep the list site-safe, when mobility needs are ignored with no seated role, or when the hunt would run longer than about twenty minutes. Prefer Human Bingo or pair prompts instead.",
       },
     ],
     sources: [
@@ -3026,7 +3266,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Agenda Pictionary (site original)",
+      title: "Agenda Pictionary",
       body: "Word list is only nouns from today’s agenda (budget, timeline, launch). After guessing, the drawer says one real sentence about that agenda item. Warm-up doubles as a preview of the meeting content.",
     },
     adultsWork:
@@ -3134,7 +3374,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Shoe → commute word (site original)",
+      title: "Shoe → commute word",
       body: "After the optional show, everyone types one word in chat about their commute or morning (walk, bus, stairs, kitchen). Host mirrors commute themes. Links the gag to arrival context without more camera time.",
     },
     adultsWork:
@@ -3242,7 +3482,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Wreck → name lock (site original)",
+      title: "Wreck → name lock",
       body: "After three category moves, the next call is ‘lock arms with the nearest person and exchange names—then unlock.’ Adds name learning without a full Name Game. Keep contact optional; elbow-touch or wave substitute allowed.",
     },
     adultsWork:
@@ -3267,6 +3507,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What categories should I avoid?",
         a: "Body, dating, money, and anything that outs private information.",
+      },
+      {
+        q: "When should you skip Train Wreck?",
+        a: "Skip in tight rooms, fixed-seat boardrooms, when anyone cannot move safely, or when you only have a seated preference poll’s worth of time. Use This or That, a hand-raise version, or jump to the agenda.",
       },
     ],
     sources: [
@@ -3354,7 +3598,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Knot with veto cards (site original)",
+      title: "Knot with veto cards",
       body: "Each person gets a red veto card. Anyone may raise it to pause and renegotiate holds (switch to ribbons, step out, or restart). Normalizes mid-activity consent instead of toughing out discomfort.",
     },
     adultsWork:
@@ -3379,6 +3623,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Where can I find alternatives?",
         a: "See our games like the Human Knot hub for lower-contact options.",
+      },
+      {
+        q: "When should you skip the Human Knot?",
+        a: "Skip when trust is low, anyone cannot or will not do contact play, formal attire or mobility needs make circles unsafe, or the room is already tense. Use Line-Up, ribbons, or another no-contact option from the Human Knot hub.",
       },
     ],
     sources: [
@@ -3462,7 +3710,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Check-in → parking lot (site original)",
+      title: "Check-in → parking lot",
       body: "After the pulse, anyone may drop one agenda worry in a shared “parking lot” doc anonymously. Facilitator only skims themes later. Separates arrival mood from issue capture without a second icebreaker.",
     },
     adultsWork:
@@ -3570,7 +3818,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Web → action strand (site original)",
+      title: "Web → action strand",
       body: "Before rewinding, place one sticky on a strand that represents a collaboration habit to keep this month (e.g., “write decisions down”). Photo optional. Links the metaphor to one behavior without a second exercise.",
     },
     adultsWork:
@@ -3678,7 +3926,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Table → working pod (site original)",
+      title: "Table → working pod",
       body: "After the last rotation, tables stay together as discussion pods for the first agenda item. The icebreaker seating becomes the work structure—no reshuffle.",
     },
     adultsWork:
@@ -3786,7 +4034,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Bring / borrow board (site original)",
+      title: "Bring / borrow board",
       body: "Two columns on a doc: Bring and Borrow. People may list one item they can lend the room (template, intro, review slot). Facilitator matches one borrow to one bring before the meeting ends. Turns the icebreaker into micro-help without a second networking game.",
     },
     adultsWork:
@@ -3894,7 +4142,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Island → kit list (site original)",
+      title: "Island → kit list",
       body: "After shares, the room builds a six-item “project island kit” on a sticky (three tools, two rituals, one rest item). Photo and revisit in a month. Moves fantasy into a lightweight working agreement.",
     },
     adultsWork:
@@ -4002,7 +4250,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Speed → sticky match (site original)",
+      title: "Speed → sticky match",
       body: "After the final round, people write one name on a sticky of someone they want a 10-minute follow-up with. Stickies go on a “office hours” board; matches are optional. Captures intent without forcing cards on everyone.",
     },
     adultsWork:
@@ -4027,6 +4275,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Is it good for introverts?",
         a: "Often yes, because the structure and time box reduce awkward open mingling.",
+      },
+      {
+        q: "When should you skip Speed Networking?",
+        a: "Skip when the room cannot rotate pairs, when trust is too low for timed hellos, or when you only have invasive prompts. Prefer Chat Waterfall or a seated preference poll.",
       },
     ],
     sources: [
@@ -4110,7 +4362,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Passion → skill swap (site original)",
+      title: "Passion → skill swap",
       body: "After mingling, people star one square they can teach in 15 minutes and one they want to learn. Post on a wall for optional lunch swaps later in the week—extends the icebreaker into lightweight learning without a second event.",
     },
     adultsWork:
@@ -4222,7 +4474,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Minefield → ticket language (site original)",
+      title: "Minefield → ticket language",
       body: "During debrief, rewrite one unclear “mine” moment as a better work instruction (“turn 45 degrees toward the window” → “state direction + distance + landmark”). Capture two phrases on a sticky as the team’s communication norms for the sprint.",
     },
     adultsWork:
@@ -4247,6 +4499,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Can Minefield be virtual?",
         a: "Yes—use a shared grid and spoken directions instead of a physical course.",
+      },
+      {
+        q: "When should you skip Minefield?",
+        a: "Skip in crisis or fragile-trust meetings, when you cannot run a real debrief, or when anyone cannot safely do eyes-closed movement. Prefer a virtual grid, a seated problem-solving game, or jump to the agenda.",
       },
     ],
     sources: [
@@ -4330,7 +4586,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Picture → prompt sticky (site original)",
+      title: "Picture → prompt sticky",
       body: "After shares, each person types one adjective from someone else’s picture into a shared doc. Facilitator reads five adjectives as the room’s “arrival mood board,” then starts work—no more storytelling.",
     },
     adultsWork:
@@ -4356,12 +4612,16 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "Should I screenshot the gallery?",
         a: "Only with clear consent. Default is no.",
       },
+      {
+        q: "When should you skip Picture Sharing?",
+        a: "Skip in low-trust rooms, when themes would invade privacy, or when cameras feel like a status check. Prefer Chat Waterfall or jump to the agenda.",
+      },
     ],
     sources: [
       { label: "Virtual ice breaker games", href: "/virtual-icebreaker-games" },
       { label: "Short virtual icebreakers", href: "/short-virtual-icebreakers" },
       { label: "Chat Waterfall", href: "/games/chat-waterfall" },
-      { label: "Virtual Background Story", href: "/games/virtual-background-story" },
+      { label: "Emoji Introduction", href: "/games/emoji-introduction" },
     ],
   },
 
@@ -4438,7 +4698,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Object → need tag (site original)",
+      title: "Object → need tag",
       body: "After the tell, people optionally add one emoji need tag in chat (hourglass, wrench, check). Facilitator only summarizes needs in aggregate before the working agenda.",
     },
     adultsWork:
@@ -4546,7 +4806,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pronounce-as-you-place (site original)",
+      title: "Pronounce-as-you-place",
       body: "When someone adds a name, the whole group repeats the pronunciation once before the next placement. Turns the puzzle into a pronunciation drill without a second name game.",
     },
     adultsWork:
@@ -4654,7 +4914,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Clue → collaborator match (site original)",
+      title: "Clue → collaborator match",
       body: "After three reveals, people star one clue that connects to their work. They optionally message that person for a 10-minute follow-up later—moves curiosity off the public stage.",
     },
     adultsWork:
@@ -4762,7 +5022,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Envelope → agenda seed (site original)",
+      title: "Envelope → agenda seed",
       body: "Include two “work” envelopes in the stack (name a risk; name a helper). Whoever draws them posts on a sticky that starts the real discussion. Links play to purpose.",
     },
     adultsWork:
@@ -4870,7 +5130,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pitch → meeting fix (site original)",
+      title: "Pitch → meeting fix",
       body: "After the fun pitches, spend 60 seconds inventing one serious “meeting fix” product name. Write it on a sticky as a reminder of the pain point to solve later—bridges comedy to process without a second activity.",
     },
     adultsWork:
@@ -4978,7 +5238,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Headline → decision subhead (site original)",
+      title: "Headline → decision subhead",
       body: "After the fun headline, write one serious subhead that states today’s decision in eight words. Keep both on the slide: humor + purpose.",
     },
     adultsWork:
@@ -5086,7 +5346,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pterodactyl → stretch reset (site original)",
+      title: "Pterodactyl → stretch reset",
       body: "After the word round, do one silent shoulder roll while keeping the same “no teeth” grin for five seconds. Releases face tension and marks the end of silly mode before serious talk.",
     },
     adultsWork:
@@ -5102,7 +5362,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         q: "How long does it take?",
-        a: "Two to five minutes.",
+        a: "Two to five minutes for one soft round—do not run it as a long tournament.",
       },
       {
         q: "Can it be virtual?",
@@ -5198,7 +5458,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Adjective sticky → agenda (site original)",
+      title: "Adjective sticky → agenda",
       body: "After the circle, each person types only their adjective into chat or a shared doc. Facilitator reads five adjectives as the room’s “arrival weather,” then starts the agenda—no second name recital. Names still got said once; the harvest is mood, not memory exam.",
     },
     adultsWork:
@@ -5224,11 +5484,14 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "How is it different from The Name Game?",
         a: "Alliteration adds a letter hook. The Name Game may use any cue and often focuses on recall structure.",
       },
+      {
+        q: "When should you skip the Alliterative Name Game?",
+        a: "Skip for recurring standups, when alliteration would feel childish in a formal kickoff, or when you need role clarity more than a letter hook. Use The Name Game (name + role) or jump to the agenda.",
+      },
     ],
     sources: [
       { label: "Name game icebreakers", href: "/name-game-icebreakers" },
       { label: "The Name Game", href: "/games/the-name-game" },
-      { label: "Motion Name-Game", href: "/games/motion-name-game" },
       { label: "Ice breaker games for teens", href: "/icebreaker-games-for-teens" },
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
     ],
@@ -5311,7 +5574,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Name-tag → one fact harvest (site original)",
+      title: "Name-tag → one fact harvest",
       body: "After three reveals, each guesser shares one work-safe fact they used (e.g. “asks about projects”). Facilitator lists three listening habits on a slide—no more guessing. Turns the party game into a short observation debrief.",
     },
     adultsWork:
@@ -5337,11 +5600,14 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "What names should I avoid?",
         a: "Anything embarrassing, political as a punchline, body-related, or without consent if using real people.",
       },
+      {
+        q: "When should you skip Blind Name Tag?",
+        a: "Skip for first client meetings, grief contexts, low-trust onboarding, or when you cannot screen every name. Prefer The Name Game or Chat Waterfall.",
+      },
     ],
     sources: [
       { label: "Name game icebreakers", href: "/name-game-icebreakers" },
       { label: "The Name Game", href: "/games/the-name-game" },
-      { label: "Guess That Team Member", href: "/games/guess-that-team-member" },
       { label: "When to skip an icebreaker", href: "/when-to-skip-an-icebreaker" },
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
     ],
@@ -5424,7 +5690,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Common → next-step sticky (site original)",
+      title: "Common → next-step sticky",
       body: "After share-outs, each pair writes one shared interest that could help the project (e.g. “both like async docs”). Stickies go on a “working preferences” board. Names stay private if preferred—keeps the mixer tied to how the team will collaborate.",
     },
     adultsWork:
@@ -5537,7 +5803,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Word story → verb harvest (site original)",
+      title: "Word story → verb harvest",
       body: "After the silly sentence, each person adds one verb they want more of today (focus, ask, rest, ship). Facilitator reads five verbs as the room’s intention list—bridges play into work without a second icebreaker.",
     },
     adultsWork:
@@ -5646,7 +5912,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Category → pairing sticky (site original)",
+      title: "Category → pairing sticky",
       body: "On the final round, people stay in zones and write one work-safe preference on a sticky (async docs / live calls). Facilitator clusters stickies on a wall as a living “how we work” map—mixer becomes operating norms without a second exercise.",
     },
     adultsWork:
@@ -5750,11 +6016,11 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         title: "Duplicate of Human Bingo page",
-        body: "Lead with custom themes so this URL is not a thin twin.",
+        body: "Lead with custom themes so the card feels specific to this event—not a generic bingo reprint.",
       },
     ],
     originalVariant: {
-      title: "Bingo → skill board (site original)",
+      title: "Bingo → skill board",
       body: "After mingling, each person stars one square that matches a skill they can offer peers this week. Stickies go onto a “ask me about…” board. Networking becomes a living help map, not only a race.",
     },
     adultsWork:
@@ -5780,11 +6046,15 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         q: "What prompts should I avoid?",
         a: "Body, salary, trauma, and non-consensual identity questions.",
       },
+      {
+        q: "When should you skip Icebreaker Bingo?",
+        a: "Skip under about 12 people without a shortened card, when the room cannot mingle, or when your theme deck still has invasive squares. Use Human Bingo with a clean card, pair prompts, or jump to the agenda.",
+      },
     ],
     sources: [
       { label: "Games like Human Bingo", href: "/games-like-human-bingo" },
       { label: "Human Bingo", href: "/games/human-bingo" },
-      { label: "Category Mixer", href: "/games/category-mixer" },
+      { label: "Line-Up", href: "/games/line-up" },
       { label: "Ice breaker games for work", href: "/icebreaker-games-for-work" },
     ],
   },
@@ -5858,7 +6128,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Reception → connector card (site original)",
+      title: "Reception → connector card",
       body: "After three shifts, each person writes one name they want to continue with and one topic. Cards go to a host basket; hosts make two warm email intros after the event—extends the line into real follow-up without public pressure.",
     },
     adultsWork:
@@ -5966,7 +6236,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Sole → path sticky (site original)",
+      title: "Sole → path sticky",
       body: "After pairs form, each duo writes one place they both like to walk or think (park, kitchen, transit). Stickies become a “thinking places” map—keeps the metaphor without dwelling on footwear.",
     },
     adultsWork:
@@ -5995,7 +6265,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     sources: [
       { label: "Games like Human Bingo", href: "/games-like-human-bingo" },
-      { label: "Category Mixer", href: "/games/category-mixer" },
+      { label: "Line-Up", href: "/games/line-up" },
       { label: "Take a Picture of Your Shoes", href: "/games/take-a-picture-of-your-shoes" },
       { label: "When to skip an icebreaker", href: "/when-to-skip-an-icebreaker" },
     ],
@@ -6074,7 +6344,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Tower → role sticky (site original)",
+      title: "Tower → role sticky",
       body: "During debrief, each team writes one role they lacked (timer, tester, materials lead) on a sticky. Stickies become a “roles we need next sprint” board—turns the snack craft into a staffing insight.",
     },
     adultsWork:
@@ -6099,6 +6369,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Do we need a winner?",
         a: "Height is optional flavor—process debrief is the point.",
+      },
+      {
+        q: "When should you skip the Marshmallow Challenge?",
+        a: "Skip when you have no allergen-safe stand-ins, no time for a real debrief, or the room needs gravity not a snack craft. Prefer Line-Up or jump to the agenda.",
       },
     ],
     sources: [
@@ -6182,7 +6456,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pickup → constraint sticky (site original)",
+      title: "Pickup → constraint sticky",
       body: "After two rounds, each team writes one constraint that helped (timer, roles, fewer bags). Stickies become “constraints that clarify” for the project kickoff—physical play feeds planning language.",
     },
     adultsWork:
@@ -6290,7 +6564,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Swap → theme board (site original)",
+      title: "Swap → theme board",
       body: "After introductions, each person writes one word from their partner’s story on a shared board. Facilitator clusters repeats (travel, food, learning)—shows shared themes without more speaking.",
     },
     adultsWork:
@@ -6398,7 +6672,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Dream → tiny next step (site original)",
+      title: "Dream → tiny next step",
       body: "After shares, each person writes one tiny next step toward their dream (email, 10-minute practice). Steps stay private unless volunteered—turns inspiration into agency without public accountability theater.",
     },
     adultsWork:
@@ -6502,7 +6776,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Appreciation → keep/try board (site original)",
+      title: "Appreciation → keep/try board",
       body: "Translate two appreciations into a “keep doing” sticky and one “try next time” sticky for the group’s norms. Moves warmth into actionable agreements without more vulnerable speaking.",
     },
     adultsWork:
@@ -6610,7 +6884,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Coin year → gratitude sticky (site original)",
+      title: "Coin year → gratitude sticky",
       body: "After shares, each person writes one ordinary good thing from any recent year (not necessarily the coin year) on a sticky. Board becomes a gratitude mosaic—keeps storytelling light if coin years felt heavy.",
     },
     adultsWork:
@@ -6718,7 +6992,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Unique → ask-me sticky (site original)",
+      title: "Unique → ask-me sticky",
       body: "Each person writes their unique item as an “ask me about…” sticky on a wall or doc. Peers can tap topics later in breaks—extends discovery without more circle time.",
     },
     adultsWork:
@@ -6826,7 +7100,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Change → focus reset (site original)",
+      title: "Change → focus reset",
       body: "After reveals, everyone mute-changes one tiny desk item on purpose, then types “ready” in chat. Marks the shift from play to work without another icebreaker.",
     },
     adultsWork:
@@ -6934,7 +7208,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Die → decision prompt (site original)",
+      title: "Die → decision prompt",
       body: "After social rolls, do one final roll against a work die (risk, customer, timeline, quality, learning, fun). The room spends two minutes discussing only that lens for the next agenda item—turns the toy into a facilitation tool.",
     },
     adultsWork:
@@ -6959,6 +7233,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "What prompts work at work?",
         a: "Tools, small wins, snacks, hobbies, learning goals, weekend plans—avoid alcohol and dating prompts.",
+      },
+      {
+        q: "When should you skip Dicebreakers?",
+        a: "Skip when you only have party-game or alcohol prompts, or when the room needs a pulse not a toy. Use One Word Check-In or Would You Rather instead.",
       },
     ],
     sources: [
@@ -7042,7 +7320,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Count → meeting norm sticky (site original)",
+      title: "Count → meeting norm sticky",
       body: "After debrief, each person writes one meeting listening norm (“pause two seconds,” “stack before speaking”). Stickies become the team’s interruption charter for the session.",
     },
     adultsWork:
@@ -7150,7 +7428,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Bingo → skill map (site original)",
+      title: "Bingo → skill map",
       body: "After mingling, each person stars one square they can teach a peer this month. Stickies become an “ask me about…” skill map. Connection stays practical; nobody has to narrate their biography.",
     },
     adultsWork:
@@ -7175,6 +7453,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "How is it different from Human Bingo?",
         a: "Same mingle mechanic. This page stresses screened, optional experience squares so the activity cannot become an identity audit.",
+      },
+      {
+        q: "When should you skip Diversity Bingo?",
+        a: "Skip if leadership wants a diversity lecture (this is a mixer, not training), if you cannot screen every square, or if protected-class prompts would sneak onto the card. Use Human Bingo with hobby squares or jump to the agenda.",
       },
     ],
     sources: [
@@ -7259,7 +7541,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Wheel → pronunciation sticky (site original)",
+      title: "Wheel → pronunciation sticky",
       body: "After spins, each person writes their name the way they want it said on a sticky or chat. Facilitator reads five names slowly. The randomizer was the icebreaker; the harvest is actually learning names.",
     },
     adultsWork:
@@ -7367,7 +7649,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Place → working-hours sticky (site original)",
+      title: "Place → working-hours sticky",
       body: "After shares, people who want to can mark an optional time zone or typical working hours on a doc—not their biography. Turns geography chat into hybrid-meeting logistics without asking anyone to explain family history.",
     },
     adultsWork:
@@ -7475,7 +7757,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Vacation → rest need (site original)",
+      title: "Vacation → rest need",
       body: "After the silly trip, each person writes one rest need for this week (quiet hour, walk, earlier stop). Private unless volunteered. Imagination becomes a practical energy check without a second icebreaker.",
     },
     adultsWork:
@@ -7583,7 +7865,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pair hello → one ask sticky (site original)",
+      title: "Pair hello → one ask sticky",
       body: "After three rotations, each person writes one work question they still want answered (“who owns X?”). Stickies go to a parking lot for the real meeting—rotations become a question harvest, not a social hour.",
     },
     adultsWork:
@@ -7691,7 +7973,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Rather → decision sticky (site original)",
+      title: "Rather → decision sticky",
       body: "After the last work pair, each person writes which side they need this week (more async / more live). Stickies become a visible team preference without a survey tool.",
     },
     adultsWork:
@@ -7795,7 +8077,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Fact → follow-up optional (site original)",
+      title: "Fact → follow-up optional",
       body: "After three reveals, people who want to can write one question they would like to ask the author later—not now. Questions go to a parking lot. Curiosity without putting anyone on the spot twice.",
     },
     adultsWork:
@@ -7903,7 +8185,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Lines → message sticky (site original)",
+      title: "Lines → message sticky",
       body: "After the reveal, each line writes one word for “what got lost.” Facilitator lists three lost words as a meeting metaphor (assumptions, haste, no playback)—then the real agenda uses a repeat-back rule.",
     },
     adultsWork:
@@ -8011,7 +8293,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Spectrum → session dial (site original)",
+      title: "Spectrum → session dial",
       body: "After the last prompt, people drop a sticky on a 1–5 “how much discussion do we need today” line. Facilitator reads the cluster and times the next agenda item to match—movement becomes a meeting-design input.",
     },
     adultsWork:
@@ -8119,7 +8401,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "If-Then → need sticky (site original)",
+      title: "If-Then → need sticky",
       body: "After the silly stem, one work stem: “If we need one thing today, then…” People write the need on a sticky. Facilitator reads five. Imagination becomes a request list.",
     },
     adultsWork:
@@ -8150,7 +8432,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       { label: "One Word Check-In", href: "/games/one-word-check-in" },
       { label: "Six-Word Memoirs", href: "/games/six-word-memoirs" },
       { label: "Ice breaker games for meetings", href: "/icebreaker-games-for-meetings" },
-      { label: "Would You Rather Training", href: "/games/would-you-rather-training" },
+      { label: "Would You Rather", href: "/games/would-you-rather" },
     ],
   },
 
@@ -8227,7 +8509,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Handshake → reconnection cue (site original)",
+      title: "Handshake → reconnection cue",
       body: "Pairs keep only beat one as a silent “we’re back from break” cue. No more inventing. Turns a gimmick into a practical regroup signal.",
     },
     adultsWork:
@@ -8255,7 +8537,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     sources: [
-      { label: "Motion Name-Game", href: "/games/motion-name-game" },
+      { label: "The Name Game", href: "/games/the-name-game" },
       { label: "Games like the Human Knot", href: "/games-like-the-human-knot" },
       { label: "When to skip an icebreaker", href: "/when-to-skip-an-icebreaker" },
       { label: "Ice breaker games for youth group", href: "/icebreaker-games-for-youth-group" },
@@ -8335,7 +8617,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Stick → kickoff plan sticky (site original)",
+      title: "Stick → kickoff plan sticky",
       body: "Each person writes one “call a pause” phrase they want this team to use (hold, replay, smaller slice). Stickies become a working agreement beside the stick.",
     },
     adultsWork:
@@ -8443,7 +8725,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Fruit → attention cue (site original)",
+      title: "Fruit → attention cue",
       body: "Keep one fruit as a later “eyes up” cue: when the facilitator says bananas, everyone pauses side talk for five seconds. Energizer becomes a meeting signal.",
     },
     adultsWork:
@@ -8468,6 +8750,10 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       {
         q: "Is there elimination?",
         a: "No. Soft reset only.",
+      },
+      {
+        q: "When should you skip Apple Orange and Banana?",
+        a: "Skip in formal client rooms, grief or crisis meetings, tight spaces where seat-swapping causes collisions, or when fruit labels feel childish for the audience. Use hands-only, Chat Waterfall, or This or That—or jump to the agenda.",
       },
     ],
     sources: [
@@ -8512,8 +8798,8 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     rulesTiming: [
-      { label: "Players", body: "8–20." },
-      { label: "Time", body: "2–5 minutes." },
+      { label: "Players", body: "8–25; above 25, split circles or skip." },
+      { label: "Time", body: "2–5 minutes (one soft round; do not stretch to a tournament)." },
       { label: "Materials", body: "None." },
       {
         label: "House rules",
@@ -8521,7 +8807,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     whyItWorks:
-      "Bang is only useful as a tiny attention spike. Elimination versions shame people and the name can be a poor fit. Use soft scoring or skip. This page exists so the library URL is not a thin shell.",
+      "Bang is only useful as a tiny attention spike. Elimination versions shame people and the name can be a poor fit for schools and workplaces. Prefer soft scoring, rename the round, or skip—most meetings are better served by Chat Waterfall or a short Rock Paper Scissors tournament.",
     facilitatorScript: [
       {
         speaker: "Open",
@@ -8547,7 +8833,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Point → stack cue (site original)",
+      title: "Point → stack cue",
       body: "After one round, teach a non-violent stack: when someone wants to speak they point at themselves, not others. Replaces the gag with a turn-taking signal.",
     },
     adultsWork:
@@ -8562,8 +8848,12 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
         a: "Usually no. If you need energy, pick Chat Waterfall or Rock Paper Scissors with cheer squads.",
       },
       {
+        q: "How many people?",
+        a: "About 8–25 in one circle. Larger rooms should split or skip.",
+      },
+      {
         q: "How long does it take?",
-        a: "Two to five minutes.",
+        a: "Two to five minutes for one soft round—do not run it as a long tournament.",
       },
       {
         q: "Can I rename it?",
@@ -8667,7 +8957,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Grounding → agenda breath (site original)",
+      title: "Grounding → agenda breath",
       body: "After the countdown, one silent 10-second look at the written agenda. Marks the shift from reset to work without a second icebreaker.",
     },
     adultsWork:
@@ -8793,7 +9083,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Map → working-hours legend (site original)",
+      title: "Map → working-hours legend",
       body: "Add a tiny legend: morning / afternoon overlap. People who want to can mark a window, not a life story. Geography becomes hybrid logistics.",
     },
     adultsWork:
@@ -8897,7 +9187,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pick → playlist sticky (site original)",
+      title: "Pick → playlist sticky",
       body: "After three music-or-movie rounds, each person writes one song or film title on a sticky for a shared holiday playlist. Binary votes become a concrete party artifact.",
     },
     adultsWork:
@@ -9001,7 +9291,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Roll → toast word (site original)",
+      title: "Roll → toast word",
       body: "After social rolls, one final roll against a toast die (thanks, rest, humor, health, teamwork, curiosity). The table uses that single word for a 10-second optional toast—no speeches.",
     },
     adultsWork:
@@ -9105,7 +9395,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Pass → gratitude chip (site original)",
+      title: "Pass → gratitude chip",
       body: "Final stop: everyone who wants to keeps a blank chip and writes one ordinary thanks (a coworker, a rest day). Chips stay private unless volunteered—candy game becomes a quiet close.",
     },
     adultsWork:
@@ -9209,7 +9499,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Sound → desk guess (site original)",
+      title: "Sound → desk guess",
       body: "After two holiday items, one office-supply shake. Winner (or volunteer) names one tool the team should use more next year—bridges party play to a light year-end note.",
     },
     adultsWork:
@@ -9238,7 +9528,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     sources: [
       { label: "Ornament Guess", href: "/games/ornament-guess" },
-      { label: "Remote Change 3 Things", href: "/games/remote-change-3-things" },
+      { label: "Chat Waterfall", href: "/games/chat-waterfall" },
       { label: "Christmas table icebreaker games", href: "/blog/christmas-table-icebreaker-games" },
       { label: "Free fun icebreaker games", href: "/free-fun-icebreaker-games" },
     ],
@@ -9313,7 +9603,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Memory → present hope sticky (site original)",
+      title: "Memory → present hope sticky",
       body: "After optional shares, everyone who wants to writes one ordinary hope for the next month (rest, walk, cook). Board becomes forward-looking without more autobiography.",
     },
     adultsWork:
@@ -9417,7 +9707,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Phone → playlist add (site original)",
+      title: "Phone → playlist add",
       body: "Volunteers who shared a song paste the title into a shared doc for a party playlist. Photos stay private—only music titles travel.",
     },
     adultsWork:
@@ -9446,7 +9736,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     sources: [
       { label: "Picture Sharing", href: "/games/picture-sharing" },
-      { label: "Virtual Background Story", href: "/games/virtual-background-story" },
+      { label: "Picture Sharing", href: "/games/picture-sharing" },
       { label: "Christmas Connection", href: "/games/christmas-connection" },
       { label: "When to skip an icebreaker", href: "/when-to-skip-an-icebreaker" },
     ],
@@ -9521,7 +9811,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Ornament → wish tag (site original)",
+      title: "Ornament → wish tag",
       body: "After reveals, volunteers write one forward wish on a paper tag and hang it on a shared tree or board—no more storytelling required.",
     },
     adultsWork:
@@ -9621,7 +9911,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Bingo → cocoa bar jobs (site original)",
+      title: "Bingo → cocoa bar jobs",
       body: "Winners and volunteers claim a party job sticky (playlist, coats, dessert labels). Mixer becomes hospitality staffing without another announcement.",
     },
     adultsWork:
@@ -9721,7 +10011,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Fortune → one action (site original)",
+      title: "Fortune → one action",
       body: "Anyone who wants to writes one tiny action implied by their fortune (send a thanks, take a walk). Actions stay private unless shared—novelty becomes agency.",
     },
     adultsWork:
@@ -9825,7 +10115,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Tinsel → shared playlist (site original)",
+      title: "Tinsel → shared playlist",
       body: "After two rounds, people who mentioned a song or film paste titles into a shared list. Stories become a party playlist without more guessing.",
     },
     adultsWork:
@@ -9925,7 +10215,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Plate → neighbor toast word (site original)",
+      title: "Plate → neighbor toast word",
       body: "Pairs trade one word from their prompts into a shared “table toast word.” Host reads five words once—no individual speeches.",
     },
     adultsWork:
@@ -10025,7 +10315,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Booth → gratitude wall (site original)",
+      title: "Booth → gratitude wall",
       body: "After a photo (or instead of one), people stick a one-line thanks on a wall. The jar feeds both cameras and a kindness board.",
     },
     adultsWork:
@@ -10125,7 +10415,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Tradition → shared practice sticky (site original)",
+      title: "Tradition → shared practice sticky",
       body: "People who want to write one practice anyone could try this month (evening walk, soup Sunday). Board stays optional and non-ethnic—hospitality without appropriation pressure.",
     },
     adultsWork:
@@ -10229,7 +10519,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
     ],
     originalVariant: {
-      title: "Sing-off → silent playlist (site original)",
+      title: "Sing-off → silent playlist",
       body: "After three sung/hummed rounds, finish with silent title adds only. Energy drops to conversation volume before dinner.",
     },
     adultsWork:

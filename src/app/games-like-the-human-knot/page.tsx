@@ -90,19 +90,19 @@ const gameEntries = [
     variation: "For virtual groups, sort in a shared doc or Zoom gallery by number.",
   },
   {
-    slug: "paper-bag-pickup",
-    name: "Paper Bag Pickup",
-    bestFor: "Light physical teamwork for groups who want knot-game energy with softer contact rules",
-    players: "8–24",
-    time: "8–12 min",
-    materials: "Paper bags or soft objects",
+    slug: "marshmallow-challenge",
+    name: "Marshmallow Challenge",
+    bestFor: "Teams who want knot-game energy with clearer build rules and less body contact",
+    players: "8–40",
+    time: "15–25 min",
+    materials: "Spaghetti, tape, string, marshmallow (or allergen stand-ins)",
     steps: [
-      "Scatter bags in an open area.",
-      "Teams race to collect bags under a rule (e.g., only elbows, or pairs must stay linked).",
-      "Count scores and reset rules for a second round.",
-      "Keep contact optional; offer seated adaptations.",
+      "Form teams of 3–5 and explain the tower goal.",
+      "Time-box the build; marshmallow must sit on top.",
+      "Measure heights and debrief collaboration, not winners only.",
+      "Offer seated / low-movement adaptations.",
     ],
-    variation: "Use soft balls indoors and remove racing for younger or mixed-ability groups.",
+    variation: "Use soft craft materials indoors; remove racing for mixed-ability groups.",
   },
   {
     slug: "two-truths-and-a-lie",
@@ -373,7 +373,7 @@ export default async function GamesLikeTheHumanKnotPage() {
                 Human Knot–style openers teach collaboration through a shared physical puzzle—but lower-contact substitutes keep the lesson when touch is not appropriate.
               </p>
               <cite className={styles.cite}>
-                — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+                — Elena Hart, summarizing guidance from{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
                   rel="noopener noreferrer"

@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/icebreaker-games-for-high-school-students-hero.jpg";
 const ogImageAlt =
   "Ice breaker games for high school students — diverse students laughing in a classroom icebreaker circle";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-08-14";
 const dateModified = "2026-08-14";
 

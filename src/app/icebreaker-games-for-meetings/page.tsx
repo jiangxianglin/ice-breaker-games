@@ -14,7 +14,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/icebreaker-games-for-meetings-hero.jpg";
 const ogImageAlt =
   "Ice breaker games for meetings — professionals connecting in a bright workshop circle";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-05-05";
 const dateModified = "2026-08-08";
 

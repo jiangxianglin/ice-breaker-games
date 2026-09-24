@@ -14,7 +14,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/short-virtual-icebreakers-hero.jpg";
 const ogImageAlt =
   "Short virtual icebreakers — remote teammates laughing during a five-minute Zoom warm-up";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-07-25";
 const dateModified = "2026-07-25";
 
@@ -228,14 +228,14 @@ const gameEntries = [
       "Work edition: “Never have I ever… shipped on a Friday / joined a meeting from a train.”",
   },
   {
-    slug: "virtual-background-story",
-    name: "Virtual Background Story",
+    slug: "picture-sharing",
+    name: "Picture Sharing",
     bestFor: "Slightly longer short virtual icebreakers with visual storytelling",
     players: "5–16",
     time: "6–10 min",
-    materials: "Virtual background or prop",
+    materials: "Camera or a photo in chat",
     steps: [
-      "Everyone sets a background that hints at a story.",
+      "Everyone shares a photo that hints at a story.",
       "Others guess; author explains in 20 seconds.",
       "Limit to a handful of shares if time is tight.",
       "Great before creative workshops.",

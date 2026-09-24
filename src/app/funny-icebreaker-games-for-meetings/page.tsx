@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/funny-icebreaker-games-for-meetings-hero.jpg";
 const ogImageAlt =
   "Funny ice breaker games for meetings — diverse professionals laughing around a conference table";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-08-08";
 const dateModified = "2026-08-08";
 
@@ -95,21 +95,21 @@ const gameEntries = [
     safety: "No body-contact prompts; keep phrases workplace-appropriate.",
   },
   {
-    slug: "virtual-background-story",
-    name: "Virtual Background Story",
+    slug: "picture-sharing",
+    name: "Picture Sharing",
     bestFor: "Remote all-hands that need a visual laugh and quick shares",
     players: "6–40",
     time: "5–10 min",
-    materials: "Video meeting with background change",
+    materials: "Camera or a photo in chat",
     funnyScene:
-      "Someone joins from the moon, another from a 1990s mall food court. The “why this background” stories become the icebreaker—no forced joke required.",
+      "Someone shares a chaotic desk photo, another a pet photobomb. The “why this picture” stories become the icebreaker—no forced joke required.",
     steps: [
-      "Give 60 seconds for everyone to set a playful virtual background.",
+      "Give 60 seconds for everyone to pick a playful photo.",
       "Invite 4–6 people to explain their choice in one sentence.",
       "Collect themes (“escape,” “nostalgia,” “chaos”).",
-      "Reset backgrounds and open the agenda.",
+      "Open the agenda.",
     ],
-    variation: "Theme: “background that matches this project’s mood.”",
+    variation: "Theme: “photo that matches this project’s mood.”",
     safety: "Allow camera-off + chat description for anyone uncomfortable on video.",
   },
   {
@@ -203,22 +203,22 @@ const gameEntries = [
     safety: "Celebrate creativity; do not roast soft-spoken pitches.",
   },
   {
-    slug: "news-headline-warm-up",
-    name: "News Headline Warm-up",
-    bestFor: "Writing-friendly teams and standup humor without performance anxiety",
-    players: "5–30",
-    time: "5–8 min",
-    materials: "Chat, sticky notes, or whiteboard",
+    slug: "train-wreck",
+    name: "Train Wreck",
+    bestFor: "Writing-friendly? Prefer movement—teams that need a loud, short reset",
+    players: "12–50",
+    time: "5–10 min",
+    materials: "Open floor or aisles",
     funnyScene:
-      "Headline of the week: “Engineer Survives Meeting That Could Have Been a Doc.” The room nods, then laughs, then the facilitator starts on time.",
+      "Someone stands when “has eaten cereal for dinner” lands. Chairs shuffle, the room laughs, then the facilitator starts on time.",
     steps: [
-      "Prompt: write a fake newspaper headline about your week or the project.",
-      "Post in chat or on a wall.",
-      "Read 4–6 favorites aloud.",
-      "Bridge one headline theme into the agenda.",
+      "People sit in a circle or rows with one empty spot.",
+      "Call light statements; matching people move to a new seat.",
+      "Keep rounds short and workplace-safe.",
+      "Sit down and open the agenda while energy is still high.",
     ],
-    variation: "Strictly positive headlines only for stressed weeks.",
-    safety: "No targeting individuals; keep satire kind and work-safe.",
+    variation: "Walk-only / no-running house rule for offices.",
+    safety: "Offer seated continuum options; no targeting individuals.",
   },
   {
     slug: "chat-waterfall",

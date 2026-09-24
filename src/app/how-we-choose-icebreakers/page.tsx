@@ -37,7 +37,11 @@ const jsonLd = {
   description,
   datePublished,
   dateModified,
-  author: { "@type": "Organization", name: "Ice Breaker Games Editorial Team" },
+  author: {
+    "@type": "Person",
+    name: "Elena Hart",
+    url: "https://www.icebreakergames.site/about",
+  },
   publisher: { "@type": "Organization", name: "Ice Breaker Games" },
   mainEntityOfPage: canonical,
 };
@@ -59,7 +63,11 @@ export default function HowWeChooseIcebreakersPage() {
 
       <h1 className="mb-4 text-4xl font-bold tracking-tight">{title}</h1>
       <p className="mb-2 text-sm text-muted-foreground">
-        By the Ice Breaker Games editorial team · Updated {dateModified}
+        By{" "}
+        <Link href="/about" className="underline underline-offset-2">
+          Elena Hart
+        </Link>{" "}
+        · Updated {dateModified}
       </p>
       <p className="mb-8 text-lg text-muted-foreground">
         This page is our public selection method. We use it when we write a game guide, reject a
@@ -148,12 +156,12 @@ export default function HowWeChooseIcebreakersPage() {
           If a format only works when you split the room, the page must say so. Reciting 25 names in
           a growing list is a common failure mode; see{" "}
           <Link
-            href="/games/motion-name-game"
+            href="/games/the-name-game"
             className="font-medium text-foreground underline underline-offset-2"
           >
-            Motion Name-Game
+            The Name Game
           </Link>{" "}
-          for how we chunk that problem instead of pretending the classic circle scales.
+          for how we keep name learning short instead of pretending a classic circle scales.
         </p>
         <p>
           Virtual meetings get a second clock: mute/unmute tax. Chat-first variants exist because
@@ -199,15 +207,15 @@ export default function HowWeChooseIcebreakersPage() {
           as the latter, with an inclusive prompt deck, because the former fails mixed-faith offices.
         </p>
         <p>
-          Example: a collage can be a costume party or a working agreement.{" "}
+          Example: a preference poll can be a costume party or a working agreement.{" "}
           <Link
-            href="/games/team-superpower-collage"
+            href="/games/would-you-rather"
             className="font-medium text-foreground underline underline-offset-2"
           >
-            Team Superpower Collage
+            Would You Rather
           </Link>{" "}
-          is written as identity-plus-kryptonite, and we tell facilitators not to use it as a
-          first-minute opener for strangers.
+          is written with pass rules and work-safe prompts, and we tell facilitators not to use
+          invasive “gotcha” options as a first-minute opener for strangers.
         </p>
       </section>
 

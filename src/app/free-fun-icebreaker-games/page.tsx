@@ -14,7 +14,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/free-fun-icebreaker-games-hero.jpg";
 const ogImageAlt =
   "Adults laughing during free-fun-icebreaker-games at a meeting table";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-09-16";
 const dateModified = "2026-09-16";
 
@@ -139,21 +139,21 @@ const gameEntries = [
     safety: "No appearance or dating squares.",
   },
   {
-    slug: "virtual-background-story",
-    name: "Virtual Background Story",
+    slug: "picture-sharing",
+    name: "Picture Sharing",
     bestFor: "Remote all-hands that need a visual laugh",
     players: "5–40",
     time: "8–12 min",
-    materials: "Video platform with backgrounds",
+    materials: "Camera or a photo in chat",
     funLevel: "High",
     steps: [
-      "Everyone sets a surprising virtual background.",
-      "In turn (or volunteers), share one sentence about why they chose it.",
+      "Ask everyone to share one photo (object, view, or pet) with a one-sentence caption.",
+      "In turn (or volunteers), explain why they chose it.",
       "Keep shares to 15–20 seconds.",
-      "Screenshot a collage if your team likes souvenirs.",
+      "Collect themes, then open the agenda.",
     ],
-    variation: "Theme: favorite vacation fail, childhood room, or “my ideal Friday.”",
-    safety: "Allow camera-off people to describe a background in chat instead.",
+    variation: "Theme: favorite desk object, commute view, or “my ideal Friday.”",
+    safety: "Allow camera-off people to describe a photo in chat instead.",
   },
   {
     slug: "one-word-check-in",

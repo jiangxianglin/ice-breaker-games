@@ -2,6 +2,7 @@ import { getGameBySlug, getGameById } from "@/db/queries/games";
 import { getRelatedGames } from "@/lib/games/related";
 import { getGamePageFaqs } from "@/data/game-page-extras";
 import { getGameSeoMeta } from "@/data/game-seo-meta";
+import { isNoindexGameSlug } from "@/lib/games/excluded-slugs";
 import { GameDetail } from "@/components/games/GameDetail";
 import { TwoTruthsAndALieDetail } from "@/components/games/TwoTruthsAndALieDetail";
 import {
@@ -578,17 +579,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: finalDescription,
       images: [openGraphImageUrl],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
+    robots: isNoindexGameSlug(game.slug)
+      ? {
+          index: false,
+          follow: true,
+          googleBot: {
+            index: false,
+            follow: true,
+          },
+        }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
+        },
   };
 }
 

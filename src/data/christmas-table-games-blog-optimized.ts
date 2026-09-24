@@ -3,7 +3,7 @@ export const christmasTableGamesOptimized = {
   title: "15 Best Christmas Table Icebreaker Games for Holiday Dinners 2026",
   excerpt: "Transform your Christmas dinner party with these engaging table icebreaker games. Perfect for family gatherings, office parties, and holiday celebrations. Easy to play while seated!",
   date: "2026-02-07",
-  author: "Holiday Events Team",
+  author: "Elena Hart",
   image: "/christmas-table-games-hero.jpg",
   tags: ["Christmas Games", "Holiday Party", "Table Games", "Dinner Party", "Family Activities"],
   

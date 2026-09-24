@@ -13,7 +13,7 @@ const canonical = "https://www.icebreakergames.site/icebreakers-for-teens";
 const ogImage = "https://www.icebreakergames.site/img/icebreakers-for-teens-hero.jpg";
 const ogImageAlt =
   "Icebreakers for teens — diverse teens laughing outdoors during a high-energy icebreaker circle";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-08-14";
 const dateModified = "2026-08-14";
 

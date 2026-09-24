@@ -69,7 +69,7 @@ export default async function IcebreakerGamesForWorkPage() {
     "find-your-match",
     "passions-tic-tac-toe",
     "the-question-web",
-    "team-superpower-collage",
+    "would-you-rather",
     "minefield",
   ];
 
@@ -237,7 +237,7 @@ export default async function IcebreakerGamesForWorkPage() {
               agenda—not entertainment that crowds out decisions.
             </p>
             <cite className="mt-3 block text-sm not-italic text-muted-foreground">
-              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              — Elena Hart, summarizing guidance from{" "}
               <a
                 href="https://www.sessionlab.com/library/icebreaker"
                 rel="noopener noreferrer"

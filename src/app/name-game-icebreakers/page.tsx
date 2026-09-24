@@ -13,7 +13,7 @@ const targetSlugs = [
   "the-name-game",
   "blind-name-tag",
   "alliterative-name-game",
-  "motion-name-game",
+  "chainlink",
   "crossword-names",
   "wheel-of-fortune-introductions",
   "find-your-match",
@@ -23,7 +23,7 @@ const targetSlugs = [
 const comparisonRows = [
   ["The Name Game", "New groups", "5–10 min", "Low"],
   ["Alliterative Name Game", "Students and workshops", "5–12 min", "Medium"],
-  ["Motion Name Game", "High-energy groups", "8–15 min", "High"],
+  ["Chainlink", "Mixed-energy intros", "8–15 min", "Medium"],
   ["Blind Name Tag", "Playful adult groups", "10–15 min", "Medium"],
 ];
 
@@ -88,7 +88,7 @@ export default async function NameGameIcebreakersPage() {
         name: "What name games work best for students?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Students usually respond well to Alliterative Name Game, Motion Name Game, Crossword Names, and Human Bingo. Use light prompts and avoid anything embarrassing or too personal.",
+          text: "Students usually respond well to Alliterative Name Game, Chainlink, Crossword Names, and Human Bingo. Use light prompts and avoid anything embarrassing or too personal.",
         },
       },
       {
@@ -151,9 +151,9 @@ export default async function NameGameIcebreakersPage() {
               <h3 className="font-semibold">Fast name learning</h3>
               <p className="mt-1 text-sm text-muted-foreground">Use The Name Game when a new group needs to learn names in 5–10 minutes.</p>
             </Link>
-            <Link href="/games/motion-name-game" className="rounded-xl bg-white p-4 shadow-sm hover:shadow-md dark:bg-gray-950">
+            <Link href="/games/chainlink" className="rounded-xl bg-white p-4 shadow-sm hover:shadow-md dark:bg-gray-950">
               <h3 className="font-semibold">High-energy students</h3>
-              <p className="mt-1 text-sm text-muted-foreground">Use Motion Name Game when movement and repetition will help names stick.</p>
+              <p className="mt-1 text-sm text-muted-foreground">Use Chainlink when a shared-trait chain will help names and facts stick.</p>
             </Link>
             <Link href="/games/blind-name-tag" className="rounded-xl bg-white p-4 shadow-sm hover:shadow-md dark:bg-gray-950">
               <h3 className="font-semibold">Playful adult groups</h3>
@@ -177,7 +177,7 @@ export default async function NameGameIcebreakersPage() {
               forgetting—learning names should feel safer, not like a memory test.
             </p>
             <cite className="mt-3 block text-sm not-italic text-muted-foreground">
-              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              — Elena Hart, summarizing guidance from{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
                 rel="noopener noreferrer"
@@ -256,7 +256,7 @@ export default async function NameGameIcebreakersPage() {
           <h2>Name games for different groups</h2>
           <h3>Name games for students</h3>
           <p>
-            Use playful formats with clear rules: Alliterative Name Game, Motion Name Game, and Crossword Names. Keep turns short and avoid prompts that make students reveal sensitive personal information.
+            Use playful formats with clear rules: Alliterative Name Game, Chainlink, and Crossword Names. Keep turns short and avoid prompts that make students reveal sensitive personal information.
           </p>
           <h3>Name games for work</h3>
           <p>

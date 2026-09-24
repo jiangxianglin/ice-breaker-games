@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { unstable_cache } from "next/cache";
 import type { Game } from "@/types/game";
-import { isExcludedGameSlug } from "@/lib/games/excluded-slugs";
+import { isLibraryHiddenGameSlug } from "@/lib/games/excluded-slugs";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -36,7 +36,7 @@ async function fetchAllGames(): Promise<Game[]> {
     }
 
     return ((data || []) as Game[]).filter(
-      (game) => !isExcludedGameSlug(game.slug)
+      (game) => !isLibraryHiddenGameSlug(game.slug)
     );
   } catch (error) {
     console.error("Failed to fetch all games:", error);
@@ -130,7 +130,7 @@ async function fetchGamesByCategory(category: string): Promise<Game[]> {
     }
 
     return ((data || []) as Game[]).filter(
-      (game) => !isExcludedGameSlug(game.slug)
+      (game) => !isLibraryHiddenGameSlug(game.slug)
     );
   } catch (error) {
     console.error(`Failed to fetch games in category ${category}:`, error);

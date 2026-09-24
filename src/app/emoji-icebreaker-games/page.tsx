@@ -14,7 +14,7 @@ const targetSlugs = [
   "emoji-check-in",
   "chat-waterfall",
   "one-word-check-in",
-  "virtual-background-story",
+  "weather-check-in",
   "this-or-that-questions",
   "picture-sharing",
   "storytelling-circle",
@@ -227,7 +227,7 @@ export default async function EmojiIcebreakerGamesPage() {
               monologues—especially when answers stay simultaneous and optional.
             </p>
             <cite className="mt-3 block text-sm not-italic text-muted-foreground">
-              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              — Elena Hart, summarizing guidance from{" "}
               <a
                 href="https://hbr.org/topic/subject/remote-work"
                 rel="noopener noreferrer"

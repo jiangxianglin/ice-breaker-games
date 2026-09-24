@@ -51,11 +51,11 @@ const NETWORKING_GAMES = [
     why: "Efficient format that is introvert-friendly and works well at conferences or internal events.",
   },
   {
-    title: "Category Mixer",
-    slug: "category-mixer",
+    title: "Line-Up",
+    slug: "line-up",
     bestFor: "Big rooms where you want movement without complex rules",
     groupSize: "30–100 adults",
-    why: "Zero materials and simple prompts make it a flexible choice for many audiences.",
+    why: "Zero materials and simple silent-sort prompts make it a flexible choice for many audiences.",
   },
 ];
 

@@ -37,6 +37,10 @@ const faqs = [
     q: "How do you run Two Truths and a Lie for virtual meetings?",
     a: "Have each person post their three statements in chat, then let others ask one or two questions before voting with reactions or a quick poll. Use breakout rooms for groups larger than 12–15.",
   },
+  {
+    q: "When should you skip Two Truths and a Lie?",
+    a: "Skip when trust is fragile, the agenda is under five minutes, after bad news, or when people have signaled discomfort with personal questions. Prefer Two Truths and a Dream, a one-word check-in, or jump to the agenda.",
+  },
 ];
 
 type Props = {
@@ -220,12 +224,18 @@ export function TwoTruthsAndALieDetail({ game, relatedGames = [] }: Props) {
               in pairs. Use on a bell schedule.
             </li>
           </ul>
-          <h3>Two-card prep (site original)</h3>
+          <h3>Two-card prep</h3>
           <p>
             Give each person two blank cards before the round: “truth bank” and “believable lie.”
             They write privately for 60 seconds, then destroy or pocket unused ideas after their turn.
             Prep reduces panic lies (“I am a secret agent”) and keeps school- and work-safe content
             on the table.
+          </p>
+          <h3>Original variant: Truth → partner seed</h3>
+          <p>
+            After three reveals, people sit with someone who guessed correctly (or who shared a similar
+            truth theme). That pair becomes the first discussion partner on the real agenda. Announce
+            the plan up front so listening for overlap matters—not only catching the lie.
           </p>
         </section>
 
@@ -308,9 +318,17 @@ export function TwoTruthsAndALieDetail({ game, relatedGames = [] }: Props) {
         <section className={styles.scriptBand}>
           <h2>Facilitator script</h2>
           <p>
-            “Think of two true things about yourself and one believable lie. Share all three in any
-            order. We’ll ask one or two questions, then vote on the lie. Keep it light—hobbies,
-            travel, food, and weekend stories work great.”
+            <strong>Open:</strong> “Think of two true things about yourself and one believable
+            lie—hobbies, food, travel timing. Pass is fine. We’ll ask one or two questions, then
+            vote.”
+          </p>
+          <p>
+            <strong>Model:</strong> “I’ve lived in three cities. I can juggle. I once met a
+            celebrity. Hands for which is the lie—then reveal and move on.”
+          </p>
+          <p>
+            <strong>Close:</strong> “I’m hearing travelers and bakers. Two more volunteers max,
+            then we start the agenda.”
           </p>
         </section>
 

@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/icebreaker-games-for-church-small-groups-hero.jpg";
 const ogImageAlt =
   "Adults in a living-room circle for icebreaker-games-for-church-small-groups";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-09-16";
 const dateModified = "2026-09-16";
 

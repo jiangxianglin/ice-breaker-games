@@ -18,14 +18,6 @@ const ogImage = "https://www.icebreakergames.site/img/games-og.jpg";
 export const metadata: Metadata = {
   title,
   description,
-  keywords: [
-    "ice breaker games",
-    "browse icebreaker games",
-    "team building activities",
-    "virtual icebreakers",
-    "meeting icebreakers",
-    "classroom games",
-  ],
   alternates: { canonical },
   openGraph: {
     type: "website",
@@ -199,6 +191,12 @@ const clusterGuides = [
       "Storytelling get-to-know alternatives with rules, variations, and safety notes.",
   },
   {
+    href: "/games-like-never-have-i-ever",
+    title: "Games like Never Have I Ever",
+    description:
+      "Safer substitutes for the confession round, with timing and when to skip a party deck.",
+  },
+  {
     href: "/icebreaker-games-for-work",
     title: "Icebreaker games for work",
     description:
@@ -247,8 +245,8 @@ export default async function GamesPage() {
     "@type": "ItemList",
     name: "Ice Breaker Games library",
     description,
-    numberOfItems: Math.min(games.length, 24),
-    itemListElement: games.slice(0, 24).map((game, index) => ({
+    numberOfItems: games.length,
+    itemListElement: games.map((game, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: game.title,
@@ -379,6 +377,29 @@ export default async function GamesPage() {
         >
           <FilterableGameGrid games={games} />
         </Suspense>
+
+        {/* Crawlable Keep list — outside Suspense so static HTML always has /games/{slug} links */}
+        <nav
+          className={styles.crawlIndex}
+          aria-labelledby="all-games-heading"
+        >
+          <h2 id="all-games-heading" className={styles.crawlIndexTitle}>
+            All ice breaker games ({games.length})
+          </h2>
+          <p className={styles.crawlIndexLead}>
+            Full library index—same Keep set as the filters above. Open any title for rules,
+            scripts, and when-to-skip notes.
+          </p>
+          <ul className={styles.crawlIndexList}>
+            {[...games]
+              .sort((a, b) => a.title.localeCompare(b.title))
+              .map((game) => (
+                <li key={game.slug}>
+                  <Link href={`/games/${game.slug}`}>{game.title}</Link>
+                </li>
+              ))}
+          </ul>
+        </nav>
       </section>
 
       <section className={styles.guidesBand} aria-labelledby="priority-heading">

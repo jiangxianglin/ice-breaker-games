@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/icebreaker-games-for-small-groups-hero.jpg";
 const ogImageAlt =
   "Ice breaker games for small groups — diverse adults laughing in a cozy workshop circle";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-08-04";
 const dateModified = "2026-08-04";
 

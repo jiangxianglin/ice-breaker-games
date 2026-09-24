@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/games-like-two-truths-and-a-lie-hero.jpg";
 const ogImageAlt =
   "games-like-two-truths-and-a-lie — diverse adults laughing during a storytelling icebreaker circle";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-08-11";
 const dateModified = "2026-09-16";
 

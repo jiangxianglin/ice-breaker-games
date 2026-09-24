@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/icebreaker-games-for-church-youth-group-hero.jpg";
 const ogImageAlt =
   "Teens in a fellowship hall playing icebreaker-games-for-church-youth-group";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-09-16";
 const dateModified = "2026-09-16";
 

@@ -15,7 +15,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/icebreaker-games-for-church-visitor-safe.jpg";
 const ogImageAlt =
   "Ice breaker games for church — facilitator welcoming a visitor before a short group opener";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-09-16";
 const dateModified = "2026-09-16";
 

@@ -422,7 +422,7 @@ export default async function IcebreakerGamesForYouthGroupPage() {
                 Youth-group icebreakers succeed when newcomers can join without cliques, prompts stay clean, and high-energy games have a clear stop before discussion.
               </p>
               <cite className={styles.cite}>
-                — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+                — Elena Hart, summarizing guidance from{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
                   rel="noopener noreferrer"

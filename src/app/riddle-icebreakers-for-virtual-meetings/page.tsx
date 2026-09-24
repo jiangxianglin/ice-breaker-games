@@ -22,7 +22,7 @@ const ogImageAlt =
 const ogTitle = "12 Riddle Icebreakers for Virtual Meetings (2026)";
 const ogDescription =
   "12 Zoom-ready riddle icebreakers for virtual meetings. Players, time, rules, and facilitator tips for every warm-up.";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2026-07-25";
 const dateModified = "2026-07-25";
 
@@ -140,14 +140,14 @@ const gameEntries = [
       "Fully remote: pass a private DM phrase; each person mimes on camera for 15 seconds.",
   },
   {
-    slug: "virtual-background-story",
-    name: "Virtual Background Story",
-    bestFor: "Visual storytelling riddles—guess the story behind someone’s background",
+    slug: "picture-sharing",
+    name: "Picture Sharing",
+    bestFor: "Visual storytelling riddles—guess the story behind someone’s photo",
     players: "5–20",
     time: "8–12 min",
-    materials: "Virtual backgrounds or a prop in frame",
+    materials: "Camera, a photo in chat, or a prop in frame",
     steps: [
-      "Everyone chooses a background (or holds up an object) that hints at a story.",
+      "Everyone chooses a photo (or holds up an object) that hints at a story.",
       "Others guess the connection before the person explains.",
       "Keep explanations to 20–30 seconds.",
       "Great opener before agenda-heavy meetings.",

@@ -116,11 +116,17 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           <h3>Why Play {game.title}?</h3>
           {game.title === "Find Your Match" ? (
             <p>
-              Find Your Match is one of the most engaging ice breaker games for social events and networking. 
-              This pairing ice breaker game helps participants connect through fun interactions while learning about famous pairs and shared interests. 
-              Find Your Match works perfectly as an ice breaker for parties, conferences, team building sessions, and social gatherings. 
-              The game encourages movement, conversation, and makes name learning easy - ideal as an opening activity for any group event. 
-              As an ice breaker game, Find Your Match is easy to set up, requires minimal materials, and guarantees everyone will have a great time getting to know each other.
+              Find Your Match is a pairing icebreaker: each person gets one half of a famous (or
+              work-safe) pair and finds their partner with yes/no questions only. The card gives shy
+              people a reason to approach strangers, and every match becomes an instant intro
+              partner—useful at conferences and orientations when you need movement without a
+              lecture. Use everyday or tool-based decks for international teams; save pop-culture
+              pairs for parties that share the references. Under about ten people, or when the room
+              cannot mingle, skip it and use{" "}
+              <Link href="/games/this-or-that-questions">This or That</Link> or{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link> instead. For larger mingling
+              without pairs, see{" "}
+              <Link href="/games/human-bingo">Human Bingo</Link>.
             </p>
           ) : game.title === "Human Bingo" ? (
             <p>
@@ -128,7 +134,8 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               initials from people who match each square. It gives shy participants a script for
               starting conversations and scales to conferences and orientations when prompts stay
               clean. Customize cards for school or work, print extras, and allow any square to be
-              skipped. For alternatives, see{" "}
+              skipped. Skip under ~12 without a shortened card, when the room cannot mingle, or when
+              you only have invasive squares. For alternatives, see{" "}
               <Link href="/games-like-human-bingo">games like Human Bingo</Link>
               {" "}or classroom grids in the{" "}
               <Link href="/blog/human-bingo-for-students-printable">
@@ -138,23 +145,32 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.title === "Alliterative Name Game" ? (
             <p>
-              The Alliterative Name Game (also called the Adjective Name Game) is a fast way to learn names and warm up a group.
-              Each person pairs their name with a positive adjective that starts with the same letter, and the group repeats the growing list.
-              It works especially well at the start of workshops, work meetings, and first-day-of-class sessions because it is structured, low-pressure, and surprisingly memorable.
+              Alliterative Name Game pairs each name with a same-letter adjective—pass or name-only
+              for hard letters. Do not force a growing “say everyone’s pair” list. Use it for first
+              meetings and workshops; skip for recurring standups. Compare{" "}
+              <Link href="/games/the-name-game">The Name Game</Link>
+              {" "}and more formats on{" "}
+              <Link href="/name-game-icebreakers">name game icebreakers</Link>.
             </p>
           ) : game.title === "One Word Check-In" ? (
             <p>
               One Word Check-In is a 3–5 minute arrival ritual: each person shares one word for energy,
               focus, or need. It is for pulse-taking, not mingling. Keep a pass rule, prefer chat in
-              large Zoom rooms, and do not diagnose anyone’s word. For a metaphor version see{" "}
+              large Zoom rooms, and do not diagnose anyone’s word. Skip after layoffs or during formal
+              reviews. For a metaphor version see{" "}
               <Link href="/games/weather-check-in">Weather Check-In</Link>
               ; for meeting choosers see{" "}
               <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
             </p>
           ) : game.title === "Two Truths and a Lie" ? (
             <p>
-              Two Truths and a Lie is a classic get-to-know-you icebreaker. Each person shares three statements about themselves (two true, one false),
-              and everyone guesses the lie. It works well for teams, classrooms, and workshops because it is simple, fun, and naturally creates follow-up conversation.
+              Two Truths and a Lie is a classic get-to-know-you icebreaker: each person shares three
+              statements (two true, one false) and the group guesses the lie. Cap each turn under
+              two minutes; sample volunteers above ~15. Skip when trust is fragile, the agenda is
+              under five minutes, or people have signaled discomfort with personal questions—prefer{" "}
+              <Link href="/games/two-truths-and-a-dream">Two Truths and a Dream</Link>
+              {" "}or a check-in from{" "}
+              <Link href="/icebreaker-games-for-meetings">ice breaker games for meetings</Link>.
             </p>
           ) : game.title === "Minefield" ? (
             <p>
@@ -169,14 +185,17 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             <p>
               The Name Game helps a new group learn names with a short cue (role, hobby, or adjective).
               Chunk groups larger than about a dozen so nobody recites twenty names in a row. Allow
-              neighbors to help on blanks. Compare{" "}
-              <Link href="/games/motion-name-game">Motion Name-Game</Link> and more formats on{" "}
+              neighbors to help on blanks. Skip for recurring teams that already know each other.
+              Compare{" "}
+              <Link href="/games/alliterative-name-game">Alliterative Name Game</Link> and more formats on{" "}
               <Link href="/name-game-icebreakers">name game icebreakers</Link>.
             </p>
           ) : game.slug === "chainlink" ? (
             <p>
-              Chainlink is an introduction chain: each person names a shared trait with the previous speaker, then adds a new fact. The spoken link—not reciting the whole circle—is what keeps the pace workable for 8–40 people.
-              Facilitation libraries such as{" "}
+              Chainlink is an introduction chain: each person names a shared trait with the previous
+              speaker, then adds a new fact. The spoken link—not reciting the whole circle—is what
+              keeps the pace workable for 8–40 people. Split above ~15 into sub-circles; skip under
+              ~8 or when the group already knows each other well. Facilitation libraries such as{" "}
               <a
                 href="https://www.sessionlab.com/library/icebreaker"
                 rel="noopener noreferrer"
@@ -192,22 +211,30 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               >
                 Wikipedia&apos;s icebreaker (facilitation) overview
               </a>{" "}
-              emphasize short, structured openers that build connection without long monologues.
-              After the chain, follow with{" "}
-              <Link href="/games/the-name-game">how to play the name game</Link>{" "}
-              so faces stick to names, or browse more{" "}
+              emphasize short, structured openers that build connection without long monologues. After
+              the chain, follow with{" "}
+              <Link href="/games/the-name-game">The Name Game</Link> so faces stick to names, or
+              browse more{" "}
               <Link href="/name-game-icebreakers">name game icebreakers</Link>.
             </p>
           ) : game.slug === "emoji-introduction" ? (
             <p>
-              Emoji Introduction is a low-pressure opener where each person shares 2–3 emojis instead of a long verbal introduction.
-              It works especially well for virtual meetings, online classrooms, and hybrid teams because people can answer in chat first, then explain only as much as they feel comfortable sharing.
+              Emoji Introduction is a low-pressure opener: each person shares 2–3 emojis (chat or
+              stickies), the room gets one guess, then a one-sentence decode. It works for virtual
+              meetings and hybrid teams because quieter people can post without unmuting. Cap spoken
+              shares above ~12 people or the opener eats the agenda. Skip it if you need name
+              learning more than mood/hobby signals—use{" "}
+              <Link href="/games/the-name-game">The Name Game</Link>
+              —or if there is no chat and no paper. For a faster pulse with one symbol, try{" "}
+              <Link href="/games/emoji-check-in">Emoji Check-In</Link>.
             </p>
           ) : game.slug === "weather-check-in" ? (
             <p>
-              Weather Check-In is a 3–8 minute sentiment check: each person describes how they feel as weather (sunny, foggy, stormy, partly cloudy).
-              It gives facilitators a fast read of the room without forcing long personal stories—especially useful for remote and hybrid meetings before a full agenda.
-              Guidance on remote connection from{" "}
+              Weather Check-In is a 3–8 minute sentiment check: each person describes how they feel
+              as weather (sunny, foggy, stormy, partly cloudy). Facilitators get a room forecast
+              without forcing long personal stories—especially useful for remote and hybrid meetings
+              before a dense agenda. Do not interrogate “stormy” answers in public; skip the game
+              after layoffs or during formal reviews. Guidance on remote connection from{" "}
               <a
                 href="https://hbr.org/topic/subject/remote-work"
                 rel="noopener noreferrer"
@@ -223,22 +250,28 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               >
                 SessionLab&apos;s icebreaker library
               </a>{" "}
-              points the same way: keep warm-ups structured and time-boxed.
-              For a single-word version, see{" "}
+              points the same way: keep warm-ups structured and time-boxed. For a single-word
+              version, see{" "}
               <Link href="/games/one-word-check-in">One Word Check-In</Link>
               ; for emoji mood shares, try{" "}
               <Link href="/games/emoji-check-in">Emoji Check-In</Link>.
             </p>
           ) : game.title === "Name That Movie Quote" ? (
             <p>
-              Name That Movie Quote is a fast, low-prep icebreaker that turns shared pop culture into laughs. Players quote a line; the group guesses the film.
-              It works for parties, youth groups, and team socials when you want energy without personal disclosure—and themed rounds keep mixed audiences included.
+              Name That Movie Quote is a fast, low-prep icebreaker: someone delivers a short film
+              line, the group guesses the title, then the next person quotes. Use it for parties,
+              youth groups, and team socials when you want energy without personal disclosure. Theme
+              the round (Pixar, sports movies, one decade) for mixed audiences; skip spoilers and
+              niche deep cuts. Skip it in cold client kickoffs, when pop-culture fluency is uneven
+              across cultures, or when you only have three minutes before a formal talk—use{" "}
+              <Link href="/games/this-or-that-questions">This or That</Link> or{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link> instead.
             </p>
           ) : game.title === "Emoji Check-In" ? (
             <p>
               Emoji Check-In is a 2–5 minute pulse: one emoji for energy or focus, collected in chat
-              or reactions. Mirror themes—do not interrogate sad faces in public. For a word version
-              see{" "}
+              or reactions. Mirror themes—do not interrogate sad faces in public. Skip after layoffs
+              or during formal reviews. For a word version see{" "}
               <Link href="/games/one-word-check-in">One Word Check-In</Link>
               ; for more emoji formats see{" "}
               <Link href="/emoji-icebreaker-games">emoji icebreaker games</Link>.
@@ -247,7 +280,10 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             <p>
               Chat Waterfall has everyone type silently, then send on a shared count so the chat
               floods together. The facilitator mirrors themes; unmutes stay optional. Ideal for Zoom
-              and Teams when going around the room is too slow. See{" "}
+              and Teams when going around the room is too slow. Skip when chat is off with no
+              reaction fallback, or when day-one name learning matters more than a pulse—use{" "}
+              <Link href="/games/the-name-game">The Name Game</Link>
+              {" "}instead. See{" "}
               <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link> and{" "}
               <Link href="/short-virtual-icebreakers">short virtual icebreakers</Link>.
             </p>
@@ -293,13 +329,15 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           ) : game.slug === "line-up" ? (
             <p>
               Line-Up sorts the group by a clean criterion (birthday month, commute) with optional
-              silence. Offer seated continua. A lower-contact alternative to the Human Knot—see{" "}
+              silence. Offer seated continua; never sort by money, grades, or body metrics. A
+              lower-contact alternative to the Human Knot—see{" "}
               <Link href="/games-like-the-human-knot">games like the Human Knot</Link>.
             </p>
           ) : game.slug === "beach-ball-qa" ? (
             <p>
               Beach Ball Q&amp;A tosses a soft ball covered in light prompts; catch, answer briefly,
-              toss on. Pass allowed. Zone large rooms. Good for teens and youth nights—see{" "}
+              toss on. Pass allowed. Zone large rooms; skip formal boards and tight seats with no
+              aisle plan. Good for teens and youth nights—see{" "}
               <Link href="/icebreaker-games-for-teens">ice breaker games for teens</Link>.
             </p>
           ) : game.slug === "scavenger-hunt" ? (
@@ -324,7 +362,10 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           ) : game.slug === "train-wreck" ? (
             <p>
               Train Wreck calls light categories so matching people walk to new spots—walk-only by
-              default. Avoid body or dating categories. Large-group energizer notes in{" "}
+              default. Avoid body, dating, or money categories. Skip it in tight rooms, fixed-seat
+              boardrooms, or when anyone cannot move safely—use{" "}
+              <Link href="/games/this-or-that-questions">This or That</Link> or a seated hand-raise
+              version instead. Large-group energizer notes in{" "}
               <Link href="/blog/ice-breaker-games-for-adults-large-groups">
                 icebreaker games for adults in large groups
               </Link>
@@ -413,7 +454,8 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           ) : game.slug === "picture-sharing" ? (
             <p>
               Picture Sharing is an optional themed photo or chat description—cameras off count as a
-              full pass. Keep themes privacy-safe. For tighter clocks use{" "}
+              full pass. Keep themes privacy-safe; shut down home or status shaming. Skip in
+              low-trust rooms. For tighter clocks use{" "}
               <Link href="/games/chat-waterfall">Chat Waterfall</Link>
               {" "}or browse{" "}
               <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link>.
@@ -476,18 +518,13 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               </Link>
               .
             </p>
-          ) : game.slug === "alliterative-name-game" ? (
-            <p>
-              Alliterative Name Game pairs each name with a same-letter adjective—pass or name-only
-              for hard letters. Compare{" "}
-              <Link href="/games/the-name-game">The Name Game</Link>
-              {" "}and more formats on{" "}
-              <Link href="/name-game-icebreakers">name game icebreakers</Link>.
-            </p>
           ) : game.slug === "blind-name-tag" ? (
             <p>
               Blind Name Tag uses facilitator-screened stickies and yes/no guesses—swap once, pass
-              anytime. Playful adults only; skip cold client rooms. See{" "}
+              anytime. Playful adults only; skip cold client rooms, grief contexts, and low-trust
+              onboarding. Prefer{" "}
+              <Link href="/games/the-name-game">The Name Game</Link>
+              {" "}or see{" "}
               <Link href="/name-game-icebreakers">name game icebreakers</Link>.
             </p>
           ) : game.slug === "10-things-in-common" ? (
@@ -514,7 +551,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           ) : game.slug === "icebreaker-bingo" ? (
             <p>
               Icebreaker Bingo is Human Bingo with custom theme decks—soft line wins, pass anytime.
-              Compare{" "}
+              Skip invasive squares and rooms that cannot mingle. Compare{" "}
               <Link href="/games/human-bingo">Human Bingo</Link>.
             </p>
           ) : game.slug === "reception-line" ? (
@@ -532,7 +569,8 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           ) : game.slug === "marshmallow-challenge" ? (
             <p>
               Marshmallow Challenge is a spaghetti-tower teamwork build with allergen-safe stand-ins
-              and a process debrief—knot energy without hand-holding. See{" "}
+              and a process debrief—knot energy without hand-holding. Skip without stand-ins or
+              debrief time. See{" "}
               <Link href="/games-like-the-human-knot">games like the Human Knot</Link>.
             </p>
           ) : game.slug === "paper-bag-pickup" ? (
@@ -652,7 +690,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             <p>
               If-Then completes a safe stem in one sentence. Pass or write-only. For process tradeoffs
               use{" "}
-              <Link href="/games/would-you-rather-training">Would You Rather Training</Link>.
+              <Link href="/games/would-you-rather">Would You Rather</Link>.
             </p>
           ) : game.slug === "crazy-handshake" ? (
             <p>
@@ -668,8 +706,14 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             </p>
           ) : game.slug === "apple-orange-and-banana" ? (
             <p>
-              Apple Orange Banana is a short fruit-label attention reset. Hands-only at work. Youth
-              options on{" "}
+              Apple Orange Banana is a short fruit-label attention reset—raise a hand or swap seats
+              when your fruit is called. Hands-only is the workplace default; skip seat-swapping in
+              tight rooms. Skip entirely in formal client rooms, grief contexts, or when fruit labels
+              feel childish—use{" "}
+              <Link href="/games/this-or-that-questions">This or That</Link>
+              {" "}or{" "}
+              <Link href="/games/chat-waterfall">Chat Waterfall</Link>
+              {" "}instead. Youth options on{" "}
               <Link href="/icebreaker-games-for-youth-group">
                 ice breaker games for youth group
               </Link>
@@ -828,6 +872,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
             <p>
               This or That Questions are short preference pairs (coffee or tea; docs or slides) answered
               with hands, sides, or chat. Use them when you need a two-minute pulse without stories.
+              Skip when names are still unknown, the topic is heavy, or you only have loaded prompts.
               Pair with{" "}
               <Link href="/games/one-word-check-in">One Word Check-In</Link> for word-based arrivals, or
               browse{" "}
@@ -861,7 +906,9 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
               <Link href="/when-to-skip-an-icebreaker">when to skip an icebreaker</Link>
               ) and run{" "}
               <Link href="/games/would-you-rather">Would You Rather</Link> or{" "}
-              <Link href="/games/human-bingo">Human Bingo</Link> instead.
+              <Link href="/games/human-bingo">Human Bingo</Link> instead. Substitutes with timing
+              and pass rules:{" "}
+              <Link href="/games-like-never-have-i-ever">games like Never Have I Ever</Link>.
             </p>
           ) : (
             <p>
@@ -879,51 +926,50 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
 
           {game.title === "Alliterative Name Game" && (
             <div className={styles.tipBox}>
-              <h4>Examples</h4>
+              <h4>Examples &amp; skip rules</h4>
               <ul>
-                <li>Brave Ben</li>
-                <li>Curious Carlos</li>
-                <li>Helpful Hannah</li>
-                <li>Joyful Jordan</li>
-                <li>Witty Will</li>
+                <li>Brave Ben · Curious Carlos · Helpful Hannah</li>
+                <li>Hard letters (X, Q): pass or name-only—never force a joke</li>
+                <li>Do not make the last person recite every pair</li>
+                <li>Skip for recurring standups; use name + role instead</li>
               </ul>
             </div>
           )}
 
           {game.title === "One Word Check-In" && (
             <div className={styles.tipBox}>
-              <h4>Prompt ideas</h4>
+              <h4>Prompt ideas &amp; skip rules</h4>
               <ul>
                 <li>One word for your energy today</li>
                 <li>One word for your focus right now</li>
                 <li>One word for what you need from this meeting</li>
-                <li>One word for your mood</li>
-                <li>One word for your bandwidth</li>
+                <li>Pass is fine; never diagnose a word in public</li>
+                <li>Skip after layoffs or during formal reviews</li>
               </ul>
             </div>
           )}
 
           {game.slug === "weather-check-in" && (
             <div className={styles.tipBox}>
-              <h4>Weather examples</h4>
+              <h4>Weather examples &amp; skip rules</h4>
               <ul>
                 <li>Mostly sunny with a chance of email thunder</li>
                 <li>Foggy but clearing after coffee</li>
                 <li>Light drizzle—tired but okay</li>
-                <li>Partly cloudy with bright spots</li>
                 <li>Windy—lots of context-switching today</li>
+                <li>Skip after layoffs or formal reviews; never quiz stormy answers in public</li>
               </ul>
             </div>
           )}
 
           {game.slug === "chainlink" && (
             <div className={styles.tipBox}>
-              <h4>Facilitator tips</h4>
+              <h4>Facilitator tips &amp; skip rules</h4>
               <ul>
                 <li>Require an explicit shared trait before the new fact</li>
                 <li>Keep facts short and work-safe (hobbies, tools, places)</li>
-                <li>Split above ~15 people into sub-circles of 8–12</li>
-                <li>Debrief listening, not who remembered the most</li>
+                <li>Split above ~15 into sub-circles of 8–12</li>
+                <li>Skip under ~8 or for recurring teams that already know each other</li>
               </ul>
             </div>
           )}
@@ -935,7 +981,31 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
                 <li>Ask for 2–3 emojis, not a long string</li>
                 <li>Model a vivid, work-safe example first</li>
                 <li>Prefer chat-first for hybrid and large rooms</li>
-                <li>Allow a pass; celebrate curiosity over perfect guesses</li>
+                <li>Allow a pass; skip the game if you need names more than mood signals</li>
+              </ul>
+            </div>
+          )}
+
+          {game.slug === "chat-waterfall" && (
+            <div className={styles.tipBox}>
+              <h4>Facilitator tips &amp; skip rules</h4>
+              <ul>
+                <li>Type silently; send only on the shared count</li>
+                <li>Mirror themes—do not read every line aloud</li>
+                <li>Unmutes stay optional (one or two max)</li>
+                <li>Skip if chat is off with no reaction fallback, or if you need names not a pulse</li>
+              </ul>
+            </div>
+          )}
+
+          {game.title === "Emoji Check-In" && (
+            <div className={styles.tipBox}>
+              <h4>Facilitator tips &amp; skip rules</h4>
+              <ul>
+                <li>One emoji only—ban long strings</li>
+                <li>Collect in chat or reactions on a count</li>
+                <li>Never quiz a sad emoji in public</li>
+                <li>Skip after layoffs or during formal reviews</li>
               </ul>
             </div>
           )}
@@ -966,12 +1036,12 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
 
           {game.title === "The Name Game" && (
             <div className={styles.tipBox}>
-              <h4>Variations</h4>
+              <h4>Variations &amp; skip rules</h4>
               <ul>
                 <li>Name + role (for work meetings)</li>
-                <li>Name + a gesture (for better memory)</li>
-                <li>Split into small circles for large groups</li>
-                <li>Virtual: type your name in chat as a backup</li>
+                <li>Split into small circles above ~12—no full-room recital</li>
+                <li>Neighbors may whisper on blanks; name tags help</li>
+                <li>Skip for recurring teams that already know each other</li>
               </ul>
             </div>
           )}
@@ -1153,12 +1223,12 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
 
           {game.title === "Find Your Match" && (
             <div className={styles.tipBox}>
-              <h4>How to prepare pairs</h4>
+              <h4>Ready decks &amp; skip rules</h4>
               <ul>
-                <li>Prepare one card per person with a famous pair (peanut butter & jelly, Batman & Robin)</li>
-                <li>Make sure there are enough pairs so everyone participates</li>
-                <li>Consider themed pairs for conferences (product names, industry references)</li>
-                <li>Have participants keep their card visible to make pairing faster</li>
+                <li>Everyday: peanut butter / jelly, salt / pepper, lock / key, coffee / mug</li>
+                <li>Work-safe: calendar / meeting, slides / presenter, inbox / email, wifi / password</li>
+                <li>Always prep a wildcard or facilitator card for odd headcounts</li>
+                <li>Skip under ~10 people or when the room cannot stand/mingle</li>
               </ul>
             </div>
           )}
@@ -1231,13 +1301,12 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
 
           {game.title === "Would You Rather" && (
             <div className={styles.tipBox}>
-              <h4>Question ideas</h4>
+              <h4>Work-safe prompts &amp; skip rules</h4>
               <ul>
-                <li>Would you rather be able to fly or be invisible?</li>
-                <li>Would you rather never use social media again or never watch TV again?</li>
-                <li>Would you rather travel to the past or the future?</li>
-                <li>Would you rather have unlimited money or unlimited time?</li>
-                <li>Would you rather be famous or anonymous but respected?</li>
+                <li>Coffee or tea · docs or slides · early standup or later</li>
+                <li>Mountains or beach · cameras optional or on (work-safe only)</li>
+                <li>Pass anytime; no forced “why”</li>
+                <li>Skip after bad news, or when you only have edgy party-game prompts</li>
               </ul>
             </div>
           )}
@@ -1676,22 +1745,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
           </div>
         )}
 
-        {game.title === "Find Your Match" && (
-          <div className={styles.section}>
-            <h3>Benefits of Find Your Match as an Ice Breaker Game</h3>
-            <ul>
-              <li>Find Your Match encourages natural conversation and movement among participants</li>
-              <li>This ice breaker game is perfect for groups of 10-50 people, ideal for networking events</li>
-              <li>Find Your Match helps participants learn names quickly through active interaction</li>
-              <li>As an ice breaker game, Find Your Match creates a fun, memorable experience for first meetings</li>
-              <li>Find Your Match works well with diverse groups, making it easy for everyone to participate equally</li>
-              <li>The famous pairs theme adds a playful element that reduces social anxiety and awkwardness</li>
-            </ul>
-          </div>
-        )}
-
-        
-{game.tags.length > 0 && (
+        {game.tags.length > 0 && (
           <section className={styles.section}>
             <h2>Tags</h2>
             <div className={styles.tags}>

@@ -69,7 +69,7 @@ export default async function BestIcebreakerGamesPage() {
     "chat-waterfall",
     "this-or-that-questions",
     "one-word-check-in",
-    "one-word-at-a-time",
+    "six-word-memoirs",
     "10-things-in-common",
   ];
 
@@ -230,7 +230,7 @@ export default async function BestIcebreakerGamesPage() {
               agenda—rather than forced oversharing.
             </p>
             <cite className="mt-3 block text-sm not-italic text-muted-foreground">
-              — Ice Breaker Games Editorial Team, summarizing guidance from{" "}
+              — Elena Hart, summarizing guidance from{" "}
               <a
                 href="https://en.wikipedia.org/wiki/Icebreaker_(facilitation)"
                 rel="noopener noreferrer"

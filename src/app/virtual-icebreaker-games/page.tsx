@@ -14,7 +14,7 @@ const ogImage =
   "https://www.icebreakergames.site/img/virtual-icebreaker-games-hero.jpg";
 const ogImageAlt =
   "Virtual ice breaker games — remote teammates laughing during an online meeting warm-up";
-const authorName = "Ice Breaker Games Editorial Team";
+const authorName = "Elena Hart";
 const datePublished = "2025-11-01";
 const dateModified = "2026-08-11";
 
@@ -65,19 +65,19 @@ const gameEntries = [
     variation: "Theme rounds: emoji for the customer, the product, or “meeting energy.”",
   },
   {
-    slug: "virtual-background-story",
-    name: "Virtual Background Story",
+    slug: "picture-sharing",
+    name: "Picture Sharing",
     bestFor: "Video-on meetings that need a visual laugh and quick shares",
     players: "6–40",
     time: "5–10 min",
-    materials: "Video meeting with background change",
+    materials: "Camera or a photo in chat",
     steps: [
-      "Give 60 seconds for everyone to set a playful virtual background.",
+      "Give 60 seconds for everyone to pick a playful photo.",
       "Invite 4–6 people to explain their choice in one sentence.",
       "Collect themes (“escape,” “nostalgia,” “chaos”).",
-      "Reset backgrounds and open the agenda.",
+      "Open the agenda.",
     ],
-    variation: "Theme: “background that matches this project’s mood.”",
+    variation: "Theme: “photo that matches this project’s mood.”",
   },
   {
     slug: "one-word-check-in",
@@ -295,7 +295,7 @@ export default async function VirtualIcebreakerGamesPage() {
   const faqs = [
     {
       q: "What are good virtual ice breaker games for Zoom or Teams?",
-      a: "Good virtual icebreaker games are fast, inclusive, and easy to run in chat or on camera. Try Chat Waterfall, Emoji Check-In, Emoji Introduction, Virtual Background Story, This or That, or One Word Check-In.",
+      a: "Good virtual icebreaker games are fast, inclusive, and easy to run in chat or on camera. Try Chat Waterfall, Emoji Check-In, Emoji Introduction, Picture Sharing, This or That, or One Word Check-In.",
     },
     {
       q: "What is a quick 5-minute virtual icebreaker?",
@@ -572,7 +572,7 @@ export default async function VirtualIcebreakerGamesPage() {
               <Link href="/games/emoji-check-in">Emoji Check-In</Link>, or{" "}
               <Link href="/games/this-or-that-questions">This or That</Link>. For visual laughs,
               try{" "}
-              <Link href="/games/virtual-background-story">Virtual Background Story</Link> or{" "}
+              <Link href="/games/picture-sharing">Picture Sharing</Link> or{" "}
               <Link href="/games/emoji-introduction">Emoji Introduction</Link>. For storytelling
               in smaller rooms, use{" "}
               <Link href="/games/two-truths-and-a-lie">Two Truths and a Lie</Link> or browse{" "}

@@ -19,8 +19,8 @@ const trustSignals = [
     label: "See skip criteria",
   },
   {
-    title: "Sources on the page",
-    body: "Where we lean on established facilitation practice or reference material, we cite it—SessionLab libraries, Wikipedia topic pages, and our own game guides.",
+    title: "Related guides on the page",
+    body: "Game pages link related facilitation notes from this library. When we lean on an outside reference (for example a public icebreaker collection), we link that too—and we label the two differently.",
     href: "/games",
     label: "Browse the library",
   },
@@ -35,7 +35,7 @@ export function TestimonialsSection() {
           <h2 id="trust-heading">How we pick what to publish</h2>
           <p>
             No celebrity endorsements—just a public checklist, skip rules, and
-            cited sources so facilitators can judge the work for themselves.
+            clear links so facilitators can judge the work for themselves.
           </p>
         </div>
 

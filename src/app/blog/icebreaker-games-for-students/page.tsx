@@ -86,7 +86,7 @@ const faqSchema = {
       name: "What are good online icebreaker games for students?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For online classes, use short formats that work well on video calls and chat. This or That Questions, Emoji Introduction, and Virtual Background Story are simple, fast, and screen-friendly choices.",
+        text: "For online classes, use short formats that work well on video calls and chat. This or That Questions, Emoji Introduction, and Picture Sharing are simple, fast, and screen-friendly choices.",
       },
     },
   ],
@@ -315,7 +315,7 @@ export default function StudentsIcebreakersPage() {
               links={[
                 { href: "/games/emoji-introduction", label: "Emoji Introduction" },
                 { href: "/games/this-or-that-questions", label: "This or That Questions" },
-                { href: "/games/virtual-background-story", label: "Virtual Background Story" },
+                { href: "/games/picture-sharing", label: "Picture Sharing" },
               ]}
             />
           </div>
@@ -561,8 +561,8 @@ export default function StudentsIcebreakersPage() {
                 text: "Easy to run through polls, reactions, or chat with almost no setup.",
               },
               {
-                name: "Virtual Background Story",
-                href: "/games/virtual-background-story",
+                name: "Picture Sharing",
+                href: "/games/picture-sharing",
                 text: "Works well in online seminars when students can choose a background that says something about them.",
               },
             ]}
@@ -791,8 +791,8 @@ export default function StudentsIcebreakersPage() {
                   This or That Questions
                 </Link>
                 , and{" "}
-                <Link href="/games/virtual-background-story" className="underline font-medium">
-                  Virtual Background Story
+                <Link href="/games/picture-sharing" className="underline font-medium">
+                  Picture Sharing
                 </Link>
                 .
               </p>

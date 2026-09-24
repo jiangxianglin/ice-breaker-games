@@ -45,6 +45,10 @@ export const portraitGalleryFaqs = [
     q: "Is Portrait Gallery related to HireVue's Portrait game?",
     a: "No. HireVue’s Portrait game is an AI interview assessment tool. Portrait Gallery here is an in-person (or virtual) icebreaker drawing activity for meetings, classrooms, and team building—not a hiring test.",
   },
+  {
+    q: "When should you skip Portrait Gallery?",
+    a: "Skip if anyone has signaled discomfort being looked at or drawn, if you have no paper/timer, if the room is under about six people (use Pass the Portrait), or if you only have five minutes before a formal presentation. Prefer Emoji Introduction or a seated check-in when materials or consent are missing.",
+  },
 ];
 
 type Props = {
@@ -164,23 +168,39 @@ export function PortraitGalleryDetail({ game, relatedGames = [] }: Props) {
             does not matter—speed and laughter do. That is why it works for adults at work as well as
             teens in class.
           </p>
-          <h3>Why play it?</h3>
+          <h3>Why play it—and when it fails</h3>
           <p>
             It gets people moving and looking at each other without forcing personal stories. Quiet
             participants can contribute as artists. The gallery wall becomes a shared artifact you can
             reference for the rest of the day. Compared with talking-only openers, this drawing
             icebreaker lowers pressure while still creating memorable moments.
           </p>
+          <p>
+            It fails when the rotate call is mushy (room chaos), when people critique looks instead of
+            lines, or when you treat unfinished sketches as an art critique. It also fails in rooms
+            that cannot stand or pass paper. Skip it after anyone opts out of being drawn with no
+            alternate role, when materials are missing, or when the next block is a high-stakes formal
+            talk and you only have five minutes—use{" "}
+            <Link href="/games/emoji-introduction">Emoji Introduction</Link> or jump to the agenda.
+          </p>
         </section>
 
         <section className={styles.safety}>
-          <h2>Facilitator notes &amp; safety</h2>
+          <h2>Facilitator notes, safety &amp; pitfalls</h2>
           <ul>
-            <li>Make participation optional—offer a “sitter” role for anyone who does not want to be drawn</li>
+            <li>Make participation optional—offer a “sitter” or timer role for anyone who does not want to be drawn</li>
             <li>Ban commentary on appearance; celebrate playful lines, not “accuracy”</li>
             <li>Use soft pencils and plenty of paper so mistakes feel cheap</li>
             <li>Keep intervals short (10–15 seconds) so perfectionism never starts</li>
             <li>For mixed-ability groups, say out loud: “Ugly drawings are the goal”</li>
+            <li>
+              <strong>Pitfall — weak rotate cue:</strong> if artists wander, freeze, reset seats, and
+              restart the next interval with a louder “Rotate!”
+            </li>
+            <li>
+              <strong>Pitfall — too few people:</strong> under ~6, drop the subject/artist split and
+              use Pass the Portrait instead
+            </li>
           </ul>
         </section>
 
@@ -258,10 +278,18 @@ export function PortraitGalleryDetail({ game, relatedGames = [] }: Props) {
         <section className={styles.scriptBand}>
           <h2>Facilitator script</h2>
           <p>
-            “We’re going to make a Portrait Gallery. Half of you are subjects—sit still and smile if
-            you want. Half of you are artists—you get 15 seconds to sketch, then I will shout Rotate
-            and you move to the next person. Ugly drawings win. When we finish, we’ll hang them and
-            take a two-minute gallery walk. Ready? Draw!”
+            <strong>Open:</strong> “We’re going to make a Portrait Gallery. Half of you are
+            subjects—sit still and smile if you want. Half of you are artists—you get 15 seconds to
+            sketch, then I will shout Rotate and you move to the next person. Ugly drawings win. Pass
+            or take the timer role if you prefer not to be drawn.”
+          </p>
+          <p>
+            <strong>Mid:</strong> “Freeze. Reset seats. Next interval starts on my Draw. Keep lines
+            loose—accuracy is not the point.”
+          </p>
+          <p>
+            <strong>Close:</strong> “Two-minute gallery walk. Find your collage, pick one detail you
+            like, then we hang a few favorites and start the agenda.”
           </p>
         </section>
 
@@ -293,6 +321,14 @@ export function PortraitGalleryDetail({ game, relatedGames = [] }: Props) {
             groups, run two rounds of subjects, then screenshare a mosaic. Pair with other{" "}
             <Link href="/virtual-icebreaker-games">virtual ice breaker games</Link> if you need a
             full remote warm-up agenda.
+          </p>
+
+          <h3>Original variant: gallery → working wall</h3>
+          <p>
+            After the gallery walk, hang each portrait next to the breakout table or wall space that
+            group will use for the next agenda block. Announce it up front: the messy collage becomes
+            the room map, not disposable scrap. People remember faces because the art stays visible
+            while they work—and you skip a second “find your table” speech.
           </p>
         </section>
 
@@ -382,6 +418,7 @@ export function PortraitGalleryDetail({ game, relatedGames = [] }: Props) {
             browseLabel="Browse small-group icebreakers"
           />
           <section className={styles.related} aria-label="Related guides">
+            <h2>Related guides</h2>
             <ul className={styles.relatedList}>
               <li>
                 <Link href="/icebreaker-games-for-small-groups">
@@ -393,6 +430,18 @@ export function PortraitGalleryDetail({ game, relatedGames = [] }: Props) {
                 <Link href="/virtual-icebreaker-games">
                   Virtual ice breaker games
                   <span>Remote-friendly warm-ups including drawing variants</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/games/picture-sharing">
+                  Picture Sharing
+                  <span>Photo-based share when you want stories without drawing</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/when-to-skip-an-icebreaker">
+                  When to skip an icebreaker
+                  <span>Consent, materials, and timing checks before you start</span>
                 </Link>
               </li>
             </ul>
