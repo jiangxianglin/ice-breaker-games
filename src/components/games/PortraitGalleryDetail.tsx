@@ -297,7 +297,7 @@ export function PortraitGalleryDetail({ game, relatedGames = [] }: Props) {
           <h2>Portrait Gallery variations</h2>
           <p>
             Once the core rotate loop works, swap one rule to match your audience. These variations
-            cover the most common search intents around portrait gallery activities.
+            cover common ways facilitators adapt portrait gallery for different rooms.
           </p>
 
           <h3>Blind portraits</h3>

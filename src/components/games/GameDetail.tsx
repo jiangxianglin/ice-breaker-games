@@ -113,7 +113,7 @@ export function GameDetail({ game, relatedGames = [] }: GameDetailProps) {
         {game.slug === "chainlink" ? <ChainlinkPlay /> : null}
 
         <section className={styles.section}>
-          <h3>Why Play {game.title}?</h3>
+          <h3>{`Why Play ${String(game.title).replace(/\s*[!?]+$/, "")}?`}</h3>
           {game.title === "Find Your Match" ? (
             <p>
               Find Your Match is a pairing icebreaker: each person gets one half of a famous (or

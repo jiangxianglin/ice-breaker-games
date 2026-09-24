@@ -44,7 +44,7 @@ async function fetchAllGames(): Promise<Game[]> {
   }
 }
 
-export const getAllGames = unstable_cache(fetchAllGames, ["getAllGames"], {
+export const getAllGames = unstable_cache(fetchAllGames, ["getAllGames", "keep-v2"], {
   revalidate: 60 * 60 * 24,
   tags: ["games"],
 });

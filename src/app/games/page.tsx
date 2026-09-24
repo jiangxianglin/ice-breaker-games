@@ -48,7 +48,7 @@ const priorityGames = [
   {
     href: "/games/this-or-that-questions",
     title: "This or That questions",
-    description: "High-intent either/or opener—rules, scripts, and classroom/work variations.",
+    description: "Either/or opener with rules, scripts, and classroom/work variations.",
   },
   {
     href: "/games/six-word-memoirs",
@@ -372,7 +372,20 @@ export default async function GamesPage() {
 
         <Suspense
           fallback={
-            <p className={styles.countLine}>Loading filters…</p>
+            <div>
+              <p className={styles.countLine}>
+                Showing all {games.length} games (filters loading…)
+              </p>
+              <ul className={styles.crawlIndexList}>
+                {[...games]
+                  .sort((a, b) => a.title.localeCompare(b.title))
+                  .map((game) => (
+                    <li key={`fb-${game.slug}`}>
+                      <Link href={`/games/${game.slug}`}>{game.title}</Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
           }
         >
           <FilterableGameGrid games={games} />
@@ -406,7 +419,7 @@ export default async function GamesPage() {
         <div className={styles.guidesInner}>
           <div className={styles.sectionHead}>
             <p className={styles.eyebrow}>Start here</p>
-            <h2 id="priority-heading">High-intent ice breaker games</h2>
+            <h2 id="priority-heading">Most requested ice breaker games</h2>
             <p>
               Open these detail pages first when you need a specific activity with rules,
               facilitator scripts, and variations—then browse hubs below by occasion.
@@ -435,8 +448,8 @@ export default async function GamesPage() {
             <p className={styles.eyebrow}>Curated guides</p>
             <h2 id="guides-heading">Browse by occasion &amp; similar games</h2>
             <p>
-              Prefer a ready-made list? These hub and blue-ocean guides match common search
-              intents and link back into the library.
+              Prefer a ready-made list? These occasion guides and similar-games pages help you
+              pick a format for your room, then open full rules in the library.
             </p>
           </div>
           <div className={styles.guideList}>

@@ -1,4 +1,5 @@
 import { getAllGames } from "@/db/queries/games";
+import { isLibraryHiddenGameSlug } from "@/lib/games/excluded-slugs";
 import { getGameHeroPath } from "@/lib/games/media";
 import type { Game } from "@/types/game";
 
@@ -11,7 +12,7 @@ export type RelatedGameItem = {
   anchorText: string;
 };
 
-/** Curated clusters — high-traffic pages push weight to weaker siblings first. */
+/** Curated clusters — Keep slugs only (never Cut / noindex). */
 const CURATED_RELATED: Record<string, string[]> = {
   chainlink: [
     "the-name-game",
@@ -34,7 +35,7 @@ const CURATED_RELATED: Record<string, string[]> = {
   "weather-check-in": [
     "one-word-check-in",
     "emoji-check-in",
-    "the-check-in",
+    "emoji-introduction",
     "chat-waterfall",
   ],
   "the-name-game": [
@@ -58,18 +59,24 @@ const CURATED_RELATED: Record<string, string[]> = {
   "human-bingo": [
     "find-your-match",
     "icebreaker-bingo",
-    "mingle-bingo",
+    "diversity-bingo",
     "the-name-game",
   ],
   "name-that-movie-quote": [
     "two-truths-and-a-lie",
     "emoji-introduction",
-    "storytelling-circle",
+    "six-word-memoirs",
     "the-name-game",
+  ],
+  "this-or-that-questions": [
+    "would-you-rather",
+    "chat-waterfall",
+    "one-word-check-in",
+    "emoji-check-in",
   ],
 };
 
-/** Exact-ish anchors for SEO boosts (keep diversified elsewhere). */
+/** Exact-ish anchors for related links (keep diversified elsewhere). */
 const ANCHOR_OVERRIDES: Record<string, Record<string, string>> = {
   chainlink: {
     "the-name-game": "how to play the name game",
@@ -105,18 +112,22 @@ function toRelatedItem(
 
 /**
  * Pick 3–4 related games: curated first, then same category, then fill.
+ * Never recommends Cut / library-hidden slugs.
  */
 export async function getRelatedGames(
   game: Pick<Game, "slug" | "category" | "title">,
   limit = 4
 ): Promise<RelatedGameItem[]> {
-  const all = await getAllGames();
+  const all = (await getAllGames()).filter(
+    (g) => !isLibraryHiddenGameSlug(g.slug)
+  );
   const bySlug = new Map(all.map((g) => [g.slug, g]));
   const picked: Game[] = [];
   const seen = new Set<string>([game.slug]);
 
   const pushSlug = (slug: string) => {
     if (seen.has(slug) || picked.length >= limit) return;
+    if (isLibraryHiddenGameSlug(slug)) return;
     const next = bySlug.get(slug);
     if (!next) return;
     seen.add(slug);

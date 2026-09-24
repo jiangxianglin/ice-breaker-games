@@ -17,7 +17,7 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
   "this-or-that-questions": {
     title: "This or That Questions (2026) | Free Icebreaker List",
     description:
-      "Ready this or that questions for meetings, class, and Zoom—hands, sides, or chat. 4–50 players, 5–8 min. 12 prompt pairs, pass rules, and when to skip.",
+      "Ready this or that questions for meetings, class, and Zoom—hands, sides, or chat. 4–50 players, 5–10 min. 12 prompt pairs, pass rules, and when to skip.",
   },
   "six-word-memoirs": {
     title: "Six Word Memoirs Icebreaker | Writing Warm-Up",

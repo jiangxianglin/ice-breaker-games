@@ -247,7 +247,7 @@ export default function BlogIndex() {
           <p className={styles.snapshotLabel}>Inside</p>
           <p>
             {sortedPosts.length} guides on meetings, students, adults, holidays,
-            and facilitation—updated as we ship new blue-ocean lists.
+            and facilitation—updated as we publish new practical lists.
           </p>
         </div>
         <div className={styles.snapshotItem}>

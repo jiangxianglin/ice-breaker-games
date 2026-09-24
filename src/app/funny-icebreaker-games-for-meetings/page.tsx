@@ -76,23 +76,23 @@ const gameEntries = [
     safety: "Keep explanations optional—emoji-only rounds work for shy teammates.",
   },
   {
-    slug: "telephone-charades",
-    name: "Telephone Charades",
-    bestFor: "Teams that want physical comedy without needing a stage",
-    players: "8–24",
-    time: "8–12 min",
-    materials: "Prompt cards",
+    slug: "this-or-that-questions",
+    name: "This or That Questions",
+    bestFor: "Teams that want fast funny polls without a long setup",
+    players: "6–40",
+    time: "5–10 min",
+    materials: "Prompt list or slides",
     funnyScene:
-      "The last person acts out “quarterly forecast” as someone fishing. The original phrase was “catch-up meeting.” Applause required.",
+      "Half the room stands for “always camera-on standups,” the other half sits for “async updates only”—and the minority has to defend their pick in five seconds.",
     steps: [
-      "Line people up; whisper a phrase to the first person.",
-      "They act it (no words) for the next person, who acts for the next, and so on.",
-      "The last person guesses the phrase aloud.",
-      "Reveal the original and enjoy the mutation.",
+      "Read a work-safe either/or prompt.",
+      "People move to sides, raise hands, or type A/B in chat.",
+      "Optional: one voice per side for five seconds.",
+      "Next prompt—or close after 5–6 pairs.",
     ],
     variation:
-      "Virtual: mute gallery-view rounds with breakout “actors.” Use meeting-themed phrases only.",
-    safety: "No body-contact prompts; keep phrases workplace-appropriate.",
+      "Virtual: reactions or chat letters instead of moving. Keep pairs light.",
+    safety: "Ban identity/politics pairs; pass allowed; never force a why.",
   },
   {
     slug: "picture-sharing",
@@ -149,58 +149,58 @@ const gameEntries = [
     safety: "Use widely known, non-offensive quotes; skip niche spoilers for new releases.",
   },
   {
-    slug: "skribbl-pictionary-online",
-    name: "Skribbl / Pictionary Online",
-    bestFor: "Remote teams that want collaborative silly drawings",
-    players: "4–16",
-    time: "8–12 min",
-    materials: "skribbl.io or shared whiteboard",
+    slug: "marshmallow-challenge",
+    name: "Marshmallow Challenge",
+    bestFor: "Remote or in-person teams that want collaborative silly builds",
+    players: "8–40",
+    time: "15–20 min",
+    materials: "Spaghetti, tape, string, one marshmallow per team",
     funnyScene:
-      "Someone tries to draw “synergy” and ends up with a stick figure high-fiving a spreadsheet. The guesses get funnier than the art.",
+      "Towers lean, marshmallows slide, and the “winning” team’s structure collapses mid-cheer—then everyone debriefs what broke first.",
     steps: [
-      "Open a shared drawing tool with meeting-safe word list.",
-      "One person draws; others guess in chat.",
-      "Rotate artists every round.",
-      "Keep a custom word pack (standups, OKRs, coffee) for relevance.",
+      "Form small teams; hand out the same kit to each.",
+      "Time-box the build; marshmallow must sit on top at the end.",
+      "Measure standing towers; celebrate attempts, not just winners.",
+      "Debrief: what assumption failed first?",
     ],
-    variation: "In-person: whiteboard + markers with the same rules.",
-    safety: "Moderate the word list; ban anything crude or exclusionary.",
+    variation: "Virtual: build with household items on camera; same debrief.",
+    safety: "Watch food allergies; offer a non-food topper if needed.",
   },
   {
-    slug: "pterodactyl",
-    name: "Pterodactyl",
-    bestFor: "Small teams that want guaranteed giggles in under five minutes",
-    players: "5–16",
-    time: "3–6 min",
-    materials: "None",
+    slug: "human-bingo",
+    name: "Human Bingo",
+    bestFor: "Small teams that want guaranteed giggles in under ten minutes",
+    players: "12–40",
+    time: "10–20 min",
+    materials: "Printed bingo cards; pens",
     funnyScene:
-      "Everyone tries to say “pterodactyl” without showing teeth. The first smile loses—and the whole circle collapses into laughter by round two.",
+      "People chase “has never broken a mug at work” squares until the room is buzzing—and someone yells bingo mid-sentence.",
     steps: [
-      "Explain the rule: say “pterodactyl” with lips covering teeth.",
-      "Go around the circle; anyone who shows teeth is out (cheerfully).",
-      "Continue until one person remains—or the room is laughing too hard to continue.",
-      "Reset once and move on while energy is high.",
+      "Hand out work-safe bingo cards and explain: find people who match squares; initials only.",
+      "Allow any square to be skipped; no invasive prompts.",
+      "Call time after 8–12 minutes; invite one or two bingo stories.",
+      "Sit and open the agenda while energy is high.",
     ],
-    variation: "Virtual: gallery view close-ups; mute between turns to reduce chaos.",
-    safety: "Keep it playful—never mock dental differences or force participation.",
+    variation: "Virtual: paste a grid in chat or use a shared doc; unmute for bingo calls.",
+    safety: "Keep it playful—never mock people who pass on a square.",
   },
   {
-    slug: "invention-pitch",
-    name: "Invention Pitch",
-    bestFor: "Product and innovation meetings that want creative humor",
-    players: "6–24",
-    time: "8–12 min",
-    materials: "Timer; optional random object list",
+    slug: "six-word-memoirs",
+    name: "Six Word Memoirs",
+    bestFor: "Product and writing-friendly meetings that want creative humor",
+    players: "4–30",
+    time: "10–15 min",
+    materials: "Paper or chat",
     funnyScene:
-      "A 60-second pitch for “self-tying shoelaces for standups that run long” somehow becomes the funniest—and oddly useful—idea of the day.",
+      "Someone writes “Standups ate my will to live” and the room laughs—then shares softer six-word wins too.",
     steps: [
-      "Give each person or pair 60–90 seconds to invent a ridiculous-but-helpful product.",
-      "Pitch in one breath: problem, product, one feature.",
-      "Audience votes with snaps or chat reactions.",
-      "Harvest any surprisingly good ideas for later.",
+      "Explain: exactly six words about you, work, or the week—pass = write-only.",
+      "Give two minutes of quiet writing.",
+      "Optional share from volunteers only.",
+      "Thank the room and open the agenda.",
     ],
-    variation: "Constraint round: must solve a real meeting pain (late starts, unclear owners).",
-    safety: "Celebrate creativity; do not roast soft-spoken pitches.",
+    variation: "Constraint: six words about this project’s mood.",
+    safety: "Celebrate creativity; do not roast soft-spoken shares.",
   },
   {
     slug: "train-wreck",
@@ -569,12 +569,13 @@ export default async function FunnyIcebreakerGamesForMeetingsPage() {
               For instant opinions, start with{" "}
               <Link href="/games/would-you-rather">Would You Rather</Link> or{" "}
               <Link href="/games/emoji-introduction">Emoji Introduction</Link>. For physical
-              comedy in small rooms, try <Link href="/games/pterodactyl">Pterodactyl</Link> or{" "}
-              <Link href="/games/telephone-charades">Telephone Charades</Link>. For large Zoom
-              rooms, use <Link href="/games/chat-waterfall">Chat Waterfall</Link> or{" "}
+              comedy in small rooms, try{" "}
               <Link href="/games/rock-paper-scissors-tournament">
                 Rock Paper Scissors Tournament
-              </Link>
+              </Link>{" "}
+              or <Link href="/games/human-knot">Human Knot</Link> (consent-first). For large Zoom
+              rooms, use <Link href="/games/chat-waterfall">Chat Waterfall</Link> or{" "}
+              <Link href="/games/emoji-introduction">Emoji Introduction</Link>
               . For practical check-ins without a humor focus, return to{" "}
               <Link href="/icebreaker-games-for-meetings">
                 ice breaker games for meetings

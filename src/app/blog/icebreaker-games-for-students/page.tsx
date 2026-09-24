@@ -399,7 +399,7 @@ export default function StudentsIcebreakersPage() {
             The best icebreaker games for students by situation
           </h2>
           <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 mb-6">
-            The keyword is broad, but the real search intent is practical. Most people searching for{" "}
+            The keyword is broad, but what people usually need is practical. Most people searching for{" "}
             <span className="font-semibold">icebreaker games for students</span> need help with a specific context, so these
             recommendations are grouped by where and how they are likely to be used.
           </p>
@@ -720,7 +720,7 @@ export default function StudentsIcebreakersPage() {
             <li>Review lens: social risk for shy students, class management friction, and usefulness across different group sizes.</li>
             <li>Editorial method: each recommendation was screened for first-day usefulness, teen resistance to cheesy prompts, and whether the game could be adapted for online or large-group use.</li>
             <li>Audience assumptions: this guide is most relevant for US, Canadian, UK, and similar English-speaking school contexts.</li>
-            <li>Update note: reviewed and updated on May 5, 2026, to reflect current search intent around school, high school, college, and online use cases.</li>
+            <li>Update note: reviewed and updated on May 5, 2026, for school, high school, college, and online use cases.</li>
           </ul>
         </section>
 

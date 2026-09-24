@@ -1376,7 +1376,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
     ],
     rulesTiming: [
       { label: "Players", body: "4–60+ with a clear signal." },
-      { label: "Time", body: "5–8 minutes for about eight pairs." },
+      { label: "Time", body: "5–10 minutes for about eight pairs." },
       { label: "Materials", body: "Prompt list or slide—no props required." },
       {
         label: "House rules",
@@ -1438,7 +1438,7 @@ export const GAME_PAGE_EXTRAS: Record<string, GamePageExtrasContent> = {
       },
       {
         q: "How long should This or That take?",
-        a: "Five to eight minutes for about eight pairs. Cap each round at roughly 45 seconds including an optional why.",
+        a: "Five to ten minutes for about eight pairs. Cap each round at roughly 45 seconds including an optional why.",
       },
       {
         q: "What materials do you need?",
