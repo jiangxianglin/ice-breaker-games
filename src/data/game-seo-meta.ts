@@ -130,9 +130,9 @@ export const GAME_SEO_META: Record<string, GameSeoMeta> = {
       "People place themselves on a room spectrum by prompt—not a forced binary. Seated continua for mobility needs; skip identity audits.",
   },
   bang: {
-    title: "Bang Icebreaker | Optional Pointing Spike",
+    title: "Bang Icebreaker | Soft Pointing Circle",
     description:
-      "Optional high-energy pointing spike with no-elimination defaults. Often skip at work; rename and soften for youth rooms that need movement.",
+      "High-energy pointing spike with no-elimination defaults. Often skip at work; rename and soften for youth rooms that need movement.",
   },
   "team-superpower-collage": {
     title: "Team Superpower Collage | Shared Identity Tiles",

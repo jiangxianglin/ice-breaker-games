@@ -58,10 +58,7 @@ export const blogPosts: BlogPost[] = [
     content: `Complete guide to Christmas table icebreaker games for holiday dinners and festive gatherings.`
   },
   {
-    slug: "tips-for-running-effective-icebreakers",
-    title: "Effective Icebreaker Games Tips: Expert Guide for Teams",
-    excerpt: "Master icebreaker games with proven tips from experts. Learn to choose, facilitate & engage teams with professional activities for meetings & events.",
-    date: "2025-01-07",
+    date: "2026-09-24",
     author: "Elena Hart",
     image: "/icebreaker-facilitator-training.jpg",
     tags: ["Icebreaker Tips", "Team Leadership", "Meeting Management", "Facilitation Skills", "Team Building"],

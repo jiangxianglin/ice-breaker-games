@@ -128,22 +128,34 @@ async function fetchLiveGameMeta(): Promise<Map<string, Date>> {
 
 /**
  * Always emit /games/* detail URLs.
- * Static GAME_SLUGS is the safety net; Supabase adds newer slugs + lastmod when available.
+ * Static GAME_SLUGS is the safety net; Supabase adds newer slugs when available.
+ *
+ * lastmod: DB `updated_at` is often stale (seed dates). Floor at CONTENT_PASS so
+ * Google sees a reason to re-crawl after the 2026-09 AdSense Keep/Cut rewrite.
  */
+const GAME_CONTENT_PASS = new Date("2026-09-24T12:00:00.000Z");
+
 async function getGamePages(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
+  const floor =
+    now.getTime() > GAME_CONTENT_PASS.getTime() ? now : GAME_CONTENT_PASS;
   const live = await fetchLiveGameMeta();
   const slugs = new Set<string>([...GAME_SLUGS, ...live.keys()]);
 
   return [...slugs]
     .filter((slug) => !isSitemapExcludedGameSlug(slug))
     .sort()
-    .map((slug) => ({
-      url: `${baseUrl}/games/${slug}`,
-      lastModified: live.get(slug) ?? now,
-      changeFrequency: "daily" as const,
-      priority: 0.9,
-    }));
+    .map((slug) => {
+      const fromDb = live.get(slug);
+      const lastModified =
+        fromDb && fromDb.getTime() > floor.getTime() ? fromDb : floor;
+      return {
+        url: `${baseUrl}/games/${slug}`,
+        lastModified,
+        changeFrequency: "daily" as const,
+        priority: 0.9,
+      };
+    });
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

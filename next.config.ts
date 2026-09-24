@@ -1,4 +1,5 @@
 import { NextConfig } from "next";
+import { NOINDEX_GAME_SLUGS } from "./src/lib/games/excluded-slugs";
 
 const nextConfig = {
   typescript: { ignoreBuildErrors: true },
@@ -165,6 +166,16 @@ const nextConfig = {
           },
         ],
       },
+      // AdSense Cut set — X-Robots-Tag so crawlers/tools see noindex without parsing RSC meta
+      ...[...NOINDEX_GAME_SLUGS].map((slug) => ({
+        source: `/games/${slug}`,
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, follow",
+          },
+        ],
+      })),
     ];
   },
 } satisfies NextConfig;
