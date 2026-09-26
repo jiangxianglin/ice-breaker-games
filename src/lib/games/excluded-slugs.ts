@@ -56,7 +56,7 @@ export const NOINDEX_GAME_SLUGS = new Set([
   "10-things-in-common",
   "reception-line",
   "sole-mate",
-  "story-swap",
+  // story-swap removed 2026-09-26: A-class page (§17.4) — keep indexable + in sitemap
   "two-truths-and-a-dream",
   "appreciation-circle",
   "year-of-the-coin",
