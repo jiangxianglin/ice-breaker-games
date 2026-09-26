@@ -6,10 +6,9 @@ import Image from "next/image";
 import { PrintButton } from "@/components/PrintButton";
 
 const SLUG = "two-truths-and-a-lie-for-students-printable";
-const title =
-  "Two Truths and a Lie for Students Printable: Classroom Worksheets + Prompt Banks";
+const title = "Two Truths and a Lie for Students: Printable Worksheets";
 const description =
-  "Print student-safe Two Truths and a Lie worksheets for class, advisory, and orientation. Includes 3 ready-to-print sheets, example statements, and teacher facilitation tips.";
+  "Print student-safe Two Truths and a Lie worksheets for class, advisory, and orientation\u20143 ready-to-print sheets, example statements, and teacher tips.";
 const imageUrl =
   "https://www.icebreakergames.site/small-group-icebreaker-activity.jpg";
 

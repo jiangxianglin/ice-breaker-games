@@ -6,9 +6,9 @@ import Image from "next/image";
 import { PrintButton } from "@/components/PrintButton";
 
 const SLUG = "human-bingo-for-students-printable";
-const title = "Human Bingo for Students Printable: 3 Ready-to-Print Cards for Class and Orientation";
+const title = "Human Bingo for Students Printable: 3 Ready-to-Print Cards";
 const description =
-  "Print student-friendly Human Bingo cards for class, orientation, and first day of school activities. Includes 3 unique versions, simple directions, and prompts for high school and college groups.";
+  "Printable Human Bingo cards for students: three unique versions with classroom-safe prompts, simple directions, and versions for high school and college.";
 const imageUrl = "https://www.icebreakergames.site/large-group-icebreaker-event.jpg";
 
 const bingoCards = [
