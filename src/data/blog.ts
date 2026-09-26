@@ -58,6 +58,10 @@ export const blogPosts: BlogPost[] = [
     content: `Complete guide to Christmas table icebreaker games for holiday dinners and festive gatherings.`
   },
   {
+    slug: "tips-for-running-effective-icebreakers",
+    title: "Effective Icebreaker Games Tips: Expert Guide for Teams",
+    excerpt:
+      "Facilitation tips for running icebreakers well: choosing by group and time, timeboxing, pass rules, when to skip, and how to debrief.",
     date: "2026-09-24",
     author: "Elena Hart",
     image: "/icebreaker-facilitator-training.jpg",
