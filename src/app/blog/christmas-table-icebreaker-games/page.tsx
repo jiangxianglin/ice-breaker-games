@@ -11,13 +11,13 @@ export async function generateMetadata(): Promise<Metadata> {
   const url = `https://www.icebreakergames.site/blog/${post.slug}`;
 
   return {
-    title: "15 Best Christmas Table Icebreaker Games for Holiday Dinners 2026",
+    title: "15 Best Christmas Table Icebreaker Games for Dinner 2026",
     description: "Discover 15 engaging Christmas table icebreaker games perfect for holiday dinners. Easy-to-play activities that keep guests entertained while seated.",
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: "15 Best Christmas Table Icebreaker Games for Holiday Dinners 2026",
+      title: "15 Best Christmas Table Icebreaker Games for Dinner 2026",
       description: "Discover 15 engaging Christmas table icebreaker games perfect for holiday dinners. Easy-to-play activities that keep guests entertained while seated.",
       type: "article",
       publishedTime: post.date,
@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: "15 Best Christmas Table Icebreaker Games for Holiday Dinners 2026",
+      title: "15 Best Christmas Table Icebreaker Games for Dinner 2026",
       description: "Discover 15 engaging Christmas table icebreaker games perfect for holiday dinners. Easy-to-play activities that keep guests entertained while seated.",
       images: ["/christmas-dinner-connection.jpg"],
       creator: "@icebreakergames",
