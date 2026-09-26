@@ -12,7 +12,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "two-truths-and-a-lie-for-students-printable",
-    title: "Two Truths and a Lie for Students Printable: Classroom Worksheets",
+    title: "Two Truths and a Lie for Students: Printable Worksheets",
     excerpt:
       "Print student-safe Two Truths and a Lie worksheets for class, advisory, and orientation—with example statements and teacher tips.",
     date: "2026-08-29",
@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "human-bingo-for-students-printable",
     title: "Human Bingo for Students Printable: 3 Ready-to-Print Cards",
-    excerpt: "Download and print student-friendly Human Bingo cards for class, orientation, and first day of school activities, with prompts that work for high school, college, and mixed groups.",
+    excerpt: "Printable Human Bingo cards for students: three ready-to-print versions with classroom-safe prompts for high school, college, and orientation.",
     date: "2026-05-05",
     author: "Elena Hart",
     image: "/large-group-icebreaker-event.jpg",
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "icebreaker-games-for-students",
     title: "Icebreaker Games for Students That Actually Work in Class",
-    excerpt: "Icebreaker Games for Students for class, high school, college, and online learning, with non-cheesy ideas, low-prep picks, and a teacher-friendly comparison table.",
+    excerpt: "Icebreaker games for students in class, high school, college, and online—non-cheesy, low-prep picks with a teacher-friendly comparison table.",
     date: "2026-05-05",
     author: "Elena Hart",
     image: "/small-group-icebreaker-activity.jpg",
